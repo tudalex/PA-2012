@@ -1,0 +1,50 @@
+#include <iostream>
+#include <stdint.h>
+#include <stdio.h>
+uint64_t karatsuba(uint64_t x, uint64_t y, unsigned char exp)
+{
+  /* TODO: Implementati metoda de inmultire a doua numere folosind algoritmul
+   * Karatsuba, scriind cele doua numere in baza (2^exp) si efectuand
+   * inmultirile conform enuntului din laborator.
+   *
+   */
+  //fprintf(stderr,"x=%llu y=%llu %d\n",x, y, exp);
+  
+  if (exp < 2)
+  	return x*y;
+  uint64_t bm = 1<<(exp);
+  uint64_t z2 = karatsuba(x/bm,y/bm, exp/2);
+  uint64_t z0 = karatsuba(x%bm,y%bm, exp/2);
+  uint64_t z1 = karatsuba(x/bm + x%bm,y/bm + y%bm, exp/2) -z2 -z0;
+  
+  return z2*bm*bm + z1*bm + z0;
+  /*
+   * TODO(pe hartie): Cate inmultiri elementare se efectueaza pentru algoritmul
+   * de inmultire Karatsuba? Se stie ca pentru a imulti doua numere a cate K
+   * biti fiecare, este nevoie de K^2 inmultiri elementare.
+   */
+  
+}
+
+int main()
+{
+  /* Citim doua numere fara semn, de 32 biti, pe care le vom inmulti. */
+  uint32_t n1, n2;
+  std::cin >> n1 >> n2;
+
+  /* Afisam rezultatul inmultirii Karatasuba. */
+  uint64_t prod_classic = ((uint64_t) n1) * ((uint64_t) n2);
+  uint64_t prod_karatsuba = karatsuba(n1, n2, 16);
+
+  if (prod_classic == prod_karatsuba) {
+    std::cout << "OK!" << std::endl << "Produsul celor doua numere este: "
+              << prod_classic << std::endl;
+  } else {
+    std::cout << "FAIL!" << std::endl << "Produsul celor doua numere este: "
+              << prod_classic << std::endl << "iar Karatsuba a calculat: "
+              << prod_karatsuba << std::endl;
+  }
+
+  return 0;
+}
+
