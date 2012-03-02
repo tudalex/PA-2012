@@ -16,7 +16,15 @@ bool compare_finish_time(const Task& left, const Task& right)
 int get_max(std::vector<Task>& v)
 {
   /* TODO: Calculati numarul maxim de task-uri care nu se suprapun. */
-  return 0;
+  sort (v.begin(), v.end(), compare_finish_time);
+  int cur_end_time = 0, sol = 0;
+  for (int i = 0; i < v.size(); ++ i)
+  	if (v[i].first >= cur_end_time)
+  	{
+  		++sol;
+  		cur_end_time = v[i].second;
+  	}  
+  return sol;
 }
 
 int main()

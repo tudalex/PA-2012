@@ -9,7 +9,15 @@ typedef std::pair<long long, long long> Fractie;
 std::vector<Fractie> descompunere_fractii_egiptene(long long x, long long y)
 {
   std::vector<Fractie> v;
-
+  long long xt, yt;
+  while (x!=1) {
+  v.push_back(std::make_pair(1, CEIL(y,x)));
+  xt = x-(y%x);
+  yt = y*CEIL(y,x);
+  x = xt;
+  y = yt;
+  }
+  v.push_back(std::make_pair(1, CEIL(y,x)));
   /* TODO: Puneti in v un sir de fractii care sa reprezinte descompunerea in
    * fractii egiptene a lui x/y. */
 

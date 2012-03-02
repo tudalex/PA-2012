@@ -1,17 +1,32 @@
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
 
 #include "VectorIO.h"
 #include "PairIO.h"
+using namespace std;
 
 /* Un material este o pereche (greutate, valoare). */
 typedef std::pair<int, double> Material;
-
+ int cmpf(const Material& a, const Material& b)
+{
+	if (a.second == b.second)
+		return a.first > b.first;
+	return a.second > b.second;
+}
 double val_max(int t, std::vector<Material>& v)
 {
   /* TODO: Valoarea maxima care se poate transporta. */
-  return 0;
+  double r = 0;
+  sort(v.begin(), v.end(), cmpf);
+  for (int i = 0; i < v.size(); ++ i)
+  {
+  	int k = min(t, v[i].first);
+  	r+= k * v[i].second;
+  	t-= k;
+  }
+  return r;
 }
 
 int main()

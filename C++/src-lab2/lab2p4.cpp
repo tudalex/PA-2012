@@ -6,15 +6,30 @@
 #include "PairIO.h"
 
 #define UNDEF -1
+using namespace std;
 
 /* Un material este o pereche (greutate, valoare). */
 typedef std::pair<int, int> Mobila;
 
 int val_max(int t, std::vector<Mobila>& v)
 {
+  std::vector < int > a(t+1, -1);
+  a[0] = 0;
+  for (int i = 0; i < v.size(); ++ i)
+  	for (int j = t; j >=0; --j)
+  		if (a[j]!=-1)
+  		{
+  			int k = j+v[i].first;
+  			if (k <= t && a[j]+v[i].second > a[k])
+  				a[k] = a[j]+v[i].second;
+  		}
+  int r = 0;
+  for (int i = 0; i <=t; ++ i)
+  	r = std::max(r, a[i]);
+  	
   /* TODO: Caclulati valoarea maxima transportabila de catre camionul de
    * capacitate t. */
-  return 0;
+  return r;
 }
 
 int main()
