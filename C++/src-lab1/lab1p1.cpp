@@ -1,29 +1,44 @@
 #include <iostream>
 #include <stdint.h>
-#include <stdio.h>
+
+/* Vom imparti cele doua numere in formatul:
+ * n1 = x1 * (2^exp) + x2
+ * n2 = y1 * (2^exp) + y2
+ *
+ * Deci produsul final devine:
+ *
+ * (n1 * n2) = alpha * (2^(2*exp)) + beta * (2^exp) + gamma
+ *
+ * unde:
+ *  alpha = x1 * y1
+ *  beta = (x1 + x2) * (y1 + y2) - alpha - gamma
+ *  gamma = x2 * y2
+ */
 uint64_t karatsuba(uint64_t x, uint64_t y, unsigned char exp)
 {
-  /* TODO: Implementati metoda de inmultire a doua numere folosind algoritmul
-   * Karatsuba, scriind cele doua numere in baza (2^exp) si efectuand
-   * inmultirile conform enuntului din laborator.
-   *
-   */
-  //fprintf(stderr,"x=%llu y=%llu %d\n",x, y, exp);
-  
-  if (exp < 2)
-  	return x*y;
-  uint64_t bm = 1<<(exp);
-  uint64_t z2 = karatsuba(x/bm,y/bm, exp/2);
-  uint64_t z0 = karatsuba(x%bm,y%bm, exp/2);
-  uint64_t z1 = karatsuba(x/bm + x%bm,y/bm + y%bm, exp/2) -z2 -z0;
-  
-  return z2*bm*bm + z1*bm + z0;
-  /*
-   * TODO(pe hartie): Cate inmultiri elementare se efectueaza pentru algoritmul
-   * de inmultire Karatsuba? Se stie ca pentru a imulti doua numere a cate K
-   * biti fiecare, este nevoie de K^2 inmultiri elementare.
-   */
-  
+  /* Daca exponentul este 0, atunci inmulteste direct. */
+  if (exp < 2) {
+    return x * y;
+  }
+
+  /* Cream o masca pentru a extrage bitii din a si din b. */
+  uint64_t mask = (((uint64_t) 1) << exp) - 1;
+
+  /* Calculam x1, x2, y1, y2. */
+  uint64_t x1 = x >> exp;
+  uint64_t x2 = x & mask;
+  uint64_t y1 = y >> exp;
+  uint64_t y2 = y & mask;
+
+  /* Calculam alpha, beta si gamma. */
+  uint64_t alpha = karatsuba(x1, y1, exp / 2);
+  uint64_t gamma = karatsuba(x2, y2, exp / 2);
+  uint64_t beta = karatsuba((x1 + x2), (y1 + y2), exp / 2) - alpha - gamma;
+
+  /* Intoarcem rezultatul final. */
+  return alpha * (((uint64_t) 1) << (2 * exp)) +
+         beta * (((uint64_t) 1) << exp) +
+         gamma;
 }
 
 int main()
