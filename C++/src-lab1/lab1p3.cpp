@@ -113,7 +113,7 @@ int main()
 
   /* Afisam rezultatul. */
   std::cout << "Subsecventa de suma maxima din vector are suma = "
-            << max_sum_subsequence(v) << std::endl;
+      << max_sum_subsequence(v) << std::endl;
 
   return 0;
 }

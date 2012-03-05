@@ -1,32 +1,45 @@
-
 #include <iostream>
 #include <vector>
 #include <algorithm>
 
 #include "VectorIO.h"
 #include "PairIO.h"
-using namespace std;
 
 /* Un material este o pereche (greutate, valoare). */
 typedef std::pair<int, double> Material;
- int cmpf(const Material& a, const Material& b)
+
+bool compare_unit_value(const Material& left, const Material& right)
 {
-	if (a.second == b.second)
-		return a.first > b.first;
-	return a.second > b.second;
+  /* Vom sorta crescator dupa valoarea unitara. */
+  return (left.second/left.first) > (right.second/right.first);
 }
+
 double val_max(int t, std::vector<Material>& v)
 {
-  /* TODO: Valoarea maxima care se poate transporta. */
-  double r = 0;
-  sort(v.begin(), v.end(), cmpf);
-  for (int i = 0; i < v.size(); ++ i)
-  {
-  	int k = min(t, v[i].first);
-  	r+= k * v[i].second;
-  	t-= k;
+  /* Deoarece putem lua si cantitati fractionare de materiale, vom sorta
+   * descrescator dupa pretul per cantitate si vom alege cele mai scumpe
+   * produse pana cand vom umple camionul. 
+   */
+  std::sort(v.begin(), v.end(), compare_unit_value);
+
+  double val_max = 0;
+  /* Parcurgem vectorul sortat si alegem produse pana cand nu mai este loc
+   * in camion sau pana cand nu mai avem produse. 
+   */
+  for (int i = 0; i < v.size() && t > 0; ++i){
+    if (t >= v[i].first){
+      /* Daca putem lua produsul in intregime. */
+      val_max += v[i].second;
+      t -= v[i].first;
+    } else {
+      /* Nu avem destul loc, luam doar cat mai este loc in camion */
+      val_max += (v[i].second/v[i].first)*t;
+      t = 0;
+    }
   }
-  return r;
+
+  /* Valoarea maxima a produselor care se poate obtine este val_max */
+  return val_max;
 }
 
 int main()

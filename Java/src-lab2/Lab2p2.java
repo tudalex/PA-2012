@@ -25,9 +25,20 @@ public class Lab2p2
   private static Vector<Fractie> descompunere_fractii_egiptene(long x, long y) 
   {
     Vector<Fractie> v = new Vector<Fractie>();
-
-    /* TODO: Puneti in v un sir de fractii care sa reprezinte descompunerea in
-     * fractii egiptene a lui x/y. */
+    /* Cat timp nu am ajuns cu descompunerea la 0, continuam sa alegem cea mai
+     * mare fractie de forma 1/n care este strict mai mica decat x/y, o adaugam la
+     * suma si incecam sa descompunem mai departe diferenta (x/y - 1/n).
+     *
+     * Se observa ca acea fractie este mereu 1/(CEIL(y/x)).
+     */
+    do 
+    {
+      v.add(new Fractie(1, ceil(y, x)));
+      long newx = (x - y % x) % x;
+      long newy = y * ceil(y, x);
+      x = newx;
+      y = newy;
+    } while (x != 0);
 
     return v;
   }

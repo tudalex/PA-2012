@@ -2,11 +2,37 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Lab2p1 
-{	
+{  
   static double valoareMaxima(int t, Material[] v)
   {
-    /* TODO: Valoarea maxima care se poate transporta. */
-    return 0;
+    /* Deoarece putem lua si cantitati fractionare de materiale, vom sorta
+     * descrescator dupa pretul per cantitate si vom alege cele mai scumpe
+     * produse pana cand vom umple camionul. 
+     */
+    Arrays.sort(v);
+
+    double valMax = 0;
+
+    /* Parcurgem vectorul sortat si alegem produse pana cand nu mai este loc
+     * in camion sau pana cand nu mai avem produse. 
+     */
+    for (int i = 0; i < v.length && t > 0; ++i){
+      if (t >= v[i].greutate)
+      {
+        /* Daca putem lua produsul in intregime. */
+        valMax += v[i].valoare;
+        t -= v[i].greutate;
+      } 
+      else 
+      {
+        /* Nu avem destul loc, luam doar cat mai este loc in camion */
+        valMax += (v[i].valoare / v[i].greutate) * t;
+        t = 0;
+      }
+    }
+
+    /* Valoarea maxima a produselor care se poate obtine este val_max */
+    return valMax;
   }
 
 
@@ -40,8 +66,7 @@ class Material implements Readable, Comparable<Material>
   }
 
   @Override
-      public int compareTo(Material other)
-      {
+      public int compareTo(Material other) {
         double ratioThis = valoare / (double)greutate;
         double ratioOther = other.valoare / (double)other.greutate;
 

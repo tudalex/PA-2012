@@ -19,7 +19,7 @@ std::ostream& operator<< (std::ostream& out, std::vector<T>& v)
   for (unsigned int i = 0; i < v.size(); ++i) {
     out << (i > 0 ? " " : "") << v[i];
   }
-  
+
   return out;
 }
 
@@ -38,7 +38,7 @@ std::istream& operator>> (std::istream& in, std::vector<T>& v)
   T element;
   unsigned int size;
   in >> size;
-  
+
   v.clear();
   for (unsigned int i = 0; i < size; ++i) {
     in >> element;

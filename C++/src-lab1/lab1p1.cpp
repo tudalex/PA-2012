@@ -37,8 +37,8 @@ uint64_t karatsuba(uint64_t x, uint64_t y, unsigned char exp)
 
   /* Intoarcem rezultatul final. */
   return alpha * (((uint64_t) 1) << (2 * exp)) +
-         beta * (((uint64_t) 1) << exp) +
-         gamma;
+      beta * (((uint64_t) 1) << exp) +
+      gamma;
 }
 
 int main()
@@ -53,11 +53,11 @@ int main()
 
   if (prod_classic == prod_karatsuba) {
     std::cout << "OK!" << std::endl << "Produsul celor doua numere este: "
-              << prod_classic << std::endl;
+        << prod_classic << std::endl;
   } else {
     std::cout << "FAIL!" << std::endl << "Produsul celor doua numere este: "
-              << prod_classic << std::endl << "iar Karatsuba a calculat: "
-              << prod_karatsuba << std::endl;
+        << prod_classic << std::endl << "iar Karatsuba a calculat: "
+        << prod_karatsuba << std::endl;
   }
 
   return 0;

@@ -10,9 +10,9 @@
     do {                                              \
       if (level <= LOG_LEVEL) {                       \
         std::cerr << __FUNCTION__ << "("              \
-                  << __FILE__ << ":"                  \
-                  << __LINE__ << ") "                 \
-                  << content << std::endl;            \
+        << __FILE__ << ":"                  \
+        << __LINE__ << ") "                 \
+        << content << std::endl;            \
       }                                               \
     } while(0)
 #else

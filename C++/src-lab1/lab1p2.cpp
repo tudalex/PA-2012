@@ -28,7 +28,7 @@ int partitioneaza(std::vector<int>& v, int begin, int end)
        * sta pe loc si ne apropiem cu capatul celalalt de el. */
       aux = left_inc;
       left_inc = -right_inc;
-      right_inc = -aux;     
+      right_inc = -aux;      
     }
     /* Pivotul se va incrementa cu 0 (va sta pe loc, indiferent in care capat a
      * ajuns), iar celalalt capat, care nu este pivotul, se va apropia de pivot
@@ -130,7 +130,7 @@ int main()
 
   /* Afisam elementul care se afla pe pozitia mediana in vectorul sortat. */
   std::cout << "Elementul median din multime este: "
-            << find_kth_smallest(v, v.size()/2) << std::endl;
+      << find_kth_smallest(v, v.size()/2) << std::endl;
 
   return 0;
 }
