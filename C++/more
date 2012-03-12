@@ -1,0 +1,681 @@
+src-lab2/lab2p1.cpp:1:1: error: expected unqualified-id before ‘.’ token
+In file included from /usr/include/c++/4.6/iosfwd:42:0,
+                 from /usr/include/c++/4.6/ios:39,
+                 from /usr/include/c++/4.6/ostream:40,
+                 from /usr/include/c++/4.6/iostream:40,
+                 from src-lab2/lab2p1.cpp:2:
+/usr/include/c++/4.6/bits/postypes.h:100:11: error: ‘ptrdiff_t’ does not name a type
+In file included from /usr/include/c++/4.6/bits/stl_algobase.h:66:0,
+                 from /usr/include/c++/4.6/bits/char_traits.h:41,
+                 from /usr/include/c++/4.6/ios:41,
+                 from /usr/include/c++/4.6/ostream:40,
+                 from /usr/include/c++/4.6/iostream:40,
+                 from src-lab2/lab2p1.cpp:2:
+/usr/include/c++/4.6/bits/stl_iterator_base_types.h:117:67: error: expected type-specifier before ‘ptrdiff_t’
+/usr/include/c++/4.6/bits/stl_iterator_base_types.h:117:67: error: expected ‘>’ before ‘ptrdiff_t’
+/usr/include/c++/4.6/bits/stl_iterator_base_types.h:128:15: error: ‘_Pointer’ does not name a type
+/usr/include/c++/4.6/bits/stl_iterator_base_types.h:130:15: error: ‘_Reference’ does not name a type
+/usr/include/c++/4.6/bits/stl_iterator_base_types.h:180:15: error: ‘ptrdiff_t’ does not name a type
+/usr/include/c++/4.6/bits/stl_iterator_base_types.h:191:15: error: ‘ptrdiff_t’ does not name a type
+In file included from /usr/include/c++/4.6/bits/stl_algobase.h:68:0,
+                 from /usr/include/c++/4.6/bits/char_traits.h:41,
+                 from /usr/include/c++/4.6/ios:41,
+                 from /usr/include/c++/4.6/ostream:40,
+                 from /usr/include/c++/4.6/iostream:40,
+                 from src-lab2/lab2p1.cpp:2:
+/usr/include/c++/4.6/bits/stl_iterator.h:102:69: error: wrong number of template arguments (5, should be 3)
+/usr/include/c++/4.6/bits/stl_iterator_base_types.h:119:12: error: provided for ‘template<class _Category, class _Tp, class _Distance> struct std::iterator’
+/usr/include/c++/4.6/bits/stl_iterator.h:397:66: error: wrong number of template arguments (5, should be 3)
+/usr/include/c++/4.6/bits/stl_iterator_base_types.h:119:12: error: provided for ‘template<class _Category, class _Tp, class _Distance> struct std::iterator’
+/usr/include/c++/4.6/bits/stl_iterator.h:488:66: error: wrong number of template arguments (5, should be 3)
+/usr/include/c++/4.6/bits/stl_iterator_base_types.h:119:12: error: provided for ‘template<class _Category, class _Tp, class _Distance> struct std::iterator’
+/usr/include/c++/4.6/bits/stl_iterator.h:582:66: error: wrong number of template arguments (5, should be 3)
+/usr/include/c++/4.6/bits/stl_iterator_base_types.h:119:12: error: provided for ‘template<class _Category, class _Tp, class _Distance> struct std::iterator’
+In file included from /usr/include/c++/4.6/bits/char_traits.h:41:0,
+                 from /usr/include/c++/4.6/ios:41,
+                 from /usr/include/c++/4.6/ostream:40,
+                 from /usr/include/c++/4.6/iostream:40,
+                 from src-lab2/lab2p1.cpp:2:
+/usr/include/c++/4.6/bits/stl_algobase.h: In static member function ‘static _Tp* std::__copy_move<_IsMove, true, std::random_access_iterator_tag>::__copy_m(const _Tp*, const _Tp*, _Tp*)’:
+/usr/include/c++/4.6/bits/stl_algobase.h:364:10: error: ‘ptrdiff_t’ does not name a type
+/usr/include/c++/4.6/bits/stl_algobase.h:365:8: error: ‘_Num’ was not declared in this scope
+/usr/include/c++/4.6/bits/stl_algobase.h:367:22: error: ‘_Num’ was not declared in this scope
+/usr/include/c++/4.6/bits/stl_algobase.h: In static member function ‘static _Tp* std::__copy_move_backward<_IsMove, true, std::random_access_iterator_tag>::__copy_move_b(const _Tp*, const _Tp*, _Tp*)’:
+/usr/include/c++/4.6/bits/stl_algobase.h:559:10: error: ‘ptrdiff_t’ does not name a type
+/usr/include/c++/4.6/bits/stl_algobase.h:560:8: error: ‘_Num’ was not declared in this scope
+/usr/include/c++/4.6/bits/stl_algobase.h:562:22: error: ‘_Num’ was not declared in this scope
+In file included from /usr/include/c++/4.6/ios:41:0,
+                 from /usr/include/c++/4.6/ostream:40,
+                 from /usr/include/c++/4.6/iostream:40,
+                 from src-lab2/lab2p1.cpp:2:
+/usr/include/c++/4.6/bits/char_traits.h: At global scope:
+/usr/include/c++/4.6/bits/char_traits.h:106:66: error: ‘std::size_t’ has not been declared
+/usr/include/c++/4.6/bits/char_traits.h:108:14: error: ‘size_t’ in namespace ‘std’ does not name a type
+/usr/include/c++/4.6/bits/char_traits.h:112:39: error: ‘std::size_t’ has not been declared
+/usr/include/c++/4.6/bits/char_traits.h:115:57: error: ‘std::size_t’ has not been declared
+/usr/include/c++/4.6/bits/char_traits.h:118:57: error: ‘std::size_t’ has not been declared
+/usr/include/c++/4.6/bits/char_traits.h:121:35: error: ‘std::size_t’ has not been declared
+/usr/include/c++/4.6/bits/char_traits.h:147:64: error: ‘std::size_t’ has not been declared
+/usr/include/c++/4.6/bits/char_traits.h: In static member function ‘static int __gnu_cxx::char_traits<_CharT>::compare(const char_type*, const char_type*, int)’:
+/usr/include/c++/4.6/bits/char_traits.h:149:12: error: ‘size_t’ is not a member of ‘std’
+/usr/include/c++/4.6/bits/char_traits.h:149:12: note: suggested alternative:
+/usr/lib/gcc/i686-linux-gnu/4.6.1/include/stddef.h:212:23: note:   ‘size_t’
+/usr/include/c++/4.6/bits/char_traits.h:149:24: error: expected ‘;’ before ‘__i’
+/usr/include/c++/4.6/bits/char_traits.h:149:33: error: ‘__i’ was not declared in this scope
+/usr/include/c++/4.6/bits/char_traits.h: At global scope:
+/usr/include/c++/4.6/bits/char_traits.h:158:5: error: ‘size_t’ in namespace ‘std’ does not name a type
+/usr/include/c++/4.6/bits/char_traits.h:171:37: error: ‘std::size_t’ has not been declared
+/usr/include/c++/4.6/bits/char_traits.h: In static member function ‘static const char_type* __gnu_cxx::char_traits<_CharT>::find(const char_type*, int, const char_type&)’:
+/usr/include/c++/4.6/bits/char_traits.h:173:12: error: ‘size_t’ is not a member of ‘std’
+/usr/include/c++/4.6/bits/char_traits.h:173:12: note: suggested alternative:
+/usr/lib/gcc/i686-linux-gnu/4.6.1/include/stddef.h:212:23: note:   ‘size_t’
+/usr/include/c++/4.6/bits/char_traits.h:173:24: error: expected ‘;’ before ‘__i’
+/usr/include/c++/4.6/bits/char_traits.h:173:33: error: ‘__i’ was not declared in this scope
+/usr/include/c++/4.6/bits/char_traits.h: At global scope:
+/usr/include/c++/4.6/bits/char_traits.h:182:55: error: ‘std::size_t’ has not been declared
+/usr/include/c++/4.6/bits/char_traits.h:191:55: error: ‘std::size_t’ has not been declared
+/usr/include/c++/4.6/bits/char_traits.h:201:33: error: ‘std::size_t’ has not been declared
+In file included from /usr/include/c++/4.6/ext/new_allocator.h:34:0,
+                 from /usr/include/c++/4.6/i686-linux-gnu/./bits/c++allocator.h:34,
+                 from /usr/include/c++/4.6/bits/allocator.h:48,
+                 from /usr/include/c++/4.6/string:43,
+                 from /usr/include/c++/4.6/bits/locale_classes.h:42,
+                 from /usr/include/c++/4.6/bits/ios_base.h:43,
+                 from /usr/include/c++/4.6/ios:43,
+                 from /usr/include/c++/4.6/ostream:40,
+                 from /usr/include/c++/4.6/iostream:40,
+                 from src-lab2/lab2p1.cpp:2:
+/usr/include/c++/4.6/new:93:31: error: declaration of ‘operator new’ as non-function
+/usr/include/c++/4.6/new:93:20: error: ‘size_t’ is not a member of ‘std’
+/usr/include/c++/4.6/new:93:20: note: suggested alternative:
+/usr/lib/gcc/i686-linux-gnu/4.6.1/include/stddef.h:212:23: note:   ‘size_t’
+/usr/include/c++/4.6/new:94:33: error: declaration of ‘operator new []’ as non-function
+/usr/include/c++/4.6/new:94:22: error: ‘size_t’ is not a member of ‘std’
+/usr/include/c++/4.6/new:94:22: note: suggested alternative:
+/usr/lib/gcc/i686-linux-gnu/4.6.1/include/stddef.h:212:23: note:   ‘size_t’
+/usr/include/c++/4.6/new:97:25: error: declaration of ‘operator new’ as non-function
+/usr/include/c++/4.6/new:97:20: error: ‘size_t’ is not a member of ‘std’
+/usr/include/c++/4.6/new:97:20: note: suggested alternative:
+/usr/lib/gcc/i686-linux-gnu/4.6.1/include/stddef.h:212:23: note:   ‘size_t’
+/usr/include/c++/4.6/new:97:33: error: expected primary-expression before ‘const’
+/usr/include/c++/4.6/new:98:27: error: declaration of ‘operator new []’ as non-function
+/usr/include/c++/4.6/new:98:22: error: ‘size_t’ is not a member of ‘std’
+/usr/include/c++/4.6/new:98:22: note: suggested alternative:
+/usr/lib/gcc/i686-linux-gnu/4.6.1/include/stddef.h:212:23: note:   ‘size_t’
+/usr/include/c++/4.6/new:98:35: error: expected primary-expression before ‘const’
+/usr/include/c++/4.6/new:103:32: error: declaration of ‘operator new’ as non-function
+/usr/include/c++/4.6/new:103:27: error: ‘size_t’ is not a member of ‘std’
+/usr/include/c++/4.6/new:103:27: note: suggested alternative:
+/usr/lib/gcc/i686-linux-gnu/4.6.1/include/stddef.h:212:23: note:   ‘size_t’
+/usr/include/c++/4.6/new:103:40: error: expected primary-expression before ‘void’
+/usr/include/c++/4.6/new:104:34: error: declaration of ‘operator new []’ as non-function
+/usr/include/c++/4.6/new:104:29: error: ‘size_t’ is not a member of ‘std’
+/usr/include/c++/4.6/new:104:29: note: suggested alternative:
+/usr/lib/gcc/i686-linux-gnu/4.6.1/include/stddef.h:212:23: note:   ‘size_t’
+/usr/include/c++/4.6/new:104:42: error: expected primary-expression before ‘void’
+In file included from /usr/include/c++/4.6/i686-linux-gnu/./bits/c++allocator.h:34:0,
+                 from /usr/include/c++/4.6/bits/allocator.h:48,
+                 from /usr/include/c++/4.6/string:43,
+                 from /usr/include/c++/4.6/bits/locale_classes.h:42,
+                 from /usr/include/c++/4.6/bits/ios_base.h:43,
+                 from /usr/include/c++/4.6/ios:43,
+                 from /usr/include/c++/4.6/ostream:40,
+                 from /usr/include/c++/4.6/iostream:40,
+                 from src-lab2/lab2p1.cpp:2:
+/usr/include/c++/4.6/ext/new_allocator.h:42:14: error: ‘std::size_t’ has not been declared
+/usr/include/c++/4.6/ext/new_allocator.h:43:14: error: ‘std::ptrdiff_t’ has not been declared
+/usr/include/c++/4.6/ext/new_allocator.h:58:15: error: ‘ptrdiff_t’ does not name a type
+In file included from /usr/include/c++/4.6/string:43:0,
+                 from /usr/include/c++/4.6/bits/locale_classes.h:42,
+                 from /usr/include/c++/4.6/bits/ios_base.h:43,
+                 from /usr/include/c++/4.6/ios:43,
+                 from /usr/include/c++/4.6/ostream:40,
+                 from /usr/include/c++/4.6/iostream:40,
+                 from src-lab2/lab2p1.cpp:2:
+/usr/include/c++/4.6/bits/allocator.h:74:15: error: ‘ptrdiff_t’ does not name a type
+/usr/include/c++/4.6/bits/allocator.h:96:15: error: ‘ptrdiff_t’ does not name a type
+In file included from /usr/include/c++/4.6/string:46:0,
+                 from /usr/include/c++/4.6/bits/locale_classes.h:42,
+                 from /usr/include/c++/4.6/bits/ios_base.h:43,
+                 from /usr/include/c++/4.6/ios:43,
+                 from /usr/include/c++/4.6/ostream:40,
+                 from /usr/include/c++/4.6/iostream:40,
+                 from src-lab2/lab2p1.cpp:2:
+/usr/include/c++/4.6/bits/ostream_insert.h:45:26: error: ‘streamsize’ has not been declared
+/usr/include/c++/4.6/bits/ostream_insert.h: In function ‘void std::__ostream_write(std::basic_ostream<_CharT, _Traits>&, const _CharT*, int)’:
+/usr/include/c++/4.6/bits/ostream_insert.h:50:13: error: ‘streamsize’ does not name a type
+/usr/include/c++/4.6/bits/ostream_insert.h:51:11: error: ‘__put’ was not declared in this scope
+/usr/include/c++/4.6/bits/ostream_insert.h: At global scope:
+/usr/include/c++/4.6/bits/ostream_insert.h:57:59: error: ‘streamsize’ has not been declared
+/usr/include/c++/4.6/bits/ostream_insert.h:77:27: error: ‘streamsize’ has not been declared
+/usr/include/c++/4.6/bits/ostream_insert.h: In function ‘std::basic_ostream<_CharT, _Traits>& std::__ostream_insert(std::basic_ostream<_CharT, _Traits>&, const _CharT*, int)’:
+/usr/include/c++/4.6/bits/ostream_insert.h:87:14: error: ‘streamsize’ does not name a type
+/usr/include/c++/4.6/bits/ostream_insert.h:88:12: error: ‘__w’ was not declared in this scope
+/usr/include/c++/4.6/bits/ostream_insert.h: At global scope:
+/usr/include/c++/4.6/bits/ostream_insert.h:118:68: error: ‘streamsize’ has not been declared
+/usr/include/c++/4.6/bits/ostream_insert.h:122:11: error: ‘streamsize’ has not been declared
+In file included from /usr/include/c++/4.6/string:55:0,
+                 from /usr/include/c++/4.6/bits/locale_classes.h:42,
+                 from /usr/include/c++/4.6/bits/ios_base.h:43,
+                 from /usr/include/c++/4.6/ios:43,
+                 from /usr/include/c++/4.6/ostream:40,
+                 from /usr/include/c++/4.6/iostream:40,
+                 from src-lab2/lab2p1.cpp:2:
+/usr/include/c++/4.6/bits/basic_string.tcc: In function ‘std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::basic_string<_CharT, _Traits, _Alloc>&)’:
+/usr/include/c++/4.6/bits/basic_string.tcc:1020:14: error: ‘streamsize’ does not name a type
+/usr/include/c++/4.6/bits/basic_string.tcc:1021:32: error: ‘__w’ was not declared in this scope
+In file included from /usr/include/c++/4.6/string:54:0,
+                 from /usr/include/c++/4.6/bits/locale_classes.h:42,
+                 from /usr/include/c++/4.6/bits/ios_base.h:43,
+                 from /usr/include/c++/4.6/ios:43,
+                 from /usr/include/c++/4.6/ostream:40,
+                 from /usr/include/c++/4.6/iostream:40,
+                 from src-lab2/lab2p1.cpp:2:
+/usr/include/c++/4.6/bits/basic_string.h: At global scope:
+/usr/include/c++/4.6/bits/basic_string.h: In instantiation of ‘std::basic_string<char>’:
+/usr/include/c++/4.6/bits/basic_string.tcc:1134:25:   instantiated from here
+/usr/include/c++/4.6/bits/basic_string.h:117:61: error: no type named ‘difference_type’ in ‘std::basic_string<char>::_CharT_alloc_type {aka struct std::allocator<char>}’
+/usr/include/c++/4.6/bits/basic_string.h: In instantiation of ‘std::basic_string<wchar_t>’:
+/usr/include/c++/4.6/bits/basic_string.tcc:1149:25:   instantiated from here
+/usr/include/c++/4.6/bits/basic_string.h:117:61: error: no type named ‘difference_type’ in ‘std::basic_string<wchar_t>::_CharT_alloc_type {aka struct std::allocator<wchar_t>}’
+In file included from /usr/include/c++/4.6/ios:43:0,
+                 from /usr/include/c++/4.6/ostream:40,
+                 from /usr/include/c++/4.6/iostream:40,
+                 from src-lab2/lab2p1.cpp:2:
+/usr/include/c++/4.6/bits/ios_base.h:454:5: error: ‘streamsize’ does not name a type
+/usr/include/c++/4.6/bits/ios_base.h:455:5: error: ‘streamsize’ does not name a type
+/usr/include/c++/4.6/bits/ios_base.h:622:5: error: ‘streamsize’ does not name a type
+/usr/include/c++/4.6/bits/ios_base.h:631:5: error: ‘streamsize’ does not name a type
+/usr/include/c++/4.6/bits/ios_base.h:645:5: error: ‘streamsize’ does not name a type
+/usr/include/c++/4.6/bits/ios_base.h:654:5: error: ‘streamsize’ does not name a type
+In file included from /usr/include/c++/4.6/ios:44:0,
+                 from /usr/include/c++/4.6/ostream:40,
+                 from /usr/include/c++/4.6/iostream:40,
+                 from src-lab2/lab2p1.cpp:2:
+/usr/include/c++/4.6/streambuf:51:5: error: ‘streamsize’ does not name a type
+/usr/include/c++/4.6/streambuf:144:14: error: ‘streamsize’ does not name a type
+/usr/include/c++/4.6/streambuf:237:33: error: ‘streamsize’ has not been declared
+/usr/include/c++/4.6/streambuf:263:7: error: ‘streamsize’ does not name a type
+/usr/include/c++/4.6/streambuf:336:7: error: ‘streamsize’ does not name a type
+/usr/include/c++/4.6/streambuf:429:7: error: ‘streamsize’ does not name a type
+/usr/include/c++/4.6/streambuf:571:26: error: ‘streamsize’ has not been declared
+/usr/include/c++/4.6/streambuf:628:15: error: ‘streamsize’ does not name a type
+/usr/include/c++/4.6/streambuf:644:15: error: ‘streamsize’ does not name a type
+/usr/include/c++/4.6/streambuf:721:15: error: ‘streamsize’ does not name a type
+/usr/include/c++/4.6/streambuf:774:20: error: ‘streamsize’ has not been declared
+/usr/include/c++/4.6/streambuf:777:20: error: ‘streamsize’ has not been declared
+/usr/include/c++/4.6/streambuf:795:5: error: ‘streamsize’ does not name a type
+/usr/include/c++/4.6/streambuf:800:5: error: ‘streamsize’ does not name a type
+In file included from /usr/include/c++/4.6/streambuf:808:0,
+                 from /usr/include/c++/4.6/ios:44,
+                 from /usr/include/c++/4.6/ostream:40,
+                 from /usr/include/c++/4.6/iostream:40,
+                 from src-lab2/lab2p1.cpp:2:
+/usr/include/c++/4.6/bits/streambuf.tcc:45:5: error: ‘streamsize’ does not name a type
+/usr/include/c++/4.6/bits/streambuf.tcc:79:5: error: ‘streamsize’ does not name a type
+/usr/include/c++/4.6/bits/streambuf.tcc:116:5: error: ‘streamsize’ does not name a type
+/usr/include/c++/4.6/bits/streambuf.tcc:139:12: error: ‘streamsize’ does not name a type
+/usr/include/c++/4.6/bits/streambuf.tcc:152:5: error: explicit instantiation of non-template ‘int std::streamsize’
+/usr/include/c++/4.6/bits/streambuf.tcc:153:5: error: expected ‘;’ before ‘__copy_streambufs’
+/usr/include/c++/4.6/bits/streambuf.tcc:156:5: error: explicit instantiation of non-template ‘int std::streamsize’
+/usr/include/c++/4.6/bits/streambuf.tcc:157:5: error: expected ‘;’ before ‘__copy_streambufs_eof’
+/usr/include/c++/4.6/bits/streambuf.tcc:163:5: error: explicit instantiation of non-template ‘int std::streamsize’
+/usr/include/c++/4.6/bits/streambuf.tcc:164:5: error: expected ‘;’ before ‘__copy_streambufs’
+/usr/include/c++/4.6/bits/streambuf.tcc:167:5: error: explicit instantiation of non-template ‘int std::streamsize’
+/usr/include/c++/4.6/bits/streambuf.tcc:168:5: error: expected ‘;’ before ‘__copy_streambufs_eof’
+In file included from /usr/include/c++/4.6/bits/locale_facets.h:50:0,
+                 from /usr/include/c++/4.6/bits/basic_ios.h:39,
+                 from /usr/include/c++/4.6/ios:45,
+                 from /usr/include/c++/4.6/ostream:40,
+                 from /usr/include/c++/4.6/iostream:40,
+                 from src-lab2/lab2p1.cpp:2:
+/usr/include/c++/4.6/bits/streambuf_iterator.h:54:25: error: wrong number of template arguments (5, should be 3)
+/usr/include/c++/4.6/bits/stl_iterator_base_types.h:119:12: error: provided for ‘template<class _Category, class _Tp, class _Distance> struct std::iterator’
+/usr/include/c++/4.6/bits/streambuf_iterator.h:207:66: error: wrong number of template arguments (5, should be 3)
+/usr/include/c++/4.6/bits/stl_iterator_base_types.h:119:12: error: provided for ‘template<class _Category, class _Tp, class _Distance> struct std::iterator’
+/usr/include/c++/4.6/bits/streambuf_iterator.h:269:34: error: ‘streamsize’ has not been declared
+/usr/include/c++/4.6/bits/streambuf_iterator.h: In function ‘typename __gnu_cxx::__enable_if<std::__is_char<_CharT>::__value, std::ostreambuf_iterator<_CharT, std::char_traits<_CharT> > >::__type std::__copy_move_a2(_CharT*, _CharT*, std::ostreambuf_iterator<_CharT, std::char_traits<_CharT> >)’:
+/usr/include/c++/4.6/bits/streambuf_iterator.h:303:13: error: ‘streamsize’ does not name a type
+/usr/include/c++/4.6/bits/streambuf_iterator.h:304:11: error: ‘__num’ was not declared in this scope
+/usr/include/c++/4.6/bits/streambuf_iterator.h: In function ‘typename __gnu_cxx::__enable_if<std::__is_char<_CharT>::__value, std::ostreambuf_iterator<_CharT, std::char_traits<_CharT> > >::__type std::__copy_move_a2(const _CharT*, const _CharT*, std::ostreambuf_iterator<_CharT, std::char_traits<_CharT> >)’:
+/usr/include/c++/4.6/bits/streambuf_iterator.h:315:13: error: ‘streamsize’ does not name a type
+/usr/include/c++/4.6/bits/streambuf_iterator.h:316:11: error: ‘__num’ was not declared in this scope
+/usr/include/c++/4.6/bits/streambuf_iterator.h: In function ‘typename __gnu_cxx::__enable_if<std::__is_char<_CharT>::__value, _CharT*>::__type std::__copy_move_a2(std::istreambuf_iterator<_CharT, std::char_traits<_CharT> >, std::istreambuf_iterator<_CharT, std::char_traits<_CharT> >, _CharT*)’:
+/usr/include/c++/4.6/bits/streambuf_iterator.h:338:14: error: ‘streamsize’ does not name a type
+/usr/include/c++/4.6/bits/streambuf_iterator.h:339:12: error: ‘__n’ was not declared in this scope
+/usr/include/c++/4.6/bits/streambuf_iterator.h: In function ‘typename __gnu_cxx::__enable_if<std::__is_char<_CharT2>::__value, std::istreambuf_iterator<_CharT2, std::char_traits<_CharT> > >::__type std::find(std::istreambuf_iterator<_CharT2, std::char_traits<_CharT> >, std::istreambuf_iterator<_CharT2, std::char_traits<_CharT> >, const _CharT2&)’:
+/usr/include/c++/4.6/bits/streambuf_iterator.h:375:8: error: ‘streamsize’ was not declared in this scope
+/usr/include/c++/4.6/bits/streambuf_iterator.h:375:19: error: expected ‘;’ before ‘__n’
+/usr/include/c++/4.6/bits/streambuf_iterator.h:376:12: error: ‘__n’ was not declared in this scope
+In file included from /usr/include/c++/4.6/bits/basic_ios.h:39:0,
+                 from /usr/include/c++/4.6/ios:45,
+                 from /usr/include/c++/4.6/ostream:40,
+                 from /usr/include/c++/4.6/iostream:40,
+                 from src-lab2/lab2p1.cpp:2:
+/usr/include/c++/4.6/bits/locale_facets.h: At global scope:
+/usr/include/c++/4.6/bits/locale_facets.h:94:29: error: ‘streamsize’ has not been declared
+/usr/include/c++/4.6/bits/locale_facets.h:94:50: error: ‘streamsize’ has not been declared
+In file included from /usr/include/c++/4.6/bits/basic_ios.h:39:0,
+                 from /usr/include/c++/4.6/ios:45,
+                 from /usr/include/c++/4.6/ostream:40,
+                 from /usr/include/c++/4.6/iostream:40,
+                 from src-lab2/lab2p1.cpp:2:
+/usr/include/c++/4.6/bits/locale_facets.h:2449:32: error: ‘streamsize’ has not been declared
+In file included from /usr/include/c++/4.6/bits/locale_facets.h:2608:0,
+                 from /usr/include/c++/4.6/bits/basic_ios.h:39,
+                 from /usr/include/c++/4.6/ios:45,
+                 from /usr/include/c++/4.6/ostream:40,
+                 from /usr/include/c++/4.6/iostream:40,
+                 from src-lab2/lab2p1.cpp:2:
+/usr/include/c++/4.6/bits/locale_facets.tcc:777:27: error: ‘streamsize’ has not been declared
+/usr/include/c++/4.6/bits/locale_facets.tcc: In member function ‘_OutIter std::num_put<_CharT, _OutIter>::_M_insert_int(_OutIter, std::ios_base&, _CharT, _ValueT) const’:
+/usr/include/c++/4.6/bits/locale_facets.tcc:918:8: error: ‘streamsize’ does not name a type
+/usr/include/c++/4.6/bits/locale_facets.tcc:919:6: error: ‘__w’ was not declared in this scope
+/usr/include/c++/4.6/bits/locale_facets.tcc:919:24: error: expected type-specifier before ‘streamsize’
+/usr/include/c++/4.6/bits/locale_facets.tcc:919:24: error: expected ‘>’ before ‘streamsize’
+/usr/include/c++/4.6/bits/locale_facets.tcc:919:24: error: expected ‘(’ before ‘streamsize’
+/usr/include/c++/4.6/bits/locale_facets.tcc:919:24: error: ‘streamsize’ was not declared in this scope
+/usr/include/c++/4.6/bits/locale_facets.tcc:920:4: error: expected ‘)’ before ‘{’ token
+/usr/include/c++/4.6/bits/locale_facets.tcc: In member function ‘_OutIter std::num_put<_CharT, _OutIter>::_M_insert_float(_OutIter, std::ios_base&, _CharT, char, _ValueT) const’:
+/usr/include/c++/4.6/bits/locale_facets.tcc:981:8: error: ‘streamsize’ does not name a type
+/usr/include/c++/4.6/bits/locale_facets.tcc:998:19: error: ‘__prec’ was not declared in this scope
+/usr/include/c++/4.6/bits/locale_facets.tcc:1056:6: error: ‘streamsize’ was not declared in this scope
+/usr/include/c++/4.6/bits/locale_facets.tcc:1056:17: error: expected ‘;’ before ‘__off’
+/usr/include/c++/4.6/bits/locale_facets.tcc:1059:3: error: ‘__off’ was not declared in this scope
+/usr/include/c++/4.6/bits/locale_facets.tcc:1065:45: error: ‘__off’ was not declared in this scope
+/usr/include/c++/4.6/bits/locale_facets.tcc:1073:8: error: ‘streamsize’ does not name a type
+/usr/include/c++/4.6/bits/locale_facets.tcc:1074:6: error: ‘__w’ was not declared in this scope
+/usr/include/c++/4.6/bits/locale_facets.tcc:1074:24: error: expected type-specifier before ‘streamsize’
+/usr/include/c++/4.6/bits/locale_facets.tcc:1074:24: error: expected ‘>’ before ‘streamsize’
+/usr/include/c++/4.6/bits/locale_facets.tcc:1074:24: error: expected ‘(’ before ‘streamsize’
+/usr/include/c++/4.6/bits/locale_facets.tcc:1074:24: error: ‘streamsize’ was not declared in this scope
+/usr/include/c++/4.6/bits/locale_facets.tcc:1075:4: error: expected ‘)’ before ‘{’ token
+/usr/include/c++/4.6/bits/locale_facets.tcc: In member function ‘virtual _OutIter std::num_put<_CharT, _OutIter>::do_put(std::num_put<_CharT, _OutIter>::iter_type, std::ios_base&, std::num_put<_CharT, _OutIter>::char_type, bool) const’:
+/usr/include/c++/4.6/bits/locale_facets.tcc:1111:10: error: ‘streamsize’ does not name a type
+/usr/include/c++/4.6/bits/locale_facets.tcc:1112:8: error: ‘__w’ was not declared in this scope
+/usr/include/c++/4.6/bits/locale_facets.tcc:1112:26: error: expected type-specifier before ‘streamsize’
+/usr/include/c++/4.6/bits/locale_facets.tcc:1112:26: error: expected ‘>’ before ‘streamsize’
+/usr/include/c++/4.6/bits/locale_facets.tcc:1112:26: error: expected ‘(’ before ‘streamsize’
+/usr/include/c++/4.6/bits/locale_facets.tcc:1112:26: error: ‘streamsize’ was not declared in this scope
+/usr/include/c++/4.6/bits/locale_facets.tcc:1113:6: error: expected ‘)’ before ‘{’ token
+/usr/include/c++/4.6/bits/locale_facets.tcc: At global scope:
+/usr/include/c++/4.6/bits/locale_facets.tcc:1195:8: error: ‘streamsize’ has not been declared
+/usr/include/c++/4.6/bits/locale_facets.tcc:1195:29: error: ‘streamsize’ has not been declared
+In file included from /usr/include/c++/4.6/iostream:40:0,
+                 from src-lab2/lab2p1.cpp:2:
+/usr/include/c++/4.6/ostream:289:38: error: ‘streamsize’ has not been declared
+/usr/include/c++/4.6/ostream:313:35: error: ‘streamsize’ has not been declared
+/usr/include/c++/4.6/ostream: In member function ‘void std::basic_ostream<_CharT, _Traits>::_M_write(const char_type*, int)’:
+/usr/include/c++/4.6/ostream:291:8: error: ‘streamsize’ does not name a type
+/usr/include/c++/4.6/ostream:292:6: error: ‘__put’ was not declared in this scope
+/usr/include/c++/4.6/ostream: In function ‘std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)’:
+/usr/include/c++/4.6/ostream:499:17: error: expected type-specifier before ‘streamsize’
+/usr/include/c++/4.6/ostream:499:17: error: expected ‘>’ before ‘streamsize’
+/usr/include/c++/4.6/ostream:499:17: error: expected ‘(’ before ‘streamsize’
+/usr/include/c++/4.6/ostream:499:17: error: ‘streamsize’ was not declared in this scope
+/usr/include/c++/4.6/ostream: In function ‘std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)’:
+/usr/include/c++/4.6/ostream:516:17: error: expected type-specifier before ‘streamsize’
+/usr/include/c++/4.6/ostream:516:17: error: expected ‘>’ before ‘streamsize’
+/usr/include/c++/4.6/ostream:516:17: error: expected ‘(’ before ‘streamsize’
+/usr/include/c++/4.6/ostream:516:17: error: ‘streamsize’ was not declared in this scope
+In file included from /usr/include/c++/4.6/ostream:588:0,
+                 from /usr/include/c++/4.6/iostream:40,
+                 from src-lab2/lab2p1.cpp:2:
+/usr/include/c++/4.6/bits/ostream.tcc: At global scope:
+/usr/include/c++/4.6/bits/ostream.tcc:185:30: error: ‘streamsize’ has not been declared
+In file included from /usr/include/c++/4.6/iostream:41:0,
+                 from src-lab2/lab2p1.cpp:2:
+/usr/include/c++/4.6/istream:81:7: error: ‘streamsize’ does not name a type
+/usr/include/c++/4.6/istream:250:7: error: ‘streamsize’ does not name a type
+/usr/include/c++/4.6/istream:324:27: error: ‘streamsize’ has not been declared
+/usr/include/c++/4.6/istream:335:27: error: ‘streamsize’ has not been declared
+/usr/include/c++/4.6/istream:397:31: error: ‘streamsize’ has not been declared
+/usr/include/c++/4.6/istream:408:31: error: ‘streamsize’ has not been declared
+/usr/include/c++/4.6/istream:435:7: error: expected ‘;’ at end of member declaration
+/usr/include/c++/4.6/istream:435:14: error: declaration of ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::ignore’
+/usr/include/c++/4.6/istream:432:7: error: conflicts with previous declaration ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::ignore()’
+/usr/include/c++/4.6/istream:435:25: error: expected ‘)’ before ‘__n’
+/usr/include/c++/4.6/istream:438:7: error: expected ‘;’ at end of member declaration
+/usr/include/c++/4.6/istream:438:14: error: declaration of ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::ignore’
+/usr/include/c++/4.6/istream:432:7: error: conflicts with previous declaration ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::ignore()’
+/usr/include/c++/4.6/istream:438:25: error: expected ‘)’ before ‘__n’
+/usr/include/c++/4.6/istream:467:28: error: ‘streamsize’ has not been declared
+/usr/include/c++/4.6/istream:485:7: error: ‘streamsize’ does not name a type
+/usr/include/c++/4.6/istream: In constructor ‘std::basic_istream<_CharT, _Traits>::basic_istream(std::basic_istream<_CharT, _Traits>::__streambuf_type*)’:
+/usr/include/c++/4.6/istream:94:9: error: class ‘std::basic_istream<_CharT, _Traits>’ does not have any field named ‘_M_gcount’
+/usr/include/c++/4.6/istream:94:31: error: there are no arguments to ‘streamsize’ that depend on a template parameter, so a declaration of ‘streamsize’ must be available [-fpermissive]
+/usr/include/c++/4.6/istream:94:31: note: (if you use ‘-fpermissive’, G++ will accept your code, but allowing the use of an undeclared name is deprecated)
+/usr/include/c++/4.6/istream: In destructor ‘virtual std::basic_istream<_CharT, _Traits>::~basic_istream()’:
+/usr/include/c++/4.6/istream:104:9: error: ‘_M_gcount’ was not declared in this scope
+/usr/include/c++/4.6/istream:104:33: error: there are no arguments to ‘streamsize’ that depend on a template parameter, so a declaration of ‘streamsize’ must be available [-fpermissive]
+/usr/include/c++/4.6/istream: In constructor ‘std::basic_istream<_CharT, _Traits>::basic_istream()’:
+/usr/include/c++/4.6/istream:588:9: error: class ‘std::basic_istream<_CharT, _Traits>’ does not have any field named ‘_M_gcount’
+/usr/include/c++/4.6/istream:588:31: error: there are no arguments to ‘streamsize’ that depend on a template parameter, so a declaration of ‘streamsize’ must be available [-fpermissive]
+/usr/include/c++/4.6/istream: At global scope:
+/usr/include/c++/4.6/istream:600:29: error: ‘streamsize’ has not been declared
+/usr/include/c++/4.6/istream:605:12: error: ‘std::basic_istream<char>& std::basic_istream<char>::ignore’ is not a static member of ‘struct std::basic_istream<char>’
+/usr/include/c++/4.6/istream:605:12: error: ‘streamsize’ was not declared in this scope
+/usr/include/c++/4.6/istream:610:12: error: ‘std::basic_istream<char>& std::basic_istream<char>::ignore’ is not a static member of ‘struct std::basic_istream<char>’
+/usr/include/c++/4.6/istream:610:12: error: ‘streamsize’ was not declared in this scope
+/usr/include/c++/4.6/istream:610:37: error: expected primary-expression before ‘__delim’
+/usr/include/c++/4.6/istream:610:44: error: expression list treated as compound expression in initializer [-fpermissive]
+/usr/include/c++/4.6/istream:616:29: error: ‘streamsize’ has not been declared
+/usr/include/c++/4.6/istream:621:12: error: ‘std::basic_istream<wchar_t>& std::basic_istream<wchar_t>::ignore’ is not a static member of ‘struct std::basic_istream<wchar_t>’
+/usr/include/c++/4.6/istream:621:12: error: ‘streamsize’ was not declared in this scope
+/usr/include/c++/4.6/istream:626:12: error: ‘std::basic_istream<wchar_t>& std::basic_istream<wchar_t>::ignore’ is not a static member of ‘struct std::basic_istream<wchar_t>’
+/usr/include/c++/4.6/istream:626:12: error: ‘streamsize’ was not declared in this scope
+/usr/include/c++/4.6/istream:626:37: error: expected primary-expression before ‘__delim’
+/usr/include/c++/4.6/istream:626:44: error: expression list treated as compound expression in initializer [-fpermissive]
+In file included from /usr/include/c++/4.6/istream:859:0,
+                 from /usr/include/c++/4.6/iostream:41,
+                 from src-lab2/lab2p1.cpp:2:
+/usr/include/c++/4.6/bits/istream.tcc: In member function ‘std::basic_istream<_CharT, _Traits>::int_type std::basic_istream<_CharT, _Traits>::get()’:
+/usr/include/c++/4.6/bits/istream.tcc:242:7: error: ‘_M_gcount’ was not declared in this scope
+/usr/include/c++/4.6/bits/istream.tcc: In member function ‘std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::get(std::basic_istream<_CharT, _Traits>::char_type&)’:
+/usr/include/c++/4.6/bits/istream.tcc:276:7: error: ‘_M_gcount’ was not declared in this scope
+/usr/include/c++/4.6/bits/istream.tcc: At global scope:
+/usr/include/c++/4.6/bits/istream.tcc:311:25: error: ‘streamsize’ has not been declared
+/usr/include/c++/4.6/bits/istream.tcc: In member function ‘std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::get(std::basic_istream<_CharT, _Traits>::char_type*, int, std::basic_istream<_CharT, _Traits>::char_type)’:
+/usr/include/c++/4.6/bits/istream.tcc:313:7: error: ‘_M_gcount’ was not declared in this scope
+/usr/include/c++/4.6/bits/istream.tcc: In member function ‘std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::get(std::basic_istream<_CharT, _Traits>::__streambuf_type&, std::basic_istream<_CharT, _Traits>::char_type)’:
+/usr/include/c++/4.6/bits/istream.tcc:360:7: error: ‘_M_gcount’ was not declared in this scope
+/usr/include/c++/4.6/bits/istream.tcc: At global scope:
+/usr/include/c++/4.6/bits/istream.tcc:402:29: error: ‘streamsize’ has not been declared
+/usr/include/c++/4.6/bits/istream.tcc: In member function ‘std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::getline(std::basic_istream<_CharT, _Traits>::char_type*, int, std::basic_istream<_CharT, _Traits>::char_type)’:
+/usr/include/c++/4.6/bits/istream.tcc:404:7: error: ‘_M_gcount’ was not declared in this scope
+/usr/include/c++/4.6/bits/istream.tcc: In member function ‘std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::ignore()’:
+/usr/include/c++/4.6/bits/istream.tcc:464:7: error: ‘_M_gcount’ was not declared in this scope
+/usr/include/c++/4.6/bits/istream.tcc: At global scope:
+/usr/include/c++/4.6/bits/istream.tcc:495:12: error: ‘std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::ignore’ is not a static member of ‘class std::basic_istream<_CharT, _Traits>’
+/usr/include/c++/4.6/bits/istream.tcc:495:12: error: template definition of non-template ‘std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::ignore’
+/usr/include/c++/4.6/bits/istream.tcc:495:12: error: ‘streamsize’ was not declared in this scope
+/usr/include/c++/4.6/bits/istream.tcc:557:12: error: ‘std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::ignore’ is not a static member of ‘class std::basic_istream<_CharT, _Traits>’
+/usr/include/c++/4.6/bits/istream.tcc:557:12: error: template definition of non-template ‘std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::ignore’
+/usr/include/c++/4.6/bits/istream.tcc:557:12: error: ‘streamsize’ was not declared in this scope
+/usr/include/c++/4.6/bits/istream.tcc:557:37: error: expected primary-expression before ‘__delim’
+/usr/include/c++/4.6/bits/istream.tcc: In member function ‘std::basic_istream<_CharT, _Traits>::int_type std::basic_istream<_CharT, _Traits>::peek()’:
+/usr/include/c++/4.6/bits/istream.tcc:625:7: error: ‘_M_gcount’ was not declared in this scope
+/usr/include/c++/4.6/bits/istream.tcc: At global scope:
+/usr/include/c++/4.6/bits/istream.tcc:652:26: error: ‘streamsize’ has not been declared
+/usr/include/c++/4.6/bits/istream.tcc: In member function ‘std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::read(std::basic_istream<_CharT, _Traits>::char_type*, int)’:
+/usr/include/c++/4.6/bits/istream.tcc:654:7: error: ‘_M_gcount’ was not declared in this scope
+/usr/include/c++/4.6/bits/istream.tcc: At global scope:
+/usr/include/c++/4.6/bits/istream.tcc:679:5: error: ‘streamsize’ does not name a type
+/usr/include/c++/4.6/bits/istream.tcc: In member function ‘std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::putback(std::basic_istream<_CharT, _Traits>::char_type)’:
+/usr/include/c++/4.6/bits/istream.tcc:717:7: error: ‘_M_gcount’ was not declared in this scope
+/usr/include/c++/4.6/bits/istream.tcc: In member function ‘std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::unget()’:
+/usr/include/c++/4.6/bits/istream.tcc:752:7: error: ‘_M_gcount’ was not declared in this scope
+/usr/include/c++/4.6/bits/istream.tcc: In function ‘std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT2*)’:
+/usr/include/c++/4.6/bits/istream.tcc:965:7: error: ‘streamsize’ was not declared in this scope
+/usr/include/c++/4.6/bits/istream.tcc:965:18: error: expected ‘;’ before ‘__extracted’
+/usr/include/c++/4.6/bits/istream.tcc:973:19: error: expected ‘;’ before ‘__num’
+/usr/include/c++/4.6/bits/istream.tcc:974:12: error: ‘__num’ was not declared in this scope
+/usr/include/c++/4.6/bits/istream.tcc:975:49: error: type/value mismatch at argument 1 in template parameter list for ‘template<class _Value> struct __gnu_cxx::__numeric_traits’
+/usr/include/c++/4.6/bits/istream.tcc:975:49: error:   expected a type, got ‘streamsize’
+/usr/include/c++/4.6/bits/istream.tcc:983:15: error: ‘__extracted’ was not declared in this scope
+/usr/include/c++/4.6/bits/istream.tcc:983:29: error: ‘__num’ was not declared in this scope
+/usr/include/c++/4.6/bits/istream.tcc:1008:12: error: ‘__extracted’ was not declared in this scope
+In file included from /usr/include/c++/4.6/vector:65:0,
+                 from src-lab2/lab2p1.cpp:3:
+/usr/include/c++/4.6/bits/stl_vector.h: At global scope:
+/usr/include/c++/4.6/bits/stl_vector.h:202:15: error: ‘ptrdiff_t’ does not name a type
+In file included from /usr/include/c++/4.6/vector:66:0,
+                 from src-lab2/lab2p1.cpp:3:
+/usr/include/c++/4.6/bits/stl_bvector.h:110:63: error: template argument 3 is invalid
+/usr/include/c++/4.6/bits/stl_bvector.h:139:13: error: ‘ptrdiff_t’ has not been declared
+/usr/include/c++/4.6/bits/stl_bvector.h: In member function ‘void std::_Bit_iterator_base::_M_incr(int)’:
+/usr/include/c++/4.6/bits/stl_bvector.h:141:7: error: ‘difference_type’ was not declared in this scope
+/usr/include/c++/4.6/bits/stl_bvector.h:141:23: error: expected ‘;’ before ‘__n’
+/usr/include/c++/4.6/bits/stl_bvector.h:142:15: error: ‘__n’ was not declared in this scope
+/usr/include/c++/4.6/bits/stl_bvector.h: At global scope:
+/usr/include/c++/4.6/bits/stl_bvector.h:180:10: error: ‘ptrdiff_t’ does not name a type
+/usr/include/c++/4.6/bits/stl_bvector.h:233:16: error: declaration of ‘operator+=’ as non-function
+/usr/include/c++/4.6/bits/stl_bvector.h:233:13: error: expected ‘;’ at end of member declaration
+/usr/include/c++/4.6/bits/stl_bvector.h:233:32: error: expected ‘)’ before ‘__i’
+/usr/include/c++/4.6/bits/stl_bvector.h:240:16: error: declaration of ‘operator-=’ as non-function
+/usr/include/c++/4.6/bits/stl_bvector.h:240:13: error: expected ‘;’ at end of member declaration
+/usr/include/c++/4.6/bits/stl_bvector.h:240:32: error: expected ‘)’ before ‘__i’
+/usr/include/c++/4.6/bits/stl_bvector.h:247:15: error: ‘difference_type’ has not been declared
+/usr/include/c++/4.6/bits/stl_bvector.h:254:15: error: ‘difference_type’ has not been declared
+/usr/include/c++/4.6/bits/stl_bvector.h:261:16: error: ‘difference_type’ has not been declared
+/usr/include/c++/4.6/bits/stl_bvector.h: In member function ‘std::_Bit_iterator::iterator std::_Bit_iterator::operator+(int) const’:
+/usr/include/c++/4.6/bits/stl_bvector.h:250:23: error: no match for ‘operator+=’ in ‘__tmp += __i’
+/usr/include/c++/4.6/bits/stl_bvector.h: In member function ‘std::_Bit_iterator::iterator std::_Bit_iterator::operator-(int) const’:
+/usr/include/c++/4.6/bits/stl_bvector.h:257:23: error: no match for ‘operator-=’ in ‘__tmp -= __i’
+/usr/include/c++/4.6/bits/stl_bvector.h: At global scope:
+/usr/include/c++/4.6/bits/stl_bvector.h:266:13: error: declaration of ‘operator+’ as non-function
+/usr/include/c++/4.6/bits/stl_bvector.h:266:13: error: ‘ptrdiff_t’ was not declared in this scope
+/usr/include/c++/4.6/bits/stl_bvector.h:266:28: error: expected primary-expression before ‘const’
+/usr/include/c++/4.6/bits/stl_bvector.h:319:16: error: declaration of ‘operator+=’ as non-function
+/usr/include/c++/4.6/bits/stl_bvector.h:319:13: error: expected ‘;’ at end of member declaration
+/usr/include/c++/4.6/bits/stl_bvector.h:319:32: error: expected ‘)’ before ‘__i’
+/usr/include/c++/4.6/bits/stl_bvector.h:326:16: error: declaration of ‘operator-=’ as non-function
+/usr/include/c++/4.6/bits/stl_bvector.h:326:13: error: expected ‘;’ at end of member declaration
+/usr/include/c++/4.6/bits/stl_bvector.h:326:32: error: expected ‘)’ before ‘__i’
+/usr/include/c++/4.6/bits/stl_bvector.h:333:15: error: ‘difference_type’ has not been declared
+/usr/include/c++/4.6/bits/stl_bvector.h:340:15: error: ‘difference_type’ has not been declared
+/usr/include/c++/4.6/bits/stl_bvector.h:347:16: error: ‘difference_type’ has not been declared
+/usr/include/c++/4.6/bits/stl_bvector.h: In member function ‘std::_Bit_const_iterator::const_iterator std::_Bit_const_iterator::operator+(int) const’:
+/usr/include/c++/4.6/bits/stl_bvector.h:336:23: error: no match for ‘operator+=’ in ‘__tmp += __i’
+/usr/include/c++/4.6/bits/stl_bvector.h: In member function ‘std::_Bit_const_iterator::const_iterator std::_Bit_const_iterator::operator-(int) const’:
+/usr/include/c++/4.6/bits/stl_bvector.h:343:23: error: no match for ‘operator-=’ in ‘__tmp -= __i’
+/usr/include/c++/4.6/bits/stl_bvector.h: At global scope:
+/usr/include/c++/4.6/bits/stl_bvector.h:352:13: error: declaration of ‘operator+’ as non-function
+/usr/include/c++/4.6/bits/stl_bvector.h:352:13: error: ‘ptrdiff_t’ was not declared in this scope
+/usr/include/c++/4.6/bits/stl_bvector.h:352:28: error: expected primary-expression before ‘const’
+/usr/include/c++/4.6/bits/stl_bvector.h:490:13: error: ‘ptrdiff_t’ does not name a type
+In file included from /usr/include/c++/4.6/bits/stl_algobase.h:66:0,
+                 from /usr/include/c++/4.6/bits/char_traits.h:41,
+                 from /usr/include/c++/4.6/ios:41,
+                 from /usr/include/c++/4.6/ostream:40,
+                 from /usr/include/c++/4.6/iostream:40,
+                 from src-lab2/lab2p1.cpp:2:
+/usr/include/c++/4.6/bits/stl_iterator_base_types.h: In instantiation of ‘std::iterator_traits<std::_Bit_iterator>’:
+/usr/include/c++/4.6/bits/stl_iterator.h:111:55:   instantiated from ‘std::reverse_iterator<std::_Bit_iterator>’
+/usr/include/c++/4.6/bits/stl_bvector.h:632:5:   instantiated from here
+/usr/include/c++/4.6/bits/stl_iterator_base_types.h:166:53: error: no type named ‘iterator_category’ in ‘struct std::_Bit_iterator’
+/usr/include/c++/4.6/bits/stl_iterator_base_types.h:167:53: error: no type named ‘value_type’ in ‘struct std::_Bit_iterator’
+/usr/include/c++/4.6/bits/stl_iterator_base_types.h:168:53: error: no type named ‘difference_type’ in ‘struct std::_Bit_iterator’
+/usr/include/c++/4.6/bits/stl_iterator_base_types.h: In instantiation of ‘std::iterator_traits<std::_Bit_const_iterator>’:
+/usr/include/c++/4.6/bits/stl_iterator.h:111:55:   instantiated from ‘std::reverse_iterator<std::_Bit_const_iterator>’
+/usr/include/c++/4.6/bits/stl_bvector.h:636:5:   instantiated from here
+/usr/include/c++/4.6/bits/stl_iterator_base_types.h:166:53: error: no type named ‘iterator_category’ in ‘struct std::_Bit_const_iterator’
+/usr/include/c++/4.6/bits/stl_iterator_base_types.h:167:53: error: no type named ‘value_type’ in ‘struct std::_Bit_const_iterator’
+/usr/include/c++/4.6/bits/stl_iterator_base_types.h:168:53: error: no type named ‘difference_type’ in ‘struct std::_Bit_const_iterator’
+In file included from /usr/include/c++/4.6/vector:66:0,
+                 from src-lab2/lab2p1.cpp:3:
+/usr/include/c++/4.6/bits/stl_bvector.h: In member function ‘std::vector<bool, _Alloc>::size_type std::vector<bool, _Alloc>::max_size() const’:
+/usr/include/c++/4.6/bits/stl_bvector.h:672:30: error: ‘difference_type’ was not declared in this scope
+/usr/include/c++/4.6/bits/stl_bvector.h:672:45: error: template argument 1 is invalid
+/usr/include/c++/4.6/bits/stl_bvector.h: In member function ‘std::vector<bool, _Alloc>::iterator std::vector<bool, _Alloc>::insert(std::vector<bool, _Alloc>::iterator, const bool&)’:
+/usr/include/c++/4.6/bits/stl_bvector.h:781:13: error: ‘difference_type’ does not name a type
+/usr/include/c++/4.6/bits/stl_bvector.h:787:24: error: ‘__n’ was not declared in this scope
+/usr/include/c++/4.6/bits/stl_bvector.h: In member function ‘void std::vector<bool, _Alloc>::resize(std::vector<bool, _Alloc>::size_type, bool)’:
+/usr/include/c++/4.6/bits/stl_bvector.h:832:61: error: there are no arguments to ‘difference_type’ that depend on a template parameter, so a declaration of ‘difference_type’ must be available [-fpermissive]
+/usr/include/c++/4.6/bits/stl_bvector.h: In member function ‘void std::vector<bool, _Alloc>::_M_initialize(std::vector<bool, _Alloc>::size_type)’:
+/usr/include/c++/4.6/bits/stl_bvector.h:875:77: error: there are no arguments to ‘difference_type’ that depend on a template parameter, so a declaration of ‘difference_type’ must be available [-fpermissive]
+In file included from /usr/include/c++/4.6/vector:70:0,
+                 from src-lab2/lab2p1.cpp:3:
+/usr/include/c++/4.6/bits/vector.tcc: In member function ‘void std::vector<bool, _Alloc>::_M_fill_insert(std::vector<bool, _Alloc>::iterator, std::vector<bool, _Alloc>::size_type, bool)’:
+/usr/include/c++/4.6/bits/vector.tcc:646:54: error: there are no arguments to ‘difference_type’ that depend on a template parameter, so a declaration of ‘difference_type’ must be available [-fpermissive]
+/usr/include/c++/4.6/bits/vector.tcc:647:58: error: there are no arguments to ‘difference_type’ that depend on a template parameter, so a declaration of ‘difference_type’ must be available [-fpermissive]
+/usr/include/c++/4.6/bits/vector.tcc:648:50: error: there are no arguments to ‘difference_type’ that depend on a template parameter, so a declaration of ‘difference_type’ must be available [-fpermissive]
+/usr/include/c++/4.6/bits/vector.tcc:657:44: error: there are no arguments to ‘difference_type’ that depend on a template parameter, so a declaration of ‘difference_type’ must be available [-fpermissive]
+/usr/include/c++/4.6/bits/vector.tcc:659:37: error: there are no arguments to ‘difference_type’ that depend on a template parameter, so a declaration of ‘difference_type’ must be available [-fpermissive]
+/usr/include/c++/4.6/bits/vector.tcc: In member function ‘void std::vector<bool, _Alloc>::_M_insert_range(std::vector<bool, _Alloc>::iterator, _ForwardIterator, _ForwardIterator, std::forward_iterator_tag)’:
+/usr/include/c++/4.6/bits/vector.tcc:682:29: error: there are no arguments to ‘difference_type’ that depend on a template parameter, so a declaration of ‘difference_type’ must be available [-fpermissive]
+/usr/include/c++/4.6/bits/vector.tcc:684:49: error: there are no arguments to ‘difference_type’ that depend on a template parameter, so a declaration of ‘difference_type’ must be available [-fpermissive]
+In file included from /usr/include/c++/4.6/bits/stl_algo.h:64:0,
+                 from /usr/include/c++/4.6/algorithm:63,
+                 from src-lab2/lab2p1.cpp:4:
+/usr/include/c++/4.6/bits/stl_tempbuf.h: At global scope:
+/usr/include/c++/4.6/bits/stl_tempbuf.h:85:16: error: ‘ptrdiff_t’ was not declared in this scope
+/usr/include/c++/4.6/bits/stl_tempbuf.h:85:25: error: template argument 2 is invalid
+/usr/include/c++/4.6/bits/stl_tempbuf.h:86:25: error: invalid type in declaration before ‘(’ token
+/usr/include/c++/4.6/bits/stl_tempbuf.h:86:25: error: template declaration of ‘int std::get_temporary_buffer’
+/usr/include/c++/4.6/bits/stl_tempbuf.h:86:26: error: ‘ptrdiff_t’ was not declared in this scope
+/usr/include/c++/4.6/bits/stl_tempbuf.h:132:15: error: ‘ptrdiff_t’ does not name a type
+/usr/include/c++/4.6/bits/stl_tempbuf.h:135:7: error: ‘size_type’ does not name a type
+/usr/include/c++/4.6/bits/stl_tempbuf.h:136:7: error: ‘size_type’ does not name a type
+/usr/include/c++/4.6/bits/stl_tempbuf.h:141:7: error: ‘size_type’ does not name a type
+/usr/include/c++/4.6/bits/stl_tempbuf.h:146:7: error: ‘size_type’ does not name a type
+/usr/include/c++/4.6/bits/stl_tempbuf.h: In member function ‘std::_Temporary_buffer<_ForwardIterator, _Tp>::value_type* std::_Temporary_buffer<_ForwardIterator, _Tp>::end()’:
+/usr/include/c++/4.6/bits/stl_tempbuf.h:158:28: error: ‘_M_len’ was not declared in this scope
+/usr/include/c++/4.6/bits/stl_tempbuf.h: In destructor ‘std::_Temporary_buffer<_ForwardIterator, _Tp>::~_Temporary_buffer()’:
+/usr/include/c++/4.6/bits/stl_tempbuf.h:168:39: error: ‘_M_len’ was not declared in this scope
+/usr/include/c++/4.6/bits/stl_tempbuf.h: In constructor ‘std::_Temporary_buffer<_ForwardIterator, _Tp>::_Temporary_buffer(_ForwardIterator, _ForwardIterator)’:
+/usr/include/c++/4.6/bits/stl_tempbuf.h:247:7: error: class ‘std::_Temporary_buffer<_ForwardIterator, _Tp>’ does not have any field named ‘_M_original_len’
+/usr/include/c++/4.6/bits/stl_tempbuf.h:248:7: error: class ‘std::_Temporary_buffer<_ForwardIterator, _Tp>’ does not have any field named ‘_M_len’
+/usr/include/c++/4.6/bits/stl_tempbuf.h:252:23: error: ‘size_type’ was not declared in this scope
+/usr/include/c++/4.6/bits/stl_tempbuf.h:252:32: error: template argument 2 is invalid
+/usr/include/c++/4.6/bits/stl_tempbuf.h:252:37: error: invalid type in declaration before ‘(’ token
+/usr/include/c++/4.6/bits/stl_tempbuf.h:252:38: error: ‘get_temporary_buffer’ is not a member of ‘std’
+/usr/include/c++/4.6/bits/stl_tempbuf.h:253:20: error: expected primary-expression before ‘>’ token
+/usr/include/c++/4.6/bits/stl_tempbuf.h:253:22: error: ‘_M_original_len’ was not declared in this scope
+/usr/include/c++/4.6/bits/stl_tempbuf.h:254:20: error: request for member ‘first’ in ‘__p’, which is of non-class type ‘int’
+/usr/include/c++/4.6/bits/stl_tempbuf.h:255:4: error: ‘_M_len’ was not declared in this scope
+/usr/include/c++/4.6/bits/stl_tempbuf.h:255:17: error: request for member ‘second’ in ‘__p’, which is of non-class type ‘int’
+/usr/include/c++/4.6/bits/stl_tempbuf.h:264:4: error: ‘_M_len’ was not declared in this scope
+In file included from /usr/include/c++/4.6/bits/stl_algobase.h:68:0,
+                 from /usr/include/c++/4.6/bits/char_traits.h:41,
+                 from /usr/include/c++/4.6/ios:41,
+                 from /usr/include/c++/4.6/ostream:40,
+                 from /usr/include/c++/4.6/iostream:40,
+                 from src-lab2/lab2p1.cpp:2:
+/usr/include/c++/4.6/bits/stl_iterator.h: At global scope:
+/usr/include/c++/4.6/bits/stl_iterator.h: In instantiation of ‘__gnu_cxx::__normal_iterator<std::pair<int, double>*, std::vector<std::pair<int, double> > >’:
+src-lab2/lab2p1.cpp:21:16:   instantiated from here
+/usr/include/c++/4.6/bits/stl_iterator.h:713:56: error: no type named ‘difference_type’ in ‘struct std::iterator_traits<std::pair<int, double>*>’
+src-lab2/lab2p1.cpp: In function ‘double val_max(int, std::vector<std::pair<int, double> >&)’:
+src-lab2/lab2p1.cpp:24:29: error: ‘min’ was not declared in this scope
+src-lab2/lab2p1.cpp:24:29: note: suggested alternative:
+/usr/include/c++/4.6/bits/stl_algobase.h:233:5: note:   ‘std::min’
+In file included from /usr/include/c++/4.6/algorithm:63:0,
+                 from src-lab2/lab2p1.cpp:4:
+/usr/include/c++/4.6/bits/stl_algo.h: In function ‘void std::sort(_RAIter, _RAIter, _Compare) [with _RAIter = __gnu_cxx::__normal_iterator<std::pair<int, double>*, std::vector<std::pair<int, double> > >, _Compare = int (*)(const std::pair<int, double>&, const std::pair<int, double>&)]’:
+src-lab2/lab2p1.cpp:21:32:   instantiated from here
+/usr/include/c++/4.6/bits/stl_algo.h:5368:4: error: no match for ‘operator-’ in ‘__last - __first’
+/usr/include/c++/4.6/bits/stl_algo.h:5368:4: note: candidates are:
+/usr/include/c++/4.6/bits/stl_iterator.h:321:5: note: template<class _Iterator> typename std::reverse_iterator::difference_type std::operator-(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+/usr/include/c++/4.6/bits/stl_iterator.h:378:5: note: template<class _IteratorL, class _IteratorR> typename std::reverse_iterator<_IteratorL>::difference_type std::operator-(const std::reverse_iterator<_IteratorL>&, const std::reverse_iterator<_IteratorR>&)
+/usr/include/c++/4.6/bits/stl_iterator.h:890:5: note: template<class _Iterator, class _Container> typename __gnu_cxx::__normal_iterator::difference_type __gnu_cxx::operator-(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+/usr/include/c++/4.6/bits/stl_iterator.h:883:5: note: template<class _IteratorL, class _IteratorR, class _Container> typename __gnu_cxx::__normal_iterator<_IteratorL, _Container>::difference_type __gnu_cxx::operator-(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)
+/usr/include/c++/4.6/bits/stl_algo.h: In function ‘void std::__final_insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<std::pair<int, double>*, std::vector<std::pair<int, double> > >, _Compare = int (*)(const std::pair<int, double>&, const std::pair<int, double>&)]’:
+/usr/include/c++/4.6/bits/stl_algo.h:5370:4:   instantiated from ‘void std::sort(_RAIter, _RAIter, _Compare) [with _RAIter = __gnu_cxx::__normal_iterator<std::pair<int, double>*, std::vector<std::pair<int, double> > >, _Compare = int (*)(const std::pair<int, double>&, const std::pair<int, double>&)]’
+src-lab2/lab2p1.cpp:21:32:   instantiated from here
+/usr/include/c++/4.6/bits/stl_algo.h:2194:7: error: no match for ‘operator-’ in ‘__last - __first’
+/usr/include/c++/4.6/bits/stl_algo.h:2194:7: note: candidates are:
+/usr/include/c++/4.6/bits/stl_iterator.h:321:5: note: template<class _Iterator> typename std::reverse_iterator::difference_type std::operator-(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+/usr/include/c++/4.6/bits/stl_iterator.h:378:5: note: template<class _IteratorL, class _IteratorR> typename std::reverse_iterator<_IteratorL>::difference_type std::operator-(const std::reverse_iterator<_IteratorL>&, const std::reverse_iterator<_IteratorR>&)
+/usr/include/c++/4.6/bits/stl_iterator.h:890:5: note: template<class _Iterator, class _Container> typename __gnu_cxx::__normal_iterator::difference_type __gnu_cxx::operator-(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+/usr/include/c++/4.6/bits/stl_iterator.h:883:5: note: template<class _IteratorL, class _IteratorR, class _Container> typename __gnu_cxx::__normal_iterator<_IteratorL, _Container>::difference_type __gnu_cxx::operator-(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)
+/usr/include/c++/4.6/bits/stl_algo.h:2196:4: error: no match for ‘operator+’ in ‘__first + 16’
+/usr/include/c++/4.6/bits/stl_algo.h:2196:4: note: candidates are:
+/usr/include/c++/4.6/bits/stl_iterator.h:327:5: note: template<class _Iterator> std::reverse_iterator<_Iterator> std::operator+(typename std::reverse_iterator<_Iterator>::difference_type, const std::reverse_iterator<_Iterator>&)
+/usr/include/c++/4.6/bits/basic_string.h:2306:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::basic_string<_CharT, _Traits, _Alloc>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+/usr/include/c++/4.6/bits/basic_string.tcc:694:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, const std::basic_string<_CharT, _Traits, _Alloc>&)
+/usr/include/c++/4.6/bits/basic_string.tcc:710:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(_CharT, const std::basic_string<_CharT, _Traits, _Alloc>&)
+/usr/include/c++/4.6/bits/basic_string.h:2343:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+/usr/include/c++/4.6/bits/basic_string.h:2359:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::basic_string<_CharT, _Traits, _Alloc>&, _CharT)
+/usr/include/c++/4.6/bits/stl_iterator.h:896:5: note: template<class _Iterator, class _Container> __gnu_cxx::__normal_iterator<_Iterator, _Container> __gnu_cxx::operator+(typename __gnu_cxx::__normal_iterator<_Iterator, _Container>::difference_type, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+/usr/include/c++/4.6/bits/stl_algo.h:2197:4: error: no match for ‘operator+’ in ‘__first + 16’
+/usr/include/c++/4.6/bits/stl_algo.h:2197:4: note: candidates are:
+/usr/include/c++/4.6/bits/stl_iterator.h:327:5: note: template<class _Iterator> std::reverse_iterator<_Iterator> std::operator+(typename std::reverse_iterator<_Iterator>::difference_type, const std::reverse_iterator<_Iterator>&)
+/usr/include/c++/4.6/bits/basic_string.h:2306:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::basic_string<_CharT, _Traits, _Alloc>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+/usr/include/c++/4.6/bits/basic_string.tcc:694:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, const std::basic_string<_CharT, _Traits, _Alloc>&)
+/usr/include/c++/4.6/bits/basic_string.tcc:710:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(_CharT, const std::basic_string<_CharT, _Traits, _Alloc>&)
+/usr/include/c++/4.6/bits/basic_string.h:2343:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+/usr/include/c++/4.6/bits/basic_string.h:2359:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::basic_string<_CharT, _Traits, _Alloc>&, _CharT)
+/usr/include/c++/4.6/bits/stl_iterator.h:896:5: note: template<class _Iterator, class _Container> __gnu_cxx::__normal_iterator<_Iterator, _Container> __gnu_cxx::operator+(typename __gnu_cxx::__normal_iterator<_Iterator, _Container>::difference_type, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+/usr/include/c++/4.6/bits/stl_algo.h: In function ‘void std::__insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<std::pair<int, double>*, std::vector<std::pair<int, double> > >, _Compare = int (*)(const std::pair<int, double>&, const std::pair<int, double>&)]’:
+/usr/include/c++/4.6/bits/stl_algo.h:2201:2:   instantiated from ‘void std::__final_insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<std::pair<int, double>*, std::vector<std::pair<int, double> > >, _Compare = int (*)(const std::pair<int, double>&, const std::pair<int, double>&)]’
+/usr/include/c++/4.6/bits/stl_algo.h:5370:4:   instantiated from ‘void std::sort(_RAIter, _RAIter, _Compare) [with _RAIter = __gnu_cxx::__normal_iterator<std::pair<int, double>*, std::vector<std::pair<int, double> > >, _Compare = int (*)(const std::pair<int, double>&, const std::pair<int, double>&)]’
+src-lab2/lab2p1.cpp:21:32:   instantiated from here
+/usr/include/c++/4.6/bits/stl_algo.h:2127:50: error: no match for ‘operator+’ in ‘__first + 1’
+/usr/include/c++/4.6/bits/stl_algo.h:2127:50: note: candidates are:
+/usr/include/c++/4.6/bits/stl_iterator.h:327:5: note: template<class _Iterator> std::reverse_iterator<_Iterator> std::operator+(typename std::reverse_iterator<_Iterator>::difference_type, const std::reverse_iterator<_Iterator>&)
+/usr/include/c++/4.6/bits/basic_string.h:2306:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::basic_string<_CharT, _Traits, _Alloc>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+/usr/include/c++/4.6/bits/basic_string.tcc:694:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, const std::basic_string<_CharT, _Traits, _Alloc>&)
+/usr/include/c++/4.6/bits/basic_string.tcc:710:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(_CharT, const std::basic_string<_CharT, _Traits, _Alloc>&)
+/usr/include/c++/4.6/bits/basic_string.h:2343:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+/usr/include/c++/4.6/bits/basic_string.h:2359:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::basic_string<_CharT, _Traits, _Alloc>&, _CharT)
+/usr/include/c++/4.6/bits/stl_iterator.h:896:5: note: template<class _Iterator, class _Container> __gnu_cxx::__normal_iterator<_Iterator, _Container> __gnu_cxx::operator+(typename __gnu_cxx::__normal_iterator<_Iterator, _Container>::difference_type, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+/usr/include/c++/4.6/bits/stl_algo.h:2201:2:   instantiated from ‘void std::__final_insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<std::pair<int, double>*, std::vector<std::pair<int, double> > >, _Compare = int (*)(const std::pair<int, double>&, const std::pair<int, double>&)]’
+/usr/include/c++/4.6/bits/stl_algo.h:5370:4:   instantiated from ‘void std::sort(_RAIter, _RAIter, _Compare) [with _RAIter = __gnu_cxx::__normal_iterator<std::pair<int, double>*, std::vector<std::pair<int, double> > >, _Compare = int (*)(const std::pair<int, double>&, const std::pair<int, double>&)]’
+src-lab2/lab2p1.cpp:21:32:   instantiated from here
+/usr/include/c++/4.6/bits/stl_algo.h:2133:8: error: no match for ‘operator+’ in ‘__i + 1’
+/usr/include/c++/4.6/bits/stl_algo.h:2133:8: note: candidates are:
+/usr/include/c++/4.6/bits/stl_iterator.h:327:5: note: template<class _Iterator> std::reverse_iterator<_Iterator> std::operator+(typename std::reverse_iterator<_Iterator>::difference_type, const std::reverse_iterator<_Iterator>&)
+/usr/include/c++/4.6/bits/basic_string.h:2306:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::basic_string<_CharT, _Traits, _Alloc>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+/usr/include/c++/4.6/bits/basic_string.tcc:694:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, const std::basic_string<_CharT, _Traits, _Alloc>&)
+/usr/include/c++/4.6/bits/basic_string.tcc:710:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(_CharT, const std::basic_string<_CharT, _Traits, _Alloc>&)
+/usr/include/c++/4.6/bits/basic_string.h:2343:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+/usr/include/c++/4.6/bits/basic_string.h:2359:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::basic_string<_CharT, _Traits, _Alloc>&, _CharT)
+/usr/include/c++/4.6/bits/stl_iterator.h:896:5: note: template<class _Iterator, class _Container> __gnu_cxx::__normal_iterator<_Iterator, _Container> __gnu_cxx::operator+(typename __gnu_cxx::__normal_iterator<_Iterator, _Container>::difference_type, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+In file included from /usr/include/c++/4.6/i686-linux-gnu/./bits/c++allocator.h:34:0,
+                 from /usr/include/c++/4.6/bits/allocator.h:48,
+                 from /usr/include/c++/4.6/string:43,
+                 from /usr/include/c++/4.6/bits/locale_classes.h:42,
+                 from /usr/include/c++/4.6/bits/ios_base.h:43,
+                 from /usr/include/c++/4.6/ios:43,
+                 from /usr/include/c++/4.6/ostream:40,
+                 from /usr/include/c++/4.6/iostream:40,
+                 from src-lab2/lab2p1.cpp:2:
+/usr/include/c++/4.6/ext/new_allocator.h: In member function ‘void __gnu_cxx::new_allocator<_Tp>::construct(__gnu_cxx::new_allocator<_Tp>::pointer, const _Tp&) [with _Tp = std::pair<int, double>, __gnu_cxx::new_allocator<_Tp>::pointer = std::pair<int, double>*]’:
+/usr/include/c++/4.6/bits/stl_vector.h:830:6:   instantiated from ‘void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = std::pair<int, double>, _Alloc = std::allocator<std::pair<int, double> >, std::vector<_Tp, _Alloc>::value_type = std::pair<int, double>]’
+include/VectorIO.h:45:5:   instantiated from ‘std::istream& operator>>(std::istream&, std::vector<T>&) [with T = std::pair<int, double>, std::istream = std::basic_istream<char>]’
+src-lab2/lab2p1.cpp:39:20:   instantiated from here
+/usr/include/c++/4.6/ext/new_allocator.h:108:9: error: no matching function for call to ‘operator new(unsigned int, void*)’
+/usr/include/c++/4.6/ext/new_allocator.h:108:9: note: candidate is:
+<built-in>:0:0: note: void* operator new(unsigned int)
+<built-in>:0:0: note:   candidate expects 1 argument, 2 provided
+In file included from /usr/include/c++/4.6/vector:70:0,
+                 from src-lab2/lab2p1.cpp:3:
+/usr/include/c++/4.6/bits/vector.tcc: In member function ‘void std::vector<_Tp, _Alloc>::_M_insert_aux(std::vector<_Tp, _Alloc>::iterator, const _Tp&) [with _Tp = std::pair<int, double>, _Alloc = std::allocator<std::pair<int, double> >, std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<std::pair<int, double>*, std::vector<std::pair<int, double> > >, typename std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type::pointer = std::pair<int, double>*]’:
+/usr/include/c++/4.6/bits/stl_vector.h:834:4:   instantiated from ‘void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = std::pair<int, double>, _Alloc = std::allocator<std::pair<int, double> >, std::vector<_Tp, _Alloc>::value_type = std::pair<int, double>]’
+include/VectorIO.h:45:5:   instantiated from ‘std::istream& operator>>(std::istream&, std::vector<T>&) [with T = std::pair<int, double>, std::istream = std::basic_istream<char>]’
+src-lab2/lab2p1.cpp:39:20:   instantiated from here
+/usr/include/c++/4.6/bits/vector.tcc:323:56: error: no match for ‘operator-’ in ‘__position - std::vector<_Tp, _Alloc>::begin [with _Tp = std::pair<int, double>, _Alloc = std::allocator<std::pair<int, double> >, std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<std::pair<int, double>*, std::vector<std::pair<int, double> > >, typename std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type::pointer = std::pair<int, double>*]()’
+/usr/include/c++/4.6/bits/vector.tcc:323:56: note: candidates are:
+/usr/include/c++/4.6/bits/stl_iterator.h:321:5: note: template<class _Iterator> typename std::reverse_iterator::difference_type std::operator-(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+/usr/include/c++/4.6/bits/stl_iterator.h:378:5: note: template<class _IteratorL, class _IteratorR> typename std::reverse_iterator<_IteratorL>::difference_type std::operator-(const std::reverse_iterator<_IteratorL>&, const std::reverse_iterator<_IteratorR>&)
+/usr/include/c++/4.6/bits/stl_iterator.h:890:5: note: template<class _Iterator, class _Container> typename __gnu_cxx::__normal_iterator::difference_type __gnu_cxx::operator-(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+/usr/include/c++/4.6/bits/stl_iterator.h:883:5: note: template<class _IteratorL, class _IteratorR, class _Container> typename __gnu_cxx::__normal_iterator<_IteratorL, _Container>::difference_type __gnu_cxx::operator-(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)
+In file included from /usr/include/c++/4.6/bits/char_traits.h:41:0,
+                 from /usr/include/c++/4.6/ios:41,
+                 from /usr/include/c++/4.6/ostream:40,
+                 from /usr/include/c++/4.6/iostream:40,
+                 from src-lab2/lab2p1.cpp:2:
+/usr/include/c++/4.6/bits/stl_algobase.h: In static member function ‘static _BI2 std::__copy_move_backward<false, false, std::random_access_iterator_tag>::__copy_move_b(_BI1, _BI1, _BI2) [with _BI1 = std::pair<int, double>*, _BI2 = std::pair<int, double>*]’:
+/usr/include/c++/4.6/bits/stl_algobase.h:581:18:   instantiated from ‘_BI2 std::__copy_move_backward_a(_BI1, _BI1, _BI2) [with bool _IsMove = false, _BI1 = std::pair<int, double>*, _BI2 = std::pair<int, double>*]’
+/usr/include/c++/4.6/bits/stl_algobase.h:590:34:   instantiated from ‘_BI2 std::__copy_move_backward_a2(_BI1, _BI1, _BI2) [with bool _IsMove = false, _BI1 = std::pair<int, double>*, _BI2 = std::pair<int, double>*]’
+/usr/include/c++/4.6/bits/stl_algobase.h:625:18:   instantiated from ‘_BI2 std::copy_backward(_BI1, _BI1, _BI2) [with _BI1 = std::pair<int, double>*, _BI2 = std::pair<int, double>*]’
+/usr/include/c++/4.6/bits/vector.tcc:310:4:   instantiated from ‘void std::vector<_Tp, _Alloc>::_M_insert_aux(std::vector<_Tp, _Alloc>::iterator, const _Tp&) [with _Tp = std::pair<int, double>, _Alloc = std::allocator<std::pair<int, double> >, std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<std::pair<int, double>*, std::vector<std::pair<int, double> > >, typename std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type::pointer = std::pair<int, double>*]’
+/usr/include/c++/4.6/bits/stl_vector.h:834:4:   instantiated from ‘void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = std::pair<int, double>, _Alloc = std::allocator<std::pair<int, double> >, std::vector<_Tp, _Alloc>::value_type = std::pair<int, double>]’
+include/VectorIO.h:45:5:   instantiated from ‘std::istream& operator>>(std::istream&, std::vector<T>&) [with T = std::pair<int, double>, std::istream = std::basic_istream<char>]’
+src-lab2/lab2p1.cpp:39:20:   instantiated from here
+/usr/include/c++/4.6/bits/stl_algobase.h:529:52: error: no type named ‘difference_type’ in ‘struct std::iterator_traits<std::pair<int, double>*>’
+/usr/include/c++/4.6/bits/stl_algobase.h:529:52: error: no type named ‘difference_type’ in ‘struct std::iterator_traits<std::pair<int, double>*>’
+/usr/include/c++/4.6/bits/stl_algobase.h:529:52: error: no type named ‘difference_type’ in ‘struct std::iterator_traits<std::pair<int, double>*>’
+/usr/include/c++/4.6/bits/stl_algobase.h:529:52: error: no type named ‘difference_type’ in ‘struct std::iterator_traits<std::pair<int, double>*>’
+In file included from /usr/include/c++/4.6/vector:63:0,
+                 from src-lab2/lab2p1.cpp:3:
+/usr/include/c++/4.6/bits/stl_construct.h: In function ‘void std::_Construct(_T1*, const _T2&) [with _T1 = std::pair<int, double>, _T2 = std::pair<int, double>]’:
+/usr/include/c++/4.6/bits/stl_uninitialized.h:77:3:   instantiated from ‘static _ForwardIterator std::__uninitialized_copy<_TrivialValueTypes>::__uninit_copy(_InputIterator, _InputIterator, _ForwardIterator) [with _InputIterator = std::pair<int, double>*, _ForwardIterator = std::pair<int, double>*, bool _TrivialValueTypes = false]’
+/usr/include/c++/4.6/bits/stl_uninitialized.h:119:41:   instantiated from ‘_ForwardIterator std::uninitialized_copy(_InputIterator, _InputIterator, _ForwardIterator) [with _InputIterator = std::pair<int, double>*, _ForwardIterator = std::pair<int, double>*]’
+/usr/include/c++/4.6/bits/stl_uninitialized.h:259:63:   instantiated from ‘_ForwardIterator std::__uninitialized_copy_a(_InputIterator, _InputIterator, _ForwardIterator, std::allocator<_Tp>&) [with _InputIterator = std::pair<int, double>*, _ForwardIterator = std::pair<int, double>*, _Tp = std::pair<int, double>]’
+/usr/include/c++/4.6/bits/stl_uninitialized.h:269:24:   instantiated from ‘_ForwardIterator std::__uninitialized_move_a(_InputIterator, _InputIterator, _ForwardIterator, _Allocator&) [with _InputIterator = std::pair<int, double>*, _ForwardIterator = std::pair<int, double>*, _Allocator = std::allocator<std::pair<int, double> >]’
+/usr/include/c++/4.6/bits/vector.tcc:340:8:   instantiated from ‘void std::vector<_Tp, _Alloc>::_M_insert_aux(std::vector<_Tp, _Alloc>::iterator, const _Tp&) [with _Tp = std::pair<int, double>, _Alloc = std::allocator<std::pair<int, double> >, std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<std::pair<int, double>*, std::vector<std::pair<int, double> > >, typename std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type::pointer = std::pair<int, double>*]’
+/usr/include/c++/4.6/bits/stl_vector.h:834:4:   instantiated from ‘void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = std::pair<int, double>, _Alloc = std::allocator<std::pair<int, double> >, std::vector<_Tp, _Alloc>::value_type = std::pair<int, double>]’
+include/VectorIO.h:45:5:   instantiated from ‘std::istream& operator>>(std::istream&, std::vector<T>&) [with T = std::pair<int, double>, std::istream = std::basic_istream<char>]’
+src-lab2/lab2p1.cpp:39:20:   instantiated from here
+/usr/include/c++/4.6/bits/stl_construct.h:84:7: error: no matching function for call to ‘operator new(unsigned int, void*)’
+/usr/include/c++/4.6/bits/stl_construct.h:84:7: note: candidate is:
+<built-in>:0:0: note: void* operator new(unsigned int)
+<built-in>:0:0: note:   candidate expects 1 argument, 2 provided
+make: *** [all] Error 1
+src-lab2/lab2p1.cpp: In function ‘double val_max(int, std::vector<std::pair<int, double> >&)’:
+src-lab2/lab2p1.cpp:24:29: error: ‘min’ was not declared in this scope
+src-lab2/lab2p1.cpp:24:29: note: suggested alternative:
+/usr/include/c++/4.6/bits/stl_algobase.h:233:5: note:   ‘std::min’
+make: *** [all] Error 1

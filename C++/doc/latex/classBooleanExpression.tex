@@ -1,0 +1,87 @@
+\hypertarget{classBooleanExpression}{
+\section{BooleanExpression Class Reference}
+\label{classBooleanExpression}\index{BooleanExpression@{BooleanExpression}}
+}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classBooleanExpression_a299abbbf6a12738e2d9df792d50ccd76}{Lexem} \{ \par
+{\bfseries True}, 
+{\bfseries False}, 
+{\bfseries And}, 
+{\bfseries Or}, 
+\par
+{\bfseries Xor}
+ \}
+\begin{DoxyCompactList}\small\item\em Valori intregi constante pentru tipurile de lexeme ce pot aparea intr-\/o expresie: {\bfseries True}, {\bfseries False}, {\bfseries And}, {\bfseries Or} si {\bfseries Xor}. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classBooleanExpression_a15ce0a130f0ae05ba2e6a62a222b5c0e}{is\_\-valid} ()
+\begin{DoxyCompactList}\small\item\em Functie care verifica daca ultima expresie parsata a fost valida sau nu din punct de vedere gramatical. \item\end{DoxyCompactList}\item 
+\hypertarget{classBooleanExpression_a59d5385cc58e0d0452b96bed1f6a6984}{
+void \hyperlink{classBooleanExpression_a59d5385cc58e0d0452b96bed1f6a6984}{operator$<$$<$} (const char $\ast$input)}
+\label{classBooleanExpression_a59d5385cc58e0d0452b96bed1f6a6984}
+
+\begin{DoxyCompactList}\small\item\em Operator care reparseaza o expresie dintr-\/un string. \item\end{DoxyCompactList}\item 
+\hypertarget{classBooleanExpression_ad8e8ad03eae2b0813deee52ed00228a0}{
+void \hyperlink{classBooleanExpression_ad8e8ad03eae2b0813deee52ed00228a0}{operator$<$$<$} (const std::string \&input)}
+\label{classBooleanExpression_ad8e8ad03eae2b0813deee52ed00228a0}
+
+\begin{DoxyCompactList}\small\item\em Operator care reparseaza o expresie dintr-\/un string. \item\end{DoxyCompactList}\item 
+std::vector$<$ \hyperlink{classBooleanExpression_a299abbbf6a12738e2d9df792d50ccd76}{Lexem} $>$ \hyperlink{classBooleanExpression_a146ead302b7f836a40e598117ef57c6d}{to\_\-vector} ()
+\begin{DoxyCompactList}\small\item\em Functie pentru acces la vectorul de lexeme rezultat in urma parsarii unei expresii. \item\end{DoxyCompactList}\item 
+\hypertarget{classBooleanExpression_a499193b6f7b6a0242cfeb2563e96732e}{
+\hyperlink{classBooleanExpression_a499193b6f7b6a0242cfeb2563e96732e}{BooleanExpression} ()}
+\label{classBooleanExpression_a499193b6f7b6a0242cfeb2563e96732e}
+
+\begin{DoxyCompactList}\small\item\em Constructor care initializeaza o expresie vida (si deci, invalida). Ca sa o puteti folosi, dati-\/i un string de parsat. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classBooleanExpression_ab5917af98325bac63ee09cdad36aaf9f}{
+std::istream \& \hyperlink{classBooleanExpression_ab5917af98325bac63ee09cdad36aaf9f}{operator$>$$>$} (std::istream \&in, \hyperlink{classBooleanExpression}{BooleanExpression} \&right)}
+\label{classBooleanExpression_ab5917af98325bac63ee09cdad36aaf9f}
+
+\begin{DoxyCompactList}\small\item\em Operator care permite citirea unei expresii boole-\/ene dintr-\/un istream. Se citeste o singura linie in intregime si se parseaza. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBooleanExpression_a15ce0a130f0ae05ba2e6a62a222b5c0e}{
+\index{BooleanExpression@{BooleanExpression}!is\_\-valid@{is\_\-valid}}
+\index{is\_\-valid@{is\_\-valid}!BooleanExpression@{BooleanExpression}}
+\subsubsection[{is\_\-valid}]{\setlength{\rightskip}{0pt plus 5cm}bool BooleanExpression::is\_\-valid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classBooleanExpression_a15ce0a130f0ae05ba2e6a62a222b5c0e}
+
+
+Functie care verifica daca ultima expresie parsata a fost valida sau nu din punct de vedere gramatical. 
+
+\begin{DoxyReturn}{Returns}
+Raspunsul ultimei operatii de parsare. 
+\end{DoxyReturn}
+\hypertarget{classBooleanExpression_a146ead302b7f836a40e598117ef57c6d}{
+\index{BooleanExpression@{BooleanExpression}!to\_\-vector@{to\_\-vector}}
+\index{to\_\-vector@{to\_\-vector}!BooleanExpression@{BooleanExpression}}
+\subsubsection[{to\_\-vector}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<${\bf Lexem}$>$ BooleanExpression::to\_\-vector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classBooleanExpression_a146ead302b7f836a40e598117ef57c6d}
+
+
+Functie pentru acces la vectorul de lexeme rezultat in urma parsarii unei expresii. 
+
+\begin{DoxyReturn}{Returns}
+Vectorul de lexeme, daca ultimul string parsata a fost corect gramatical, sau un vector gol altfel. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/home/marcvs/Desktop/working/pa-\/materiale/pa/codeBase/C++/include/BooleanExpression.h\item 
+/home/marcvs/Desktop/working/pa-\/materiale/pa/codeBase/C++/src/BooleanExpression.cpp\end{DoxyCompactItemize}
