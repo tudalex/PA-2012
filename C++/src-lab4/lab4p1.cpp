@@ -11,6 +11,7 @@
 #include "MapIO.h"
 
 #include "Rebus.h"
+using namespace std;
 
 /* Vom modela o tabela de variable ca fiind un map de la o coordonata (i, j)
  * la o multime de cuvinte care ar putea ipotetic sa fie introduse in Rebus
@@ -34,17 +35,39 @@ Rebus rebus;
 void build_word_sets(Domains& horizontal, Domains& vertical)
 {
   /* Si completam. */
+  int k;
   for (unsigned int i = 0; i < rebus.rows; ++i) {
     for (unsigned int j = 0; j < rebus.columns; ++j) {
       if (rebus.is_empty(i, j) &&
           (j == 0 || rebus.is_empty(i, j - 1) == false)) {
+          if (!rebus.is_empty(i,j))
+         	continue;
         /* TODO: Puneti in horizontal, la pozitia (i, j), toate cuvintele care
          * ar putea ipotetic sa fie completate incepand de acolo spre dreapta. */
+          for (k = j; k < rebus.columns && rebus.is_empty(i, k); ++ k)
+          	;
+          int l = min(k-j+1, rebus.columns-j);
+          cerr<<"for "<<i<<" "<<j<<" found size "<<l;
+          for ( k = 0; k < vocabular.size(); ++ k)
+          	if (vocabular[k].length() == l)
+          		horizontal[ make_pair(i,j)].push_back(vocabular[k]);
+          cerr<<" opt:"<<horizontal[Position(i,j)].size()<<endl;
       }
+      
       if (rebus.is_empty(i, j) &&
           (i == 0 || rebus.is_empty(i - 1, j) == false)) {
         /* TODO: Puneti in vertical, la pozitia (i, j), toate cuvintele care ar
          * putea ipotetic sa fie completate incepand de acolo in jos. */
+         if (!rebus.is_empty(i,j))
+         	continue;
+         for ( k = i; k < rebus.rows && rebus.is_empty(k, j); ++ k)
+          	;
+          int l = min(k-j+1, rebus.columns-j);
+          cerr<<"vertical: for "<<i<<" "<<j<<" found size "<<l;
+          for ( k = 0; k < vocabular.size(); ++ k)
+          	if (vocabular[k].length() == l)
+          		vertical[ make_pair(i,j)].push_back(vocabular[k]);
+          cerr<<" opt:"<<vertical[Position(i,j)].size()<<endl;;
       }
     }
   }
@@ -62,11 +85,28 @@ bool verifica_inainte(int row,
    * acest string. */
   horizontal[Position(row, col)].clear();
   horizontal[Position(row, col)].push_back(s);
-
+  vector< vector<string>::iterator > elim;
+  int newcol = col + s.size();
+  for (int i = col; i < newcol; ++ i)
+  {
+  		elim.clear();
+  		std::string prefix = prefixes[i];
+  		if (prefix.empty())
+  			continue;
+  		Position origin = Position(row-prefix.size()+1, col);
+  		for (vector<string>::iterator j = vertical[origin].begin(); j != vertical[origin].end(); ++ j)
+  			if(j->find(prefix)!=0)
+  				elim.push_back(j);
+  		for (int j = 0; j < elim.size(); ++ j)
+  			vertical[origin].erase(elim[j]);		
+  			
+  }  
   /* TODO: Parcurgem prefixele nou modificate si stergem din domeniul vertical tot ce
    * nu se potriveste cu prefixele. Daca la un moment dat, vreo unul dintre
    * domenii ajunge sa fie domeniul vid, atunci intoarce false. */
   for (unsigned int i = 0; i < s.length(); ++i) {
+  	if (rebus.get(row, i+col)!='*' && vertical[Position(row, i+col)].empty())
+  		return false;
   }
 
   return true;
@@ -114,31 +154,69 @@ void backtracking(
 
   /* Marcam faptul ca am mai efectuat o intrare in recursivitate. */
   recursions++;
-
+  cerr<<"row:"<<row<<" col:"<<col<<endl;
   /* Daca e solutie, afiseaz-o si iesi. */
   if (rebus.is_done()){
     std::cout << rebus;
     found_solution = true;
     return;
   } else if (row == rebus.rows) {
+  	
     return;
   }
-
+  int newcol, newrow = row;
   if (rebus.is_empty(row, col)) {
     /* Daca la (row, col) nu este completat, atunci incercam sa completam
      * orizontal unul dintre stringurile din domeniu pentru (row, col). */
-    std::vector<std::string>& possibilities = horizontal[Position(row, col)];
-
-    /* TODO: Incercati pe rand toate variantele de a completa de la (row, col)
-     * in dreapta. Puteti folosi functia putString din Rebus.h */
-
+     /* TODO: Incercati pe rand toate variantele de a completa de la (row, col)
+		 * in dreapta. Puteti folosi functia putString din Rebus.h */
+    std::vector<std::string> possibilities = horizontal[Position(row, col)];
+    cerr<<possibilities;
+    Domains backup_h = horizontal, backup_v = vertical;
+	for (int i = 0; i < possibilities.size(); ++ i)
+	{
+		
+		//Putting new word
+		string word = possibilities[i];
+		rebus.putString(row,col, word);
+		
+		//Calculating new position for backtracking
+		newcol = col+possibilities[i].size();
+		if (newcol == rebus.columns)
+			newcol = 0, newrow = row+1;
+			
+		//Updating vertical prefixes
+		
+		for (int j = col; j < newcol; ++ j)
+			verticalPrefixes[j].push_back(rebus.get(row,j)); 
+		
+			
+		cerr<<"new row:"<<newrow<<" col:"<<newcol<<" pos:"<<(int)possibilities.size()<<" i:"<<i<<endl;
+		//Running the backtracking
+		bool good_word = verifica_inainte(row, col, word,horizontal, vertical, verticalPrefixes);
+		if (good_word)
+			backtracking(newrow, newcol, horizontal, vertical, verticalPrefixes);
+		
+		//Rolling back changes
+		for (int j = col; j < newcol; ++ j)
+		{
+			verticalPrefixes[j].erase(verticalPrefixes[j].size()-1,1);
+			rebus.erase(row, j);
+		}
+		horizontal = backup_h;
+		vertical = backup_v;
+	}
   } else {
     /* Cand treci peste un '*', sterge prefixul care se forma vertical pentru
      * coloana respectiva. */
     if (rebus.get(row, col) == '*') {
       verticalPrefixes[col] = std::string();
     }
-
+    newcol = col+1;
+	if (newcol == rebus.columns)
+		newcol = 0, newrow = row+1;
+	cerr<<"new row:"<<newrow<<" col:"<<newcol<<endl;
+	backtracking(newrow, newcol, horizontal, vertical, verticalPrefixes);
     /* TODO: Fiind deja completat, treci mai departe la completarea cu
      * backtracking a urmatoarei celule de la dreapta (si daca suntem la
      * sfarsitul randului, a primei celule de pe urmatoarea linie). */

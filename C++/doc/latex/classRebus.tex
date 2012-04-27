@@ -6,21 +6,21 @@
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classRebus_ada84d588bdfa1bd624f4a3bb27ce2c76}{Rebus} ()
-\begin{DoxyCompactList}\small\item\em Constructor pentru un careu de \hyperlink{classRebus}{Rebus}. \item\end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Constructor pentru un careu de \hyperlink{classRebus}{Rebus}. \end{DoxyCompactList}\item 
 char \hyperlink{classRebus_a1da48c3c6eccfcfe78285ba3e7395bcc}{get} (unsigned int row, unsigned int column)
-\begin{DoxyCompactList}\small\item\em Functie care returneaza o litera din careu. \item\end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Functie care returneaza o litera din careu. \end{DoxyCompactList}\item 
 void \hyperlink{classRebus_ad6dd40d142119027fa581111509a2853}{put} (unsigned int row, unsigned int column, char c)
-\begin{DoxyCompactList}\small\item\em Functie care pune o litera in careu. Functia nu are nici un efect daca respectiva celula din careu contine '$\ast$'. Daca apelul este unul invalid (in afara careului), el nu are nici un efect. \item\end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Functie care pune o litera in careu. Functia nu are nici un efect daca respectiva celula din careu contine '$\ast$'. Daca apelul este unul invalid (in afara careului), el nu are nici un efect. \end{DoxyCompactList}\item 
 void \hyperlink{classRebus_a57b95672c0bf931f1605b18c5cbed815}{putString} (unsigned int row, unsigned int column, std::string s)
-\begin{DoxyCompactList}\small\item\em Functie care pune un string orizontal in careu. Functia nu are nici un efect daca nu exista spatiu suficient. \item\end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Functie care pune un string orizontal in careu. Functia nu are nici un efect daca nu exista spatiu suficient. \end{DoxyCompactList}\item 
 void \hyperlink{classRebus_a3b93d56e569bb72d7825ddebd6e902c9}{eraseString} (unsigned int row, unsigned int column)
-\begin{DoxyCompactList}\small\item\em Functie care sterge un string orizontal din careu (pana la marginea careului sau pana la urmatorul caracter '$\ast$'. \item\end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Functie care sterge un string orizontal din careu (pana la marginea careului sau pana la urmatorul caracter '$\ast$'. \end{DoxyCompactList}\item 
 void \hyperlink{classRebus_a671d4a4355f48a1dc31d82236cbd4935}{erase} (unsigned int row, unsigned int column)
-\begin{DoxyCompactList}\small\item\em Functie care sterge o litera din careu. Functia nu are nici un efect daca respectiva celula din careu contine '$\ast$'. Daca apelul este unul invalid (in afara careului), el nu are nici un efect. \item\end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Functie care sterge o litera din careu. Functia nu are nici un efect daca respectiva celula din careu contine '$\ast$'. Daca apelul este unul invalid (in afara careului), el nu are nici un efect. \end{DoxyCompactList}\item 
 bool \hyperlink{classRebus_ab91bb231fa7ee3fb81dee78829f6f249}{is\_\-empty} (unsigned int row, unsigned int column)
-\begin{DoxyCompactList}\small\item\em Functie care verifica daca o celula din careu este libera (trebuie sa nu fie completata si sa nu fie '$\ast$'. Daca apelul este unul invalid (in afara careului), se intoarce {\bfseries false}. \item\end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Functie care verifica daca o celula din careu este libera (trebuie sa nu fie completata si sa nu fie '$\ast$'. Daca apelul este unul invalid (in afara careului), se intoarce {\bfseries false}. \end{DoxyCompactList}\item 
 bool \hyperlink{classRebus_af5a546a1f074c8ed3dd744927b78a46a}{is\_\-done} ()
-\begin{DoxyCompactList}\small\item\em Functie care verifica daca careul este completat valid. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Functie care verifica daca careul este completat valid. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -75,7 +75,13 @@ Constructor pentru un careu de \hyperlink{classRebus}{Rebus}.
 
 
 \begin{DoxyParams}{Parameters}
-\item[{\em rows}]Numarul de linii ale careului. \item[{\em columns}]Numarul de coloane ale careului. \item[{\em in}]Un flux din care sa se citeasca configuratia careului. \end{DoxyParams}
+{\em rows} & Numarul de linii ale careului. \\
+\hline
+{\em columns} & Numarul de coloane ale careului. \\
+\hline
+{\em in} & Un flux din care sa se citeasca configuratia careului. \\
+\hline
+\end{DoxyParams}
 
 
 \subsection{Member Function Documentation}
@@ -84,8 +90,8 @@ Constructor pentru un careu de \hyperlink{classRebus}{Rebus}.
 \index{erase@{erase}!Rebus@{Rebus}}
 \subsubsection[{erase}]{\setlength{\rightskip}{0pt plus 5cm}void Rebus::erase (
 \begin{DoxyParamCaption}
-\item[{unsigned int}]{ row, }
-\item[{unsigned int}]{ column}
+\item[{unsigned int}]{row, }
+\item[{unsigned int}]{column}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
 \label{classRebus_a671d4a4355f48a1dc31d82236cbd4935}
@@ -95,14 +101,18 @@ Functie care sterge o litera din careu. Functia nu are nici un efect daca respec
 
 
 \begin{DoxyParams}{Parameters}
-\item[{\em row}]Linia din careu. \item[{\em column}]Coloana din careu. \end{DoxyParams}
+{\em row} & Linia din careu. \\
+\hline
+{\em column} & Coloana din careu. \\
+\hline
+\end{DoxyParams}
 \hypertarget{classRebus_a3b93d56e569bb72d7825ddebd6e902c9}{
 \index{Rebus@{Rebus}!eraseString@{eraseString}}
 \index{eraseString@{eraseString}!Rebus@{Rebus}}
 \subsubsection[{eraseString}]{\setlength{\rightskip}{0pt plus 5cm}void Rebus::eraseString (
 \begin{DoxyParamCaption}
-\item[{unsigned int}]{ row, }
-\item[{unsigned int}]{ column}
+\item[{unsigned int}]{row, }
+\item[{unsigned int}]{column}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
 \label{classRebus_a3b93d56e569bb72d7825ddebd6e902c9}
@@ -112,14 +122,18 @@ Functie care sterge un string orizontal din careu (pana la marginea careului sau
 
 
 \begin{DoxyParams}{Parameters}
-\item[{\em row}]Linia locatiei de unde incepe stringul orizontal. \item[{\em column}]Coloana locatiei de unde incepe stringul orizontal. \end{DoxyParams}
+{\em row} & Linia locatiei de unde incepe stringul orizontal. \\
+\hline
+{\em column} & Coloana locatiei de unde incepe stringul orizontal. \\
+\hline
+\end{DoxyParams}
 \hypertarget{classRebus_a1da48c3c6eccfcfe78285ba3e7395bcc}{
 \index{Rebus@{Rebus}!get@{get}}
 \index{get@{get}!Rebus@{Rebus}}
 \subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}char Rebus::get (
 \begin{DoxyParamCaption}
-\item[{unsigned int}]{ row, }
-\item[{unsigned int}]{ column}
+\item[{unsigned int}]{row, }
+\item[{unsigned int}]{column}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
 \label{classRebus_a1da48c3c6eccfcfe78285ba3e7395bcc}
@@ -129,9 +143,13 @@ Functie care returneaza o litera din careu.
 
 
 \begin{DoxyParams}{Parameters}
-\item[{\em row}]Linia din careu. \item[{\em column}]Coloana din careu. \end{DoxyParams}
+{\em row} & Linia din careu. \\
+\hline
+{\em column} & Coloana din careu. \\
+\hline
+\end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Caracterul de la linia si coloana respectiva din careu. Pentru o celula de careu goala se va intoarce '\_\-', iar pentru o celula de careu blocata se va intoarce '$\ast$'. Daca apelul este unul invalid (in afara careului), se intoarce ''. 
+Caracterul de la linia si coloana respectiva din careu. Pentru o celula de careu goala se va intoarce '\_\-', iar pentru o celula de careu blocata se va intoarce '$\ast$'. Daca apelul este unul invalid (in afara careului), se intoarce '$\backslash$0'. 
 \end{DoxyReturn}
 \hypertarget{classRebus_af5a546a1f074c8ed3dd744927b78a46a}{
 \index{Rebus@{Rebus}!is\_\-done@{is\_\-done}}
@@ -154,8 +172,8 @@ Functie care verifica daca careul este completat valid.
 \index{is\_\-empty@{is\_\-empty}!Rebus@{Rebus}}
 \subsubsection[{is\_\-empty}]{\setlength{\rightskip}{0pt plus 5cm}bool Rebus::is\_\-empty (
 \begin{DoxyParamCaption}
-\item[{unsigned int}]{ row, }
-\item[{unsigned int}]{ column}
+\item[{unsigned int}]{row, }
+\item[{unsigned int}]{column}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
 \label{classRebus_ab91bb231fa7ee3fb81dee78829f6f249}
@@ -165,7 +183,11 @@ Functie care verifica daca o celula din careu este libera (trebuie sa nu fie com
 
 
 \begin{DoxyParams}{Parameters}
-\item[{\em row}]Linia din careu. \item[{\em column}]Coloana din careu. \end{DoxyParams}
+{\em row} & Linia din careu. \\
+\hline
+{\em column} & Coloana din careu. \\
+\hline
+\end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 {\bfseries true} daca respectiva celula este libera si {\bfseries false} in caz contrar. 
 \end{DoxyReturn}
@@ -174,9 +196,9 @@ Functie care verifica daca o celula din careu este libera (trebuie sa nu fie com
 \index{put@{put}!Rebus@{Rebus}}
 \subsubsection[{put}]{\setlength{\rightskip}{0pt plus 5cm}void Rebus::put (
 \begin{DoxyParamCaption}
-\item[{unsigned int}]{ row, }
-\item[{unsigned int}]{ column, }
-\item[{char}]{ c}
+\item[{unsigned int}]{row, }
+\item[{unsigned int}]{column, }
+\item[{char}]{c}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
 \label{classRebus_ad6dd40d142119027fa581111509a2853}
@@ -186,15 +208,21 @@ Functie care pune o litera in careu. Functia nu are nici un efect daca respectiv
 
 
 \begin{DoxyParams}{Parameters}
-\item[{\em row}]Linia din careu. \item[{\em column}]Coloana din careu. \item[{\em c}]Caracterul care va fi scris in careu. \end{DoxyParams}
+{\em row} & Linia din careu. \\
+\hline
+{\em column} & Coloana din careu. \\
+\hline
+{\em c} & Caracterul care va fi scris in careu. \\
+\hline
+\end{DoxyParams}
 \hypertarget{classRebus_a57b95672c0bf931f1605b18c5cbed815}{
 \index{Rebus@{Rebus}!putString@{putString}}
 \index{putString@{putString}!Rebus@{Rebus}}
 \subsubsection[{putString}]{\setlength{\rightskip}{0pt plus 5cm}void Rebus::putString (
 \begin{DoxyParamCaption}
-\item[{unsigned int}]{ row, }
-\item[{unsigned int}]{ column, }
-\item[{std::string}]{ s}
+\item[{unsigned int}]{row, }
+\item[{unsigned int}]{column, }
+\item[{std::string}]{s}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
 \label{classRebus_a57b95672c0bf931f1605b18c5cbed815}
@@ -204,9 +232,15 @@ Functie care pune un string orizontal in careu. Functia nu are nici un efect dac
 
 
 \begin{DoxyParams}{Parameters}
-\item[{\em row}]Linia din careu. \item[{\em column}]Coloana din careu. \item[{\em s}]Sttring care va fi scris in careu. \end{DoxyParams}
+{\em row} & Linia din careu. \\
+\hline
+{\em column} & Coloana din careu. \\
+\hline
+{\em s} & Sttring care va fi scris in careu. \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
 \item 
-/home/marcvs/Desktop/working/pa-\/materiale/pa/codeBase/C++/include/Rebus.h\end{DoxyCompactItemize}
+/home/tudalex/codeBase/C++/include/Rebus.h\end{DoxyCompactItemize}

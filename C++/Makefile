@@ -3,7 +3,7 @@
 #
 # Standard variables to automatize the build process
 CC=g++
-CFLAGS=-c -Wall
+CFLAGS=-g -c -Wall
 LDFLAGS=-lm
 
 # Adding include directories
