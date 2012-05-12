@@ -1,0 +1,118 @@
+\hypertarget{classDisjointSets}{
+\section{DisjointSets Class Reference}
+\label{classDisjointSets}\index{DisjointSets@{DisjointSets}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDisjointSets_ac852916309afe7f1cbb6b410531e31b9}{DisjointSets} (unsigned int n)
+\begin{DoxyCompactList}\small\item\em Constructor. Initial, fiecare element se afla in propria sa multime. \item\end{DoxyCompactList}\item 
+unsigned int \hyperlink{classDisjointSets_a4a309dd1f2837c2c786699ac8f638992}{get\_\-n} () const 
+\begin{DoxyCompactList}\small\item\em Functie care returneaza numarul de noduri din set. \item\end{DoxyCompactList}\item 
+unsigned int \hyperlink{classDisjointSets_a223dc387dabf1b308760b7bb5d467bf5}{number\_\-of\_\-disjoint\_\-sets} () const 
+\begin{DoxyCompactList}\small\item\em Functie care returneaza numarul de seturi distincte. \item\end{DoxyCompactList}\item 
+void \hyperlink{classDisjointSets_a225f4787599acec21061736895e78ed4}{merge\_\-sets\_\-of} (int ID\_\-node\_\-a, int ID\_\-node\_\-b)
+\begin{DoxyCompactList}\small\item\em Functie care reuneste multimile din care fac parte doua noduri. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classDisjointSets_ad24b190278102ed04a2cb8b5182754bd}{same\_\-set} (int ID\_\-node\_\-a, int ID\_\-node\_\-b)
+\begin{DoxyCompactList}\small\item\em Functie care determina daca doua noduri fac parte din acelasi set. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDisjointSets_ac6026f9d8b1ac2b75355f55bb6739dfe}{
+class \hyperlink{classDisjointSets_ac6026f9d8b1ac2b75355f55bb6739dfe}{Maze}}
+\label{classDisjointSets_ac6026f9d8b1ac2b75355f55bb6739dfe}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classDisjointSets_ac852916309afe7f1cbb6b410531e31b9}{
+\index{DisjointSets@{DisjointSets}!DisjointSets@{DisjointSets}}
+\index{DisjointSets@{DisjointSets}!DisjointSets@{DisjointSets}}
+\subsubsection[{DisjointSets}]{\setlength{\rightskip}{0pt plus 5cm}DisjointSets::DisjointSets (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classDisjointSets_ac852916309afe7f1cbb6b410531e31b9}
+
+
+Constructor. Initial, fiecare element se afla in propria sa multime. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em n}]Numarul de multimi initiale. \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classDisjointSets_a4a309dd1f2837c2c786699ac8f638992}{
+\index{DisjointSets@{DisjointSets}!get\_\-n@{get\_\-n}}
+\index{get\_\-n@{get\_\-n}!DisjointSets@{DisjointSets}}
+\subsubsection[{get\_\-n}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int DisjointSets::get\_\-n (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classDisjointSets_a4a309dd1f2837c2c786699ac8f638992}
+
+
+Functie care returneaza numarul de noduri din set. 
+
+\begin{DoxyReturn}{Returns}
+Numarul de noduri din set. 
+\end{DoxyReturn}
+\hypertarget{classDisjointSets_a225f4787599acec21061736895e78ed4}{
+\index{DisjointSets@{DisjointSets}!merge\_\-sets\_\-of@{merge\_\-sets\_\-of}}
+\index{merge\_\-sets\_\-of@{merge\_\-sets\_\-of}!DisjointSets@{DisjointSets}}
+\subsubsection[{merge\_\-sets\_\-of}]{\setlength{\rightskip}{0pt plus 5cm}void DisjointSets::merge\_\-sets\_\-of (
+\begin{DoxyParamCaption}
+\item[{int}]{ ID\_\-node\_\-a, }
+\item[{int}]{ ID\_\-node\_\-b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classDisjointSets_a225f4787599acec21061736895e78ed4}
+
+
+Functie care reuneste multimile din care fac parte doua noduri. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em a}]Primul {\bfseries nod} \item[{\em b}]Al doilea {\bfseries nod}. \end{DoxyParams}
+\hypertarget{classDisjointSets_a223dc387dabf1b308760b7bb5d467bf5}{
+\index{DisjointSets@{DisjointSets}!number\_\-of\_\-disjoint\_\-sets@{number\_\-of\_\-disjoint\_\-sets}}
+\index{number\_\-of\_\-disjoint\_\-sets@{number\_\-of\_\-disjoint\_\-sets}!DisjointSets@{DisjointSets}}
+\subsubsection[{number\_\-of\_\-disjoint\_\-sets}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int DisjointSets::number\_\-of\_\-disjoint\_\-sets (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classDisjointSets_a223dc387dabf1b308760b7bb5d467bf5}
+
+
+Functie care returneaza numarul de seturi distincte. 
+
+\begin{DoxyReturn}{Returns}
+Numarul de seturi distincte. 
+\end{DoxyReturn}
+\hypertarget{classDisjointSets_ad24b190278102ed04a2cb8b5182754bd}{
+\index{DisjointSets@{DisjointSets}!same\_\-set@{same\_\-set}}
+\index{same\_\-set@{same\_\-set}!DisjointSets@{DisjointSets}}
+\subsubsection[{same\_\-set}]{\setlength{\rightskip}{0pt plus 5cm}bool DisjointSets::same\_\-set (
+\begin{DoxyParamCaption}
+\item[{int}]{ ID\_\-node\_\-a, }
+\item[{int}]{ ID\_\-node\_\-b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classDisjointSets_ad24b190278102ed04a2cb8b5182754bd}
+
+
+Functie care determina daca doua noduri fac parte din acelasi set. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em a}]Primul {\bfseries nod}. \item[{\em b}]Al doilea {\bfseries nod}. \end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/marcvs/Desktop/working/pa-\/materiale/pa/codeBase/C++/include/DisjointSets.h\end{DoxyCompactItemize}

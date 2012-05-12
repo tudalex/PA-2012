@@ -1,0 +1,370 @@
+\hypertarget{classMatrix}{
+\section{Matrix$<$ Type $>$ Class Template Reference}
+\label{classMatrix}\index{Matrix@{Matrix}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMatrix_a4543e4dacf7cfa454e45f2a3d655cb99}{Matrix} (int n\_\-lin, int n\_\-col, int init=\hyperlink{classMatrix_ac576343229d4c60eb7270123baf1eb08}{None})
+\begin{DoxyCompactList}\small\item\em Constructor pentru instantierea unei matrice de {\itshape n\_\-lin\/} linii, respectiv {\itshape n\_\-col\/} coloane. Al treilea parametru este optional, dar cu ajutorul lui se poate initializa matricea nou construita. \end{DoxyCompactList}\item 
+\hyperlink{classMatrix_a26ec7ce757009a97599b048379466841}{Matrix} (const \hyperlink{classMatrix}{Matrix}$<$ Type $>$ \&right)
+\begin{DoxyCompactList}\small\item\em Copy constructor pentru clonarea unei matrice (atat dimensiuni, cat si continut) \end{DoxyCompactList}\item 
+\hypertarget{classMatrix_ae653bc04255a76bf5275bfce4aec0e5f}{
+\hyperlink{classMatrix_ae653bc04255a76bf5275bfce4aec0e5f}{Matrix} ()}
+\label{classMatrix_ae653bc04255a76bf5275bfce4aec0e5f}
+
+\begin{DoxyCompactList}\small\item\em Constructor care creaza o matrice de 0 lini si 0 coloane (care nu poate avea continut). In mod normal, acest rezultat intors de o operatie semnaleaza o eroare de aritmetica matricelor. \end{DoxyCompactList}\item 
+\hypertarget{classMatrix_a3f2bd634a34d187bc3f5f4b1556ae8d6}{
+int \hyperlink{classMatrix_a3f2bd634a34d187bc3f5f4b1556ae8d6}{get\_\-n\_\-lin} () const }
+\label{classMatrix_a3f2bd634a34d187bc3f5f4b1556ae8d6}
+
+\begin{DoxyCompactList}\small\item\em Getter pentru a afla numarul de linii al matricei. \end{DoxyCompactList}\item 
+\hypertarget{classMatrix_a7ee6511bb33eb5e1d070142b9428c7b5}{
+int \hyperlink{classMatrix_a7ee6511bb33eb5e1d070142b9428c7b5}{get\_\-n\_\-col} () const }
+\label{classMatrix_a7ee6511bb33eb5e1d070142b9428c7b5}
+
+\begin{DoxyCompactList}\small\item\em Getter pentru a afla numarul de coloane al matricei. \end{DoxyCompactList}\item 
+\hyperlink{classMatrix}{Matrix}$<$ Type $>$ \hyperlink{classMatrix_a0402527771ceae198c876ffb23cce1c6}{submatrix} (int start\_\-lin, int start\_\-col, int n\_\-lines, int n\_\-columns) const 
+\begin{DoxyCompactList}\small\item\em Functie care creaza o matrice de {\bfseries n\_\-lines} linii si {\bfseries n\_\-columns} coloane, copiind valorile din matricea initiala incepand de la {\bfseries (start\_\-lin,start\_\-col)} \end{DoxyCompactList}\item 
+\hyperlink{classMatrix}{Matrix}$<$ Type $>$ \& \hyperlink{classMatrix_ae186d4ba278c7c953cba1c86f016a78b}{copy} (int start\_\-lin, int start\_\-col, const \hyperlink{classMatrix}{Matrix}$<$ Type $>$ \&source)
+\begin{DoxyCompactList}\small\item\em Functie care copie continutul unei matrice in matricea curenta, incepand de la elementul de coordonate {\bfseries (start\_\-lin,start\_\-col)}. \end{DoxyCompactList}\item 
+\hypertarget{classMatrix_aee246cf6d811890281f4189277e48fae}{
+Type $\ast$ \hyperlink{classMatrix_aee246cf6d811890281f4189277e48fae}{operator\mbox{[}$\,$\mbox{]}} (int line) const }
+\label{classMatrix_aee246cf6d811890281f4189277e48fae}
+
+\begin{DoxyCompactList}\small\item\em Operator care da acces la adresa de inceput a unei linii, astfel incat elementele din matrice sa poata fi referite prin seturi de paranteze patrate ca si intr-\/un array bidimensinoal. \end{DoxyCompactList}\item 
+\hyperlink{classMatrix}{Matrix}$<$ Type $>$ \& \hyperlink{classMatrix_a1a1add9519f7b0665d7521d02ec812e8}{operator=} (const \hyperlink{classMatrix}{Matrix}$<$ Type $>$ \&right)
+\begin{DoxyCompactList}\small\item\em Operatorul de atribuire intre doua obiecte de tip matrice. Are ca efect clonarea matricei din dreapta. \end{DoxyCompactList}\item 
+\hyperlink{classMatrix}{Matrix}$<$ Type $>$ \& \hyperlink{classMatrix_ad1b43be070f29d447bd56e46faa533aa}{operator+=} (const \hyperlink{classMatrix}{Matrix}$<$ Type $>$ \&right)
+\begin{DoxyCompactList}\small\item\em Operatorul de adunare la continutul unei matrici. {\bfseries Atentie!} Adunarea incrementala este mai rapida decat atribuirea unei sume de matrici. \end{DoxyCompactList}\item 
+\hyperlink{classMatrix}{Matrix}$<$ Type $>$ \& \hyperlink{classMatrix_a3f8b8cab5fccc81ec96be09dce471f6c}{operator-\/=} (const \hyperlink{classMatrix}{Matrix}$<$ Type $>$ \&right)
+\begin{DoxyCompactList}\small\item\em Operatorul de scadere din continutul unei matrici. {\bfseries Atentie!} Scaderea incrementala este mai rapida decat atribuirea unei diferente de matrici. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMatrix_a598b23c7c96c1a1c068bbf49ef4ea8ac}{
+static const int \hyperlink{classMatrix_a598b23c7c96c1a1c068bbf49ef4ea8ac}{Zero} = 0}
+\label{classMatrix_a598b23c7c96c1a1c068bbf49ef4ea8ac}
+
+\begin{DoxyCompactList}\small\item\em Constanta statica care identifica tipul de matrice nula (utila pentru a o trimite in constructor) \end{DoxyCompactList}\item 
+\hypertarget{classMatrix_a39799dca149367cbeefb335cbd349c7e}{
+static const int \hyperlink{classMatrix_a39799dca149367cbeefb335cbd349c7e}{Unit} = 1}
+\label{classMatrix_a39799dca149367cbeefb335cbd349c7e}
+
+\begin{DoxyCompactList}\small\item\em Constanta statica care identifica tipul de matrice unitara (utila pentru a o trimite in constructor). Daca matricea nu este patratica, face fallback pe None. \end{DoxyCompactList}\item 
+\hypertarget{classMatrix_ac576343229d4c60eb7270123baf1eb08}{
+static const int \hyperlink{classMatrix_ac576343229d4c60eb7270123baf1eb08}{None} = 2}
+\label{classMatrix_ac576343229d4c60eb7270123baf1eb08}
+
+\begin{DoxyCompactList}\small\item\em Constanta statica care identifica tipul de matrice neinitializata (valoarea implicita din constructor). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std::istream \& \hyperlink{classMatrix_a7e819908cb4e8e09980fd9381634d48f}{operator$>$$>$} (std::istream \&, \hyperlink{classMatrix}{Matrix}$<$ Type $>$ \&right)
+\begin{DoxyCompactList}\small\item\em Operatorul de deserializare realizeaza citirea unei matrice dintr-\/un fisier (sau de la tastatura). {\bfseries  Atentie!} Se citesc doar datele, dimensiunile sunt cele date in constructor. \end{DoxyCompactList}\item 
+std::ostream \& \hyperlink{classMatrix_a8f189cca48033f65cb272270343c2552}{operator$<$$<$} (std::ostream \&, const \hyperlink{classMatrix}{Matrix}$<$ Type $>$ right)
+\begin{DoxyCompactList}\small\item\em Operatorul de serializare realizeaza scrierea unei matrice intr-\/un fisier (sau pe ecran). {\bfseries  Atentie!} Se scrie doar continutul, nu si dimensiunile matricei. \end{DoxyCompactList}\item 
+\hyperlink{classMatrix}{Matrix}$<$ Type $>$ \hyperlink{classMatrix_a2010b1cbd96555d2031fe00cc3686c40}{operator$\ast$} (const \hyperlink{classMatrix}{Matrix}$<$ Type $>$ \&left, const \hyperlink{classMatrix}{Matrix}$<$ Type $>$ \&right)
+\begin{DoxyCompactList}\small\item\em Operatorul de inmultire efectueaza produsul a doua matrice. Atentie, inmultirea nu este comutativa! \end{DoxyCompactList}\item 
+\hyperlink{classMatrix}{Matrix}$<$ Type $>$ \hyperlink{classMatrix_a94ca96fc24df6e145ed15ee99447c188}{operator+} (const \hyperlink{classMatrix}{Matrix}$<$ Type $>$ \&left, const \hyperlink{classMatrix}{Matrix}$<$ Type $>$ \&right)
+\begin{DoxyCompactList}\small\item\em Operatorul de adunare efectueaza suma a doua matrice. Suma matricelor este comutativa. \end{DoxyCompactList}\item 
+\hyperlink{classMatrix}{Matrix}$<$ Type $>$ \hyperlink{classMatrix_ac80472ae19b5bc1f5390b34229c9efef}{operator-\/} (const \hyperlink{classMatrix}{Matrix}$<$ Type $>$ \&left, const \hyperlink{classMatrix}{Matrix}$<$ Type $>$ \&right)
+\begin{DoxyCompactList}\small\item\em Operatorul de scadere efectueaza diferenta a doua matrice. Diferenta matricelor nu este comutativa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{template$<$class Type$>$ class Matrix$<$ Type $>$}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMatrix_a4543e4dacf7cfa454e45f2a3d655cb99}{
+\index{Matrix@{Matrix}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!Matrix@{Matrix}}
+\subsubsection[{Matrix}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Type$>$ {\bf Matrix}$<$ Type $>$::{\bf Matrix} (
+\begin{DoxyParamCaption}
+\item[{int}]{n\_\-lin, }
+\item[{int}]{n\_\-col, }
+\item[{int}]{init = {\ttfamily {\bf None}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMatrix_a4543e4dacf7cfa454e45f2a3d655cb99}
+
+
+Constructor pentru instantierea unei matrice de {\itshape n\_\-lin\/} linii, respectiv {\itshape n\_\-col\/} coloane. Al treilea parametru este optional, dar cu ajutorul lui se poate initializa matricea nou construita. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n\_\-lin} & Numarul de linii al matricei \\
+\hline
+{\em n\_\-col} & Numarul de coloane al matricei \\
+\hline
+{\em init} & O constanta dintre {\bfseries \hyperlink{classMatrix_ac576343229d4c60eb7270123baf1eb08}{Matrix::None}}, {\bfseries \hyperlink{classMatrix_a39799dca149367cbeefb335cbd349c7e}{Matrix::Unit}} sau {\bfseries \hyperlink{classMatrix_a598b23c7c96c1a1c068bbf49ef4ea8ac}{Matrix::Zero}}. Specificarea oricarei alte valori inafara de acestea trei face fallback pe {\bfseries \hyperlink{classMatrix_ac576343229d4c60eb7270123baf1eb08}{Matrix::None}}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classMatrix_a26ec7ce757009a97599b048379466841}{
+\index{Matrix@{Matrix}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!Matrix@{Matrix}}
+\subsubsection[{Matrix}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Type$>$ {\bf Matrix}$<$ Type $>$::{\bf Matrix} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ Type $>$ \&}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMatrix_a26ec7ce757009a97599b048379466841}
+
+
+Copy constructor pentru clonarea unei matrice (atat dimensiuni, cat si continut) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em right} & Matricea care se cloneaza \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMatrix_ae186d4ba278c7c953cba1c86f016a78b}{
+\index{Matrix@{Matrix}!copy@{copy}}
+\index{copy@{copy}!Matrix@{Matrix}}
+\subsubsection[{copy}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Type$>$ {\bf Matrix}$<$Type$>$\& {\bf Matrix}$<$ Type $>$::copy (
+\begin{DoxyParamCaption}
+\item[{int}]{start\_\-lin, }
+\item[{int}]{start\_\-col, }
+\item[{const {\bf Matrix}$<$ Type $>$ \&}]{source}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMatrix_ae186d4ba278c7c953cba1c86f016a78b}
+
+
+Functie care copie continutul unei matrice in matricea curenta, incepand de la elementul de coordonate {\bfseries (start\_\-lin,start\_\-col)}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\_\-lin} & Linia de la care sa inceapa copierea in matrice \\
+\hline
+{\em start\_\-col} & Coloana de la care sa inceapa copierea in matrice \\
+\hline
+{\em source} & Matricea al carei continut se copie. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+O referinta la matricea in care se copie. Daca copierea ar depasi limitele matricei destinatie, atunci ea nu se efectueaza. 
+\end{DoxyReturn}
+\hypertarget{classMatrix_ad1b43be070f29d447bd56e46faa533aa}{
+\index{Matrix@{Matrix}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Matrix@{Matrix}}
+\subsubsection[{operator+=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Type$>$ {\bf Matrix}$<$Type$>$\& {\bf Matrix}$<$ Type $>$::operator+= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ Type $>$ \&}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMatrix_ad1b43be070f29d447bd56e46faa533aa}
+
+
+Operatorul de adunare la continutul unei matrici. {\bfseries Atentie!} Adunarea incrementala este mai rapida decat atribuirea unei sume de matrici. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em right} & Matricea care se aduna \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+O referinta la matricea la care se aduna (pentru chaining). Daca adunarea nu este legala, atunci se ignora operatia. 
+\end{DoxyReturn}
+\hypertarget{classMatrix_a3f8b8cab5fccc81ec96be09dce471f6c}{
+\index{Matrix@{Matrix}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!Matrix@{Matrix}}
+\subsubsection[{operator-\/=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Type$>$ {\bf Matrix}$<$Type$>$\& {\bf Matrix}$<$ Type $>$::operator-\/= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ Type $>$ \&}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMatrix_a3f8b8cab5fccc81ec96be09dce471f6c}
+
+
+Operatorul de scadere din continutul unei matrici. {\bfseries Atentie!} Scaderea incrementala este mai rapida decat atribuirea unei diferente de matrici. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em right} & Matricea care se scade \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+O referinta la matricea din care se scade (pentru chaining). Daca scaderea nu este legala, atunci se ignora operatia. 
+\end{DoxyReturn}
+\hypertarget{classMatrix_a1a1add9519f7b0665d7521d02ec812e8}{
+\index{Matrix@{Matrix}!operator=@{operator=}}
+\index{operator=@{operator=}!Matrix@{Matrix}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Type$>$ {\bf Matrix}$<$Type$>$\& {\bf Matrix}$<$ Type $>$::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ Type $>$ \&}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMatrix_a1a1add9519f7b0665d7521d02ec812e8}
+
+
+Operatorul de atribuire intre doua obiecte de tip matrice. Are ca efect clonarea matricei din dreapta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em right} & Matricea care se atribuie \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+O referinta la obiectul din stanga operatorului egal, utila pentru chaining. 
+\end{DoxyReturn}
+\hypertarget{classMatrix_a0402527771ceae198c876ffb23cce1c6}{
+\index{Matrix@{Matrix}!submatrix@{submatrix}}
+\index{submatrix@{submatrix}!Matrix@{Matrix}}
+\subsubsection[{submatrix}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Type$>$ {\bf Matrix}$<$Type$>$ {\bf Matrix}$<$ Type $>$::submatrix (
+\begin{DoxyParamCaption}
+\item[{int}]{start\_\-lin, }
+\item[{int}]{start\_\-col, }
+\item[{int}]{n\_\-lines, }
+\item[{int}]{n\_\-columns}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMatrix_a0402527771ceae198c876ffb23cce1c6}
+
+
+Functie care creaza o matrice de {\bfseries n\_\-lines} linii si {\bfseries n\_\-columns} coloane, copiind valorile din matricea initiala incepand de la {\bfseries (start\_\-lin,start\_\-col)} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\_\-lin} & Linia de la care sa inceapa copierea din matrice \\
+\hline
+{\em start\_\-col} & Coloana de la care sa inceapa copierea din matrice \\
+\hline
+{\em n\_\-lines} & Numarul de linii al matricei create \\
+\hline
+{\em n\_\-columns} & Numarul de coloane al matricei create \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Matricea rezultata prin copierea portiunii specificate din matricea initiala. Daca dimensiunile specificate ies din matricea initiala, se intoarce o matrice cu 0 linii si 0 coloane. 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classMatrix_a2010b1cbd96555d2031fe00cc3686c40}{
+\index{Matrix@{Matrix}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Matrix@{Matrix}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Type$>$ {\bf Matrix}$<$Type$>$ operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ Type $>$ \&}]{left, }
+\item[{const {\bf Matrix}$<$ Type $>$ \&}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{classMatrix_a2010b1cbd96555d2031fe00cc3686c40}
+
+
+Operatorul de inmultire efectueaza produsul a doua matrice. Atentie, inmultirea nu este comutativa! 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & Matricea din stanga operatorului de inmultire \\
+\hline
+{\em right} & Matricea din dreapta operatorului de inmultire \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Daca inmultirea a fost legala, intoarce produsul matricelor. Altfel, daca inmultirea nu a fost legala (pentru a se putea inmulti, matricele trebuie sa aiba numar de coloane, respectiv linii corespunzatoare) se intoarce o matrice cu 0 linii si 0 coloane. 
+\end{DoxyReturn}
+\hypertarget{classMatrix_a94ca96fc24df6e145ed15ee99447c188}{
+\index{Matrix@{Matrix}!operator+@{operator+}}
+\index{operator+@{operator+}!Matrix@{Matrix}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Type$>$ {\bf Matrix}$<$Type$>$ operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ Type $>$ \&}]{left, }
+\item[{const {\bf Matrix}$<$ Type $>$ \&}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{classMatrix_a94ca96fc24df6e145ed15ee99447c188}
+
+
+Operatorul de adunare efectueaza suma a doua matrice. Suma matricelor este comutativa. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & Matricea din stanga operatorului de adunare \\
+\hline
+{\em right} & Matricea din dreapta operatorului de adunare \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Daca adunarea a fost legala, intoarce suma matricelor. Altfel, daca adunarea nu a fost legala (pentru a se putea aduna, matricele trebuie sa aiba dimensiuni identice) se intoarce o matrice cu 0 linii si 0 coloane. 
+\end{DoxyReturn}
+\hypertarget{classMatrix_ac80472ae19b5bc1f5390b34229c9efef}{
+\index{Matrix@{Matrix}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Matrix@{Matrix}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Type$>$ {\bf Matrix}$<$Type$>$ operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ Type $>$ \&}]{left, }
+\item[{const {\bf Matrix}$<$ Type $>$ \&}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{classMatrix_ac80472ae19b5bc1f5390b34229c9efef}
+
+
+Operatorul de scadere efectueaza diferenta a doua matrice. Diferenta matricelor nu este comutativa. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & Matricea din stanga operatorului de scadere \\
+\hline
+{\em right} & Matricea din dreapta operatorului de scadere \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Daca scaderea a fost legala, intoarce diferenta matricelor. Altfel, daca scaderea nu a fost legala (pentru a se putea scadea, matricele trebuie sa aiba dimensiuni identice) se intoarce o matrice cu 0 linii si 0 coloane. 
+\end{DoxyReturn}
+\hypertarget{classMatrix_a8f189cca48033f65cb272270343c2552}{
+\index{Matrix@{Matrix}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Matrix@{Matrix}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Type$>$ std::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std::ostream \&}]{out, }
+\item[{const {\bf Matrix}$<$ Type $>$}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{classMatrix_a8f189cca48033f65cb272270343c2552}
+
+
+Operatorul de serializare realizeaza scrierea unei matrice intr-\/un fisier (sau pe ecran). {\bfseries  Atentie!} Se scrie doar continutul, nu si dimensiunile matricei. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & Stream-\/ul (fisier sau iesire standard) unde se scrie \\
+\hline
+{\em right} & Matricea al carei continut este scris \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Serializarea intoarce o referinta la flux, pentru a putea permite chaining-\/ul. 
+\end{DoxyReturn}
+\hypertarget{classMatrix_a7e819908cb4e8e09980fd9381634d48f}{
+\index{Matrix@{Matrix}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Matrix@{Matrix}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Type$>$ std::istream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std::istream \&}]{in, }
+\item[{{\bf Matrix}$<$ Type $>$ \&}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{classMatrix_a7e819908cb4e8e09980fd9381634d48f}
+
+
+Operatorul de deserializare realizeaza citirea unei matrice dintr-\/un fisier (sau de la tastatura). {\bfseries  Atentie!} Se citesc doar datele, dimensiunile sunt cele date in constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & Stream-\/ul (fisier sau intrare standard) de unde se citeste \\
+\hline
+{\em right} & Matricea al carei continut este citit \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Deserializarea intoarce o referinta la flux, pentru a putea permite chaining-\/ul. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/tudalex/codeBase/C++/include/Matrix.h\end{DoxyCompactItemize}

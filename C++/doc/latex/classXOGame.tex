@@ -1,0 +1,56 @@
+\hypertarget{classXOGame}{
+\section{XOGame Class Reference}
+\label{classXOGame}\index{XOGame@{XOGame}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classXOGame_ae03433c323f4c08cfff2c9e8d26e7530}{XOGame} (ComputerAI computerAI)
+\begin{DoxyCompactList}\small\item\em Constructor care instantiaza un joc in care AI-\/ul calculatorului gandeste folosindu-\/se de functia data ca parametru. \end{DoxyCompactList}\item 
+\hypertarget{classXOGame_aacde44d6398b72595008996a7ac3d72d}{
+void \hyperlink{classXOGame_aacde44d6398b72595008996a7ac3d72d}{humanVScomputer} ()}
+\label{classXOGame_aacde44d6398b72595008996a7ac3d72d}
+
+\begin{DoxyCompactList}\small\item\em Lanseaza in executie un joc intre un om si un calculator. Omul muta primul. \end{DoxyCompactList}\item 
+\hypertarget{classXOGame_a322eaf2fceb6d4ff6f88102708b7d8ea}{
+void \hyperlink{classXOGame_a322eaf2fceb6d4ff6f88102708b7d8ea}{computerVShuman} ()}
+\label{classXOGame_a322eaf2fceb6d4ff6f88102708b7d8ea}
+
+\begin{DoxyCompactList}\small\item\em Lanseaza in executie un joc intre un calculator si un om. Calculatorul muta primul. \end{DoxyCompactList}\item 
+\hypertarget{classXOGame_aeb2ca697dff9b16d8abfc438e019c167}{
+void \hyperlink{classXOGame_aeb2ca697dff9b16d8abfc438e019c167}{humanVShuman} ()}
+\label{classXOGame_aeb2ca697dff9b16d8abfc438e019c167}
+
+\begin{DoxyCompactList}\small\item\em Lanseaza in executie un joc intre doi oameni. \end{DoxyCompactList}\item 
+\hypertarget{classXOGame_a2546fa6a5ee36ab0d380fe2b5ea5096f}{
+void \hyperlink{classXOGame_a2546fa6a5ee36ab0d380fe2b5ea5096f}{computerVScomputer} ()}
+\label{classXOGame_a2546fa6a5ee36ab0d380fe2b5ea5096f}
+
+\begin{DoxyCompactList}\small\item\em Lanseaza in executie un joc intre doua calculatoare. Amandoua gandesc cu acelasi AI. Trebuie sa obtineti mereu remiza daca ati implementat optim si exhaustiv. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classXOGame_ae03433c323f4c08cfff2c9e8d26e7530}{
+\index{XOGame@{XOGame}!XOGame@{XOGame}}
+\index{XOGame@{XOGame}!XOGame@{XOGame}}
+\subsubsection[{XOGame}]{\setlength{\rightskip}{0pt plus 5cm}XOGame::XOGame (
+\begin{DoxyParamCaption}
+\item[{ComputerAI}]{computerAI}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classXOGame_ae03433c323f4c08cfff2c9e8d26e7530}
+
+
+Constructor care instantiaza un joc in care AI-\/ul calculatorului gandeste folosindu-\/se de functia data ca parametru. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em computerAI} & Functia pe care o va apela engine-\/ul de joc cand pune calculatorul sa gandeasca. {\bfseries $<$u$>$TREBUIE$<$/u$>$} sa respecte urmatoarea semnatura: \hyperlink{classXOBoard}{XOBoard} ComputerAI(XOBoard::Player, XOBoard). Functia data ca parametru poate fi si {\bfseries NULL}, dar in acest caz nu veti putea sa porniti jocul decat folosind metoda {\bfseries \hyperlink{classXOGame_aeb2ca697dff9b16d8abfc438e019c167}{humanVShuman()}}. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/home/tudalex/codeBase/C++/include/XOBoard.h\item 
+/home/tudalex/codeBase/C++/src/XOBoard.cpp\end{DoxyCompactItemize}

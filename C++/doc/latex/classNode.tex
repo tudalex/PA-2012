@@ -1,0 +1,79 @@
+\hypertarget{classNode}{
+\section{Node Class Reference}
+\label{classNode}\index{Node@{Node}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classNode_a04535ea56222fb056ac3f9cdb2b0e9dc}{
+bool \hyperlink{classNode_a04535ea56222fb056ac3f9cdb2b0e9dc}{has\_\-same\_\-state} (const \hyperlink{classNode}{Node} \&other) const }
+\label{classNode_a04535ea56222fb056ac3f9cdb2b0e9dc}
+
+\begin{DoxyCompactList}\small\item\em Functie care verifica daca doua structuri de tip \hyperlink{classNode}{Node} reprezinta aceeasi stare. \item\end{DoxyCompactList}\item 
+\hypertarget{classNode_a7f6a233887089a7088a7cff703923e35}{
+int \hyperlink{classNode_a7f6a233887089a7088a7cff703923e35}{distance} () const }
+\label{classNode_a7f6a233887089a7088a7cff703923e35}
+
+\begin{DoxyCompactList}\small\item\em Functie care intoarce distanta parcursa de la starea initiala pana la starea reprezentata de nod. \item\end{DoxyCompactList}\item 
+\hypertarget{classNode_a9538475d28df6250d4b3bb383e2c638a}{
+void \hyperlink{classNode_a9538475d28df6250d4b3bb383e2c638a}{set\_\-distance} (int distance)}
+\label{classNode_a9538475d28df6250d4b3bb383e2c638a}
+
+\begin{DoxyCompactList}\small\item\em Functie care inscrie distanta parcursa de la starea initiala pana la starea reprezentata de nod in cadrul nodului. \item\end{DoxyCompactList}\item 
+\hypertarget{classNode_a0dd99341f384d0cbe602792b4aac82ba}{
+const \hyperlink{classNode}{Node} $\ast$ \hyperlink{classNode_a0dd99341f384d0cbe602792b4aac82ba}{parent} () const }
+\label{classNode_a0dd99341f384d0cbe602792b4aac82ba}
+
+\begin{DoxyCompactList}\small\item\em Functie care intoarce nodul parinte prin care s-\/a ajuns in starea repezentata de nod. \item\end{DoxyCompactList}\item 
+\hypertarget{classNode_a85d2f936141b11c283ebfb6e2ba3c4d4}{
+void \hyperlink{classNode_a85d2f936141b11c283ebfb6e2ba3c4d4}{set\_\-parent} (const \hyperlink{classNode}{Node} $\ast$parent)}
+\label{classNode_a85d2f936141b11c283ebfb6e2ba3c4d4}
+
+\begin{DoxyCompactList}\small\item\em Functie care inscrie nodul parinte prin care s-\/a ajuns in starea reprezentata de nod. \item\end{DoxyCompactList}\item 
+\hypertarget{classNode_afff505e516a56aff71078703f6dcff54}{
+int \hyperlink{classNode_afff505e516a56aff71078703f6dcff54}{out\_\-of\_\-place} (const \hyperlink{classNode}{Node} \&other) const }
+\label{classNode_afff505e516a56aff71078703f6dcff54}
+
+\begin{DoxyCompactList}\small\item\em Functie care intoarce numarul de piese care nu se afla la locul pe care ar trebui sa il ocupe in starea finala. \item\end{DoxyCompactList}\item 
+\hypertarget{classNode_a487d897836ff22b0932e762db41b1d85}{
+int \hyperlink{classNode_a487d897836ff22b0932e762db41b1d85}{approx\_\-distance} (const \hyperlink{classNode}{Node} \&other) const }
+\label{classNode_a487d897836ff22b0932e762db41b1d85}
+
+\begin{DoxyCompactList}\small\item\em Functie care intoarce estimarea distantei dintre 2 noduri ca suma a diferentei pozitiilor. \item\end{DoxyCompactList}\item 
+\hypertarget{classNode_aadf864009ae1cc1adb8aa8a3807ab428}{
+void \hyperlink{classNode_aadf864009ae1cc1adb8aa8a3807ab428}{expand} (std::vector$<$ \hyperlink{classNode}{Node} $\ast$ $>$ \&expanded) const }
+\label{classNode_aadf864009ae1cc1adb8aa8a3807ab428}
+
+\begin{DoxyCompactList}\small\item\em Functie care expandeaza un nod si pune nodurile rezultate in lista vecinilor primita ca parametru. \item\end{DoxyCompactList}\item 
+\hypertarget{classNode_ad075488abbd00d3be0f3515839a6b47c}{
+void \hyperlink{classNode_ad075488abbd00d3be0f3515839a6b47c}{print\_\-path} () const }
+\label{classNode_ad075488abbd00d3be0f3515839a6b47c}
+
+\begin{DoxyCompactList}\small\item\em Functie care afiseaza toti parintii nodului, in ordinea in care acestia au fost parcursi. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classNode_acd052a324caaa2fa0ab5aff9ab0205f7}{
+static int {\bfseries N}}
+\label{classNode_acd052a324caaa2fa0ab5aff9ab0205f7}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classNode_a8f66b39225eb98c6161e1339eb398e5e}{
+std::ostream \& {\bfseries operator$<$$<$} (std::ostream \&out, const \hyperlink{classNode}{Node} \&node)}
+\label{classNode_a8f66b39225eb98c6161e1339eb398e5e}
+
+\item 
+\hypertarget{classNode_aff91a3b012a8d4c18b2c7011e49d33b0}{
+std::istream \& {\bfseries operator$>$$>$} (std::istream \&in, \hyperlink{classNode}{Node} \&node)}
+\label{classNode_aff91a3b012a8d4c18b2c7011e49d33b0}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/home/marcvs/Desktop/working/pa-\/materiale/pa/codeBase/C++/include/Node.h\item 
+/home/marcvs/Desktop/working/pa-\/materiale/pa/codeBase/C++/src/Node.cpp\end{DoxyCompactItemize}

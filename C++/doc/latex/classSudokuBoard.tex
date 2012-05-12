@@ -1,0 +1,173 @@
+\hypertarget{classSudokuBoard}{
+\section{SudokuBoard Class Reference}
+\label{classSudokuBoard}\index{SudokuBoard@{SudokuBoard}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries BitSet}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classSudokuBoard_aa5d810273b58996f5eb00522dc04c012}{impossible} (int row, int col)
+\begin{DoxyCompactList}\small\item\em Functie care spune daca pentru linia {\bfseries row} si coloana {\bfseries col} din careu nu mai avem nici o posibilitate de completare. \end{DoxyCompactList}\item 
+int \hyperlink{classSudokuBoard_add88bcf66d345b2822335d92713b8714}{unique\_\-possibility} (int row, int col)
+\begin{DoxyCompactList}\small\item\em Functie care verifica daca nu cumva pentru linia {\bfseries row} si coloana {\bfseries col} nu exista decat o singura metoda de completare. \end{DoxyCompactList}\item 
+bool \hyperlink{classSudokuBoard_a4ae4146f3ebed70288b41adb9ee1d8ed}{allows} (int row, int col, int i)
+\begin{DoxyCompactList}\small\item\em Functie care verifica daca este posibil sa se completeze valoarea {\bfseries i} la celula de coordonate {\bfseries row}, {\bfseries col} \end{DoxyCompactList}\item 
+void \hyperlink{classSudokuBoard_aff759e2337f20e107ed7e70d5cd8ca41}{put} (int row, int col, int i)
+\begin{DoxyCompactList}\small\item\em Functie care completeaza o valoare intr-\/o celula din careu. {\bfseries ATENTIE!} Este responsabilitatea voastra sa va asigurati ca nu suprascrieti o valoare deja pusa acolo! \end{DoxyCompactList}\item 
+bool \hyperlink{classSudokuBoard_a1e4d6cac572c9f4d4a573265da99f517}{is\_\-empty} (int row, int col)
+\begin{DoxyCompactList}\small\item\em Functie care verifica daca o celula din careu nu a fost completata. \end{DoxyCompactList}\item 
+bool \hyperlink{classSudokuBoard_ad53cca0148ad57fdaa05f9b92000fe66}{is\_\-done} ()
+\begin{DoxyCompactList}\small\item\em Functie care verifica daca un careu s-\/a terminat de completat. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classSudokuBoard_ac31711643f4d24c0e0e312d763a37d62}{
+std::ostream \& \hyperlink{classSudokuBoard_ac31711643f4d24c0e0e312d763a37d62}{operator$<$$<$} (std::ostream \&out, \hyperlink{classSudokuBoard}{SudokuBoard} \&right)}
+\label{classSudokuBoard_ac31711643f4d24c0e0e312d763a37d62}
+
+\begin{DoxyCompactList}\small\item\em Operator care scrie o grila de Sudoku intr-\/un stream de iesire. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classSudokuBoard_a4ae4146f3ebed70288b41adb9ee1d8ed}{
+\index{SudokuBoard@{SudokuBoard}!allows@{allows}}
+\index{allows@{allows}!SudokuBoard@{SudokuBoard}}
+\subsubsection[{allows}]{\setlength{\rightskip}{0pt plus 5cm}bool SudokuBoard::allows (
+\begin{DoxyParamCaption}
+\item[{int}]{row, }
+\item[{int}]{col, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classSudokuBoard_a4ae4146f3ebed70288b41adb9ee1d8ed}
+
+
+Functie care verifica daca este posibil sa se completeze valoarea {\bfseries i} la celula de coordonate {\bfseries row}, {\bfseries col} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & Linia pentru care verificam \\
+\hline
+{\em col} & Coloana pentru care verificam \\
+\hline
+{\em i} & Valoarea despre care intrebam daca este permisibila \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Functia intoarce {\bfseries true} daca completarea este corecta. 
+\end{DoxyReturn}
+\hypertarget{classSudokuBoard_aa5d810273b58996f5eb00522dc04c012}{
+\index{SudokuBoard@{SudokuBoard}!impossible@{impossible}}
+\index{impossible@{impossible}!SudokuBoard@{SudokuBoard}}
+\subsubsection[{impossible}]{\setlength{\rightskip}{0pt plus 5cm}bool SudokuBoard::impossible (
+\begin{DoxyParamCaption}
+\item[{int}]{row, }
+\item[{int}]{col}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classSudokuBoard_aa5d810273b58996f5eb00522dc04c012}
+
+
+Functie care spune daca pentru linia {\bfseries row} si coloana {\bfseries col} din careu nu mai avem nici o posibilitate de completare. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & Linia pentru care verificam \\
+\hline
+{\em col} & Coloana pentru care verificam \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Functia intoarce {\bfseries true} daca este imposibil sa mai completezi celula de coordonate (row,col) 
+\end{DoxyReturn}
+\hypertarget{classSudokuBoard_ad53cca0148ad57fdaa05f9b92000fe66}{
+\index{SudokuBoard@{SudokuBoard}!is\_\-done@{is\_\-done}}
+\index{is\_\-done@{is\_\-done}!SudokuBoard@{SudokuBoard}}
+\subsubsection[{is\_\-done}]{\setlength{\rightskip}{0pt plus 5cm}bool SudokuBoard::is\_\-done (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classSudokuBoard_ad53cca0148ad57fdaa05f9b92000fe66}
+
+
+Functie care verifica daca un careu s-\/a terminat de completat. 
+
+\begin{DoxyReturn}{Returns}
+Functia intoarce {\bfseries true} daca s-\/a terminat completarea careului. 
+\end{DoxyReturn}
+\hypertarget{classSudokuBoard_a1e4d6cac572c9f4d4a573265da99f517}{
+\index{SudokuBoard@{SudokuBoard}!is\_\-empty@{is\_\-empty}}
+\index{is\_\-empty@{is\_\-empty}!SudokuBoard@{SudokuBoard}}
+\subsubsection[{is\_\-empty}]{\setlength{\rightskip}{0pt plus 5cm}bool SudokuBoard::is\_\-empty (
+\begin{DoxyParamCaption}
+\item[{int}]{row, }
+\item[{int}]{col}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classSudokuBoard_a1e4d6cac572c9f4d4a573265da99f517}
+
+
+Functie care verifica daca o celula din careu nu a fost completata. 
+
+\begin{DoxyReturn}{Returns}
+Functia intoarce {\bfseries true} daca celula respectiva este libera si {\bfseries false} altfel. 
+\end{DoxyReturn}
+\hypertarget{classSudokuBoard_aff759e2337f20e107ed7e70d5cd8ca41}{
+\index{SudokuBoard@{SudokuBoard}!put@{put}}
+\index{put@{put}!SudokuBoard@{SudokuBoard}}
+\subsubsection[{put}]{\setlength{\rightskip}{0pt plus 5cm}void SudokuBoard::put (
+\begin{DoxyParamCaption}
+\item[{int}]{row, }
+\item[{int}]{col, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classSudokuBoard_aff759e2337f20e107ed7e70d5cd8ca41}
+
+
+Functie care completeaza o valoare intr-\/o celula din careu. {\bfseries ATENTIE!} Este responsabilitatea voastra sa va asigurati ca nu suprascrieti o valoare deja pusa acolo! 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & Linia pentru care verificam \\
+\hline
+{\em col} & Coloana pentru care verificam \\
+\hline
+{\em i} & Valoarea pe care dorim sa o trecem in celula \\
+\hline
+\end{DoxyParams}
+\hypertarget{classSudokuBoard_add88bcf66d345b2822335d92713b8714}{
+\index{SudokuBoard@{SudokuBoard}!unique\_\-possibility@{unique\_\-possibility}}
+\index{unique\_\-possibility@{unique\_\-possibility}!SudokuBoard@{SudokuBoard}}
+\subsubsection[{unique\_\-possibility}]{\setlength{\rightskip}{0pt plus 5cm}int SudokuBoard::unique\_\-possibility (
+\begin{DoxyParamCaption}
+\item[{int}]{row, }
+\item[{int}]{col}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classSudokuBoard_add88bcf66d345b2822335d92713b8714}
+
+
+Functie care verifica daca nu cumva pentru linia {\bfseries row} si coloana {\bfseries col} nu exista decat o singura metoda de completare. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & Linia pentru care verificam \\
+\hline
+{\em col} & Coloana pentru care verificam \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Functia intoarce o cifra nenula intre 1 si 9 daca exista o singura varianta de completare, si 0 daca exista mai multe variante sau nici o varianta. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/home/tudalex/codeBase/C++/include/SudokuBoard.h\item 
+/home/tudalex/codeBase/C++/src/SudokuBoard.cpp\end{DoxyCompactItemize}

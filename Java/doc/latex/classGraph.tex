@@ -1,0 +1,346 @@
+\hypertarget{classGraph}{
+\section{Graph Class Reference}
+\label{classGraph}\index{Graph@{Graph}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Edge}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classGraph_ada3f3f1186255e18b8467b8044a0a45f}{
+\hyperlink{classGraph_aa4b8785265efefb668f2931c8f18c8e0}{Graph.Type} {\bfseries getType} ()}
+\label{classGraph_ada3f3f1186255e18b8467b8044a0a45f}
+
+\item 
+\hyperlink{classGraph_ad807b85e0af693b12607a8f66bdd6f2d}{Graph} (String filename, \hyperlink{classGraph_aa4b8785265efefb668f2931c8f18c8e0}{Graph.Type} type)  throws FileNotFoundException 
+\item 
+\hypertarget{classGraph_ae06670e180d9bd67674227b1f2a3b8d6}{
+{\bfseries Graph} (int size, \hyperlink{classGraph_aa4b8785265efefb668f2931c8f18c8e0}{Graph.Type} type)}
+\label{classGraph_ae06670e180d9bd67674227b1f2a3b8d6}
+
+\item 
+void \hyperlink{classGraph_a2b4218e18d84fa35a65deb3f92f92b71}{reloadFromDisk} ()  throws FileNotFoundException 
+\item 
+void \hyperlink{classGraph_a6b0c9ae1efc61d18e9d0850de69007d7}{addEdge} (int x, int y, int c)
+\item 
+void \hyperlink{classGraph_ac9bac0b67df901c292a6cb7056c1b0d4}{clearParents} ()
+\item 
+void \hyperlink{classGraph_a84efbb4a0a7fa7f1b9aaa588cb03d454}{setParent} (int node, int parent)
+\item 
+int \hyperlink{classGraph_af44d0a95f60ebe3a674277f2cc02c339}{getParent} (int node)
+\item 
+void \hyperlink{classGraph_af3be08d7ab8ae3b8c7d8ea91263eaa20}{printPathBetween} (int first, int last)
+\item 
+void \hyperlink{classGraph_ae9af916770c65c6b60b582ffc563d8ed}{printAdjMatrix} ()
+\item 
+void \hyperlink{classGraph_afe6e5a59033d5c3eb35132df7723d8ff}{printCapacityMatrix} ()
+\item 
+void \hyperlink{classGraph_a7ca9ea178502d458dfe8412856f96342}{printFlowMatrix} ()
+\item 
+void \hyperlink{classGraph_ac27f2f6fdfad438bfdc73945847c9d35}{printParents} ()
+\item 
+void \hyperlink{classGraph_ad566bba341395b31350bcc67d43ac858}{printNeighbours} ()
+\item 
+void \hyperlink{classGraph_aad6e4deef302caff422a47c497e5c6b9}{clearFlow} ()
+\item 
+void \hyperlink{classGraph_a2ecf3dd3c4897aa924da8e5c221a8509}{print} ()
+\item 
+\hypertarget{classGraph_ac83f6a4edf0d503d387f59093692d719}{
+void {\bfseries printNodes} ()}
+\label{classGraph_ac83f6a4edf0d503d387f59093692d719}
+
+\item 
+\hypertarget{classGraph_a37a53b4ccf99d9a31976b62b3ab1eea2}{
+void {\bfseries printEdges} ()}
+\label{classGraph_a37a53b4ccf99d9a31976b62b3ab1eea2}
+
+\item 
+int \hyperlink{classGraph_ab7d965333f0ae9e6727676db3224ec4b}{getSize} ()
+\item 
+boolean \hyperlink{classGraph_ab19bf592d0e75e5863184a1c00c8f52a}{isEdge} (int x, int y)
+\item 
+\hypertarget{classGraph_aa5a714640bcc1e4c463d7dc8b0a1173c}{
+Vector$<$ Integer $>$ {\bfseries getNeighbours} (int node)}
+\label{classGraph_aa5a714640bcc1e4c463d7dc8b0a1173c}
+
+\item 
+Vector$<$ Edge $>$ \hyperlink{classGraph_a9e1ed7f7e8df8c0fd2be08f09e3da3f0}{getEdges} ()
+\item 
+Vector$<$ Integer $>$ \hyperlink{classGraph_a57fee445d59d45794cbe606a05c85da7}{getNodes} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boolean\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \hyperlink{classGraph_a87f661f464d587bc3f6b476c85e800ae}{adjMatrix}
+\item 
+int\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \hyperlink{classGraph_a6fe80b61925cedc187fa1ef35c504b1e}{capacityMatrix}
+\item 
+int\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \hyperlink{classGraph_ad45717436b6a4ea15d30b88263baeb2a}{flow}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \hyperlink{classGraph_a2dbb2805720a0812f5df6a58d38956af}{UNDEFINED} = Integer.MAX\_\-VALUE
+\item 
+static final int \hyperlink{classGraph_a282d3ae4575cc3764258ecdb2d8e8fdf}{INFINITY} = Integer.MAX\_\-VALUE
+\end{DoxyCompactItemize}
+\subsection*{Package Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classGraph_aa4b8785265efefb668f2931c8f18c8e0}{Type} \{ \hyperlink{classGraph_aa4b8785265efefb668f2931c8f18c8e0}{DIRECTED}, 
+\hyperlink{classGraph_aa4b8785265efefb668f2931c8f18c8e0}{UNDIRECTED}
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classGraph_aa4b8785265efefb668f2931c8f18c8e0}{
+\index{Graph@{Graph}!Type@{Type}}
+\index{Type@{Type}!Graph@{Graph}}
+\subsubsection[{Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Graph::Type}\hspace{0.3cm}{\ttfamily  \mbox{[}package\mbox{]}}}}
+\label{classGraph_aa4b8785265efefb668f2931c8f18c8e0}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{DIRECTED@{DIRECTED}!Graph@{Graph}}\index{Graph@{Graph}!DIRECTED@{DIRECTED}}\item[{\em 
+\hypertarget{classGraph_aa4b8785265efefb668f2931c8f18c8e0}{
+DIRECTED}
+\label{classGraph_aa4b8785265efefb668f2931c8f18c8e0}
+}]Graf ORIENTAT \index{UNDIRECTED@{UNDIRECTED}!Graph@{Graph}}\index{Graph@{Graph}!UNDIRECTED@{UNDIRECTED}}\item[{\em 
+\hypertarget{classGraph_aa4b8785265efefb668f2931c8f18c8e0}{
+UNDIRECTED}
+\label{classGraph_aa4b8785265efefb668f2931c8f18c8e0}
+}]Graf NEOORIENTAT \end{description}
+\end{Desc}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classGraph_ad807b85e0af693b12607a8f66bdd6f2d}{
+\index{Graph@{Graph}!Graph@{Graph}}
+\index{Graph@{Graph}!Graph@{Graph}}
+\subsubsection[{Graph}]{\setlength{\rightskip}{0pt plus 5cm}Graph::Graph (
+\begin{DoxyParamCaption}
+\item[{String}]{ filename, }
+\item[{{\bf Graph.Type}}]{ type}
+\end{DoxyParamCaption}
+)  throws FileNotFoundException \hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classGraph_ad807b85e0af693b12607a8f66bdd6f2d}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em filename}]numele fisierului din care va fi incarcat graful \item[{\em type}]tipul grafului (orientat / neorientat) \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classGraph_a6b0c9ae1efc61d18e9d0850de69007d7}{
+\index{Graph@{Graph}!addEdge@{addEdge}}
+\index{addEdge@{addEdge}!Graph@{Graph}}
+\subsubsection[{addEdge}]{\setlength{\rightskip}{0pt plus 5cm}void Graph::addEdge (
+\begin{DoxyParamCaption}
+\item[{int}]{ x, }
+\item[{int}]{ y, }
+\item[{int}]{ c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classGraph_a6b0c9ae1efc61d18e9d0850de69007d7}
+Adauga un arc de capacitate c intre nodurile x si y. Daca graful este neorientat, va fi adaugat de asemenea si arcul (y, x, c). \hypertarget{classGraph_aad6e4deef302caff422a47c497e5c6b9}{
+\index{Graph@{Graph}!clearFlow@{clearFlow}}
+\index{clearFlow@{clearFlow}!Graph@{Graph}}
+\subsubsection[{clearFlow}]{\setlength{\rightskip}{0pt plus 5cm}void Graph::clearFlow (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classGraph_aad6e4deef302caff422a47c497e5c6b9}
+Seteaza toate elementele matricii de flux la 0. \hypertarget{classGraph_ac9bac0b67df901c292a6cb7056c1b0d4}{
+\index{Graph@{Graph}!clearParents@{clearParents}}
+\index{clearParents@{clearParents}!Graph@{Graph}}
+\subsubsection[{clearParents}]{\setlength{\rightskip}{0pt plus 5cm}void Graph::clearParents (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classGraph_ac9bac0b67df901c292a6cb7056c1b0d4}
+Initializeaza toti parintii cu \hyperlink{classGraph_a2dbb2805720a0812f5df6a58d38956af}{Graph.UNDEFINED}. \hypertarget{classGraph_a9e1ed7f7e8df8c0fd2be08f09e3da3f0}{
+\index{Graph@{Graph}!getEdges@{getEdges}}
+\index{getEdges@{getEdges}!Graph@{Graph}}
+\subsubsection[{getEdges}]{\setlength{\rightskip}{0pt plus 5cm}Vector$<$Edge$>$ Graph::getEdges (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classGraph_a9e1ed7f7e8df8c0fd2be08f09e3da3f0}
+Intoarce un vector cu toate muchiile din graf. \hypertarget{classGraph_a57fee445d59d45794cbe606a05c85da7}{
+\index{Graph@{Graph}!getNodes@{getNodes}}
+\index{getNodes@{getNodes}!Graph@{Graph}}
+\subsubsection[{getNodes}]{\setlength{\rightskip}{0pt plus 5cm}Vector$<$Integer$>$ Graph::getNodes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classGraph_a57fee445d59d45794cbe606a05c85da7}
+Intoarce un vector cu toate nodurile din graf pentru a putea fi folosit (de exemplu) intr-\/o constructie precum \char`\"{}for(int k : graph.getNodes())\char`\"{}. \hypertarget{classGraph_af44d0a95f60ebe3a674277f2cc02c339}{
+\index{Graph@{Graph}!getParent@{getParent}}
+\index{getParent@{getParent}!Graph@{Graph}}
+\subsubsection[{getParent}]{\setlength{\rightskip}{0pt plus 5cm}int Graph::getParent (
+\begin{DoxyParamCaption}
+\item[{int}]{ node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classGraph_af44d0a95f60ebe3a674277f2cc02c339}
+Intoarce parintele unui anumit nod sau \hyperlink{classGraph_a2dbb2805720a0812f5df6a58d38956af}{Graph.UNDEFINED} daca acesta nu a fost setat. \hypertarget{classGraph_ab7d965333f0ae9e6727676db3224ec4b}{
+\index{Graph@{Graph}!getSize@{getSize}}
+\index{getSize@{getSize}!Graph@{Graph}}
+\subsubsection[{getSize}]{\setlength{\rightskip}{0pt plus 5cm}int Graph::getSize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classGraph_ab7d965333f0ae9e6727676db3224ec4b}
+Intoarce numarul de noduri din graf. \hypertarget{classGraph_ab19bf592d0e75e5863184a1c00c8f52a}{
+\index{Graph@{Graph}!isEdge@{isEdge}}
+\index{isEdge@{isEdge}!Graph@{Graph}}
+\subsubsection[{isEdge}]{\setlength{\rightskip}{0pt plus 5cm}boolean Graph::isEdge (
+\begin{DoxyParamCaption}
+\item[{int}]{ x, }
+\item[{int}]{ y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classGraph_ab19bf592d0e75e5863184a1c00c8f52a}
+Intoarce true in cazul in care intre nodurile date ca parametru exista muchie si false in caz contrar. \hypertarget{classGraph_a2ecf3dd3c4897aa924da8e5c221a8509}{
+\index{Graph@{Graph}!print@{print}}
+\index{print@{print}!Graph@{Graph}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}void Graph::print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classGraph_a2ecf3dd3c4897aa924da8e5c221a8509}
+Afiseaza toate informatiile despre graf \hypertarget{classGraph_ae9af916770c65c6b60b582ffc563d8ed}{
+\index{Graph@{Graph}!printAdjMatrix@{printAdjMatrix}}
+\index{printAdjMatrix@{printAdjMatrix}!Graph@{Graph}}
+\subsubsection[{printAdjMatrix}]{\setlength{\rightskip}{0pt plus 5cm}void Graph::printAdjMatrix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classGraph_ae9af916770c65c6b60b582ffc563d8ed}
+Afiseaza matricea de adiacenta asociata grafului. \hypertarget{classGraph_afe6e5a59033d5c3eb35132df7723d8ff}{
+\index{Graph@{Graph}!printCapacityMatrix@{printCapacityMatrix}}
+\index{printCapacityMatrix@{printCapacityMatrix}!Graph@{Graph}}
+\subsubsection[{printCapacityMatrix}]{\setlength{\rightskip}{0pt plus 5cm}void Graph::printCapacityMatrix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classGraph_afe6e5a59033d5c3eb35132df7723d8ff}
+Afiseaza matricea de capacitati asociata grafului. \hypertarget{classGraph_a7ca9ea178502d458dfe8412856f96342}{
+\index{Graph@{Graph}!printFlowMatrix@{printFlowMatrix}}
+\index{printFlowMatrix@{printFlowMatrix}!Graph@{Graph}}
+\subsubsection[{printFlowMatrix}]{\setlength{\rightskip}{0pt plus 5cm}void Graph::printFlowMatrix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classGraph_a7ca9ea178502d458dfe8412856f96342}
+Afiseaza matricea de flux asociata grafului. \hypertarget{classGraph_ad566bba341395b31350bcc67d43ac858}{
+\index{Graph@{Graph}!printNeighbours@{printNeighbours}}
+\index{printNeighbours@{printNeighbours}!Graph@{Graph}}
+\subsubsection[{printNeighbours}]{\setlength{\rightskip}{0pt plus 5cm}void Graph::printNeighbours (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classGraph_ad566bba341395b31350bcc67d43ac858}
+Afiseaza graful sub forma de liste de adiacenta (fiecare nod este urmat de vecinii sai). \hypertarget{classGraph_ac27f2f6fdfad438bfdc73945847c9d35}{
+\index{Graph@{Graph}!printParents@{printParents}}
+\index{printParents@{printParents}!Graph@{Graph}}
+\subsubsection[{printParents}]{\setlength{\rightskip}{0pt plus 5cm}void Graph::printParents (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classGraph_ac27f2f6fdfad438bfdc73945847c9d35}
+Afiseaza vectorul de parinti. \hypertarget{classGraph_af3be08d7ab8ae3b8c7d8ea91263eaa20}{
+\index{Graph@{Graph}!printPathBetween@{printPathBetween}}
+\index{printPathBetween@{printPathBetween}!Graph@{Graph}}
+\subsubsection[{printPathBetween}]{\setlength{\rightskip}{0pt plus 5cm}void Graph::printPathBetween (
+\begin{DoxyParamCaption}
+\item[{int}]{ first, }
+\item[{int}]{ last}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classGraph_af3be08d7ab8ae3b8c7d8ea91263eaa20}
+Tipareste calea intre doua noduri. Este necesar ca, in prealabil, sa fi fost folosita functia \hyperlink{classGraph_a84efbb4a0a7fa7f1b9aaa588cb03d454}{setParent()} pentru a seta corect parintii.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em first}]nodul sursa \item[{\em last}]nodul destinatie \end{DoxyParams}
+\hypertarget{classGraph_a2b4218e18d84fa35a65deb3f92f92b71}{
+\index{Graph@{Graph}!reloadFromDisk@{reloadFromDisk}}
+\index{reloadFromDisk@{reloadFromDisk}!Graph@{Graph}}
+\subsubsection[{reloadFromDisk}]{\setlength{\rightskip}{0pt plus 5cm}void Graph::reloadFromDisk (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)  throws FileNotFoundException \hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classGraph_a2b4218e18d84fa35a65deb3f92f92b71}
+Reconstruieste graful folosind aceiasi paramentri din constructor.
+
+Functia poate fi chemata pentru a reseta graful la starea initiala. \hypertarget{classGraph_a84efbb4a0a7fa7f1b9aaa588cb03d454}{
+\index{Graph@{Graph}!setParent@{setParent}}
+\index{setParent@{setParent}!Graph@{Graph}}
+\subsubsection[{setParent}]{\setlength{\rightskip}{0pt plus 5cm}void Graph::setParent (
+\begin{DoxyParamCaption}
+\item[{int}]{ node, }
+\item[{int}]{ parent}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classGraph_a84efbb4a0a7fa7f1b9aaa588cb03d454}
+Retine pe \char`\"{}parent\char`\"{} drept parintele lui \char`\"{}node\char`\"{}.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em node}]nodul pe al carui parinte vrem sa il setam \item[{\em parent}]parintele nodului \end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classGraph_a87f661f464d587bc3f6b476c85e800ae}{
+\index{Graph@{Graph}!adjMatrix@{adjMatrix}}
+\index{adjMatrix@{adjMatrix}!Graph@{Graph}}
+\subsubsection[{adjMatrix}]{\setlength{\rightskip}{0pt plus 5cm}boolean \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} {\bf Graph::adjMatrix}}}
+\label{classGraph_a87f661f464d587bc3f6b476c85e800ae}
+Matricea de adiacenta asociata grafului.
+
+adjMatrix\mbox{[}x\mbox{]}\mbox{[}y\mbox{]} == true $<$=$>$ exista un arc de la nodul \char`\"{}x\char`\"{} la nodul \char`\"{}y\char`\"{} \hypertarget{classGraph_a6fe80b61925cedc187fa1ef35c504b1e}{
+\index{Graph@{Graph}!capacityMatrix@{capacityMatrix}}
+\index{capacityMatrix@{capacityMatrix}!Graph@{Graph}}
+\subsubsection[{capacityMatrix}]{\setlength{\rightskip}{0pt plus 5cm}int \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} {\bf Graph::capacityMatrix}}}
+\label{classGraph_a6fe80b61925cedc187fa1ef35c504b1e}
+Matricea de capacitati asociata grafului.
+
+capacityMatrix\mbox{[}x\mbox{]}\mbox{[}y\mbox{]} == capacitatea asociata arcului de la nodul \char`\"{}x\char`\"{} la nodul \char`\"{}y\char`\"{} \hypertarget{classGraph_ad45717436b6a4ea15d30b88263baeb2a}{
+\index{Graph@{Graph}!flow@{flow}}
+\index{flow@{flow}!Graph@{Graph}}
+\subsubsection[{flow}]{\setlength{\rightskip}{0pt plus 5cm}int \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} {\bf Graph::flow}}}
+\label{classGraph_ad45717436b6a4ea15d30b88263baeb2a}
+Matricea de flux asociata grafului (poate fi folosita pentru a retine fluxul transportat de retea).
+
+flow\mbox{[}x\mbox{]}\mbox{[}y\mbox{]} == fluxul asociat arcului de la nodul \char`\"{}x\char`\"{} la nodul \char`\"{}y\char`\"{} \hypertarget{classGraph_a282d3ae4575cc3764258ecdb2d8e8fdf}{
+\index{Graph@{Graph}!INFINITY@{INFINITY}}
+\index{INFINITY@{INFINITY}!Graph@{Graph}}
+\subsubsection[{INFINITY}]{\setlength{\rightskip}{0pt plus 5cm}final int {\bf Graph::INFINITY} = Integer.MAX\_\-VALUE\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classGraph_a282d3ae4575cc3764258ecdb2d8e8fdf}
+INIFINIT \hypertarget{classGraph_a2dbb2805720a0812f5df6a58d38956af}{
+\index{Graph@{Graph}!UNDEFINED@{UNDEFINED}}
+\index{UNDEFINED@{UNDEFINED}!Graph@{Graph}}
+\subsubsection[{UNDEFINED}]{\setlength{\rightskip}{0pt plus 5cm}final int {\bf Graph::UNDEFINED} = Integer.MAX\_\-VALUE\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classGraph_a2dbb2805720a0812f5df6a58d38956af}
+NEDEFINIT 
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/marcvs/Desktop/working/pa-\/materiale/pa/codeBase/Java/src/Graph.java\end{DoxyCompactItemize}

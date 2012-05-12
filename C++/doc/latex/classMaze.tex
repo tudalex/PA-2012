@@ -1,0 +1,239 @@
+\hypertarget{classMaze}{
+\section{Maze Class Reference}
+\label{classMaze}\index{Maze@{Maze}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMaze_a7ecf1da4b9685f97bf3110a8479e724b}{
+\hyperlink{classMaze_a7ecf1da4b9685f97bf3110a8479e724b}{Maze} ()}
+\label{classMaze_a7ecf1da4b9685f97bf3110a8479e724b}
+
+\begin{DoxyCompactList}\small\item\em Empty constructor. \end{DoxyCompactList}\item 
+\hyperlink{classMaze_aefe17a9230004f78133d5cee3fde7ff3}{Maze} (unsigned int height, unsigned int width)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+int \hyperlink{classMaze_a3f9b79edb99a9726da62bc6823ea9149}{get\_\-width} ()
+\begin{DoxyCompactList}\small\item\em Functie pentru determinarea latimii labirintului. \end{DoxyCompactList}\item 
+int \hyperlink{classMaze_a43a3408e506b2f2463fc985865b3c850}{get\_\-height} ()
+\begin{DoxyCompactList}\small\item\em Functie pentru determinarea inaltimii labirintului. \end{DoxyCompactList}\item 
+bool \hyperlink{classMaze_ac93538707952b53de27238eea535ee54}{is\_\-walkable} (unsigned int line, unsigned int column)
+\begin{DoxyCompactList}\small\item\em Functie care spune daca o celula din labirint este accesibila. \end{DoxyCompactList}\item 
+bool \hyperlink{classMaze_a345eaa7ceb15067163e32c3efe04ce4c}{is\_\-walkable} (Coord coord)
+\begin{DoxyCompactList}\small\item\em Functie care spune daca o celula din labirint este accesibila. \end{DoxyCompactList}\item 
+bool \hyperlink{classMaze_ac246c826b75f7a89936c4957381589a5}{is\_\-exit\_\-point} (unsigned int line, unsigned int column)
+\begin{DoxyCompactList}\small\item\em Functie care spune daca o celula din labirint este punct de iesire. \end{DoxyCompactList}\item 
+bool \hyperlink{classMaze_aabd5993906681eef8491618fb2cce4c5}{is\_\-exit\_\-point} (Coord coord)
+\begin{DoxyCompactList}\small\item\em Functie care spune daca o celula din labirint este punct de iesire. \end{DoxyCompactList}\item 
+void \hyperlink{classMaze_a07a1b1c1187313a16ec8a2823e7a3019}{mark\_\-solution\_\-step} (unsigned int line, unsigned int column)
+\begin{DoxyCompactList}\small\item\em Functie care marcheaza un pas din solutie. \end{DoxyCompactList}\item 
+void \hyperlink{classMaze_a0b27a912b886cd33a45d53789e4f2f1b}{mark\_\-solution\_\-step} (Coord coord)
+\begin{DoxyCompactList}\small\item\em Functie care marcheaza un pas din solutie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMaze_af5844881f8fcd17e2c8e5dc036338f85}{
+std::istream \& {\bfseries operator$>$$>$} (std::istream \&, \hyperlink{classMaze}{Maze} \&maze)}
+\label{classMaze_af5844881f8fcd17e2c8e5dc036338f85}
+
+\item 
+\hypertarget{classMaze_af855ad718bd33714d1e871a802a164b2}{
+std::ostream \& {\bfseries operator$<$$<$} (std::ostream \&, const \hyperlink{classMaze}{Maze} \&)}
+\label{classMaze_af855ad718bd33714d1e871a802a164b2}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMaze_aefe17a9230004f78133d5cee3fde7ff3}{
+\index{Maze@{Maze}!Maze@{Maze}}
+\index{Maze@{Maze}!Maze@{Maze}}
+\subsubsection[{Maze}]{\setlength{\rightskip}{0pt plus 5cm}Maze::Maze (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{height, }
+\item[{unsigned int}]{width}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMaze_aefe17a9230004f78133d5cee3fde7ff3}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & Latimea labirintului (nr. coloane) \\
+\hline
+{\em height} & Inaltimea labirintului (nr. linii) \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMaze_a43a3408e506b2f2463fc985865b3c850}{
+\index{Maze@{Maze}!get\_\-height@{get\_\-height}}
+\index{get\_\-height@{get\_\-height}!Maze@{Maze}}
+\subsubsection[{get\_\-height}]{\setlength{\rightskip}{0pt plus 5cm}int Maze::get\_\-height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMaze_a43a3408e506b2f2463fc985865b3c850}
+
+
+Functie pentru determinarea inaltimii labirintului. 
+
+\begin{DoxyReturn}{Returns}
+Inaltimea labirintului 
+\end{DoxyReturn}
+\hypertarget{classMaze_a3f9b79edb99a9726da62bc6823ea9149}{
+\index{Maze@{Maze}!get\_\-width@{get\_\-width}}
+\index{get\_\-width@{get\_\-width}!Maze@{Maze}}
+\subsubsection[{get\_\-width}]{\setlength{\rightskip}{0pt plus 5cm}int Maze::get\_\-width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMaze_a3f9b79edb99a9726da62bc6823ea9149}
+
+
+Functie pentru determinarea latimii labirintului. 
+
+\begin{DoxyReturn}{Returns}
+Latimea labirintului 
+\end{DoxyReturn}
+\hypertarget{classMaze_ac246c826b75f7a89936c4957381589a5}{
+\index{Maze@{Maze}!is\_\-exit\_\-point@{is\_\-exit\_\-point}}
+\index{is\_\-exit\_\-point@{is\_\-exit\_\-point}!Maze@{Maze}}
+\subsubsection[{is\_\-exit\_\-point}]{\setlength{\rightskip}{0pt plus 5cm}bool Maze::is\_\-exit\_\-point (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{line, }
+\item[{unsigned int}]{column}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMaze_ac246c826b75f7a89936c4957381589a5}
+
+
+Functie care spune daca o celula din labirint este punct de iesire. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & Linia din labirint. \\
+\hline
+{\em column} & Coloana din labirint. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Functia intoarce {\bfseries true} daca celula din labiring de la (line, column) este acceisbila, sau {\bfseries false} daca respectiva celula este zid. 
+\end{DoxyReturn}
+\hypertarget{classMaze_aabd5993906681eef8491618fb2cce4c5}{
+\index{Maze@{Maze}!is\_\-exit\_\-point@{is\_\-exit\_\-point}}
+\index{is\_\-exit\_\-point@{is\_\-exit\_\-point}!Maze@{Maze}}
+\subsubsection[{is\_\-exit\_\-point}]{\setlength{\rightskip}{0pt plus 5cm}bool Maze::is\_\-exit\_\-point (
+\begin{DoxyParamCaption}
+\item[{Coord}]{coord}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMaze_aabd5993906681eef8491618fb2cce4c5}
+
+
+Functie care spune daca o celula din labirint este punct de iesire. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coord} & Linia si coloana din labirint. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Functia intoarce {\bfseries true} daca celula din labiring de la coord este acceisbila, sau {\bfseries false} daca respectiva celula este zid. 
+\end{DoxyReturn}
+\hypertarget{classMaze_a345eaa7ceb15067163e32c3efe04ce4c}{
+\index{Maze@{Maze}!is\_\-walkable@{is\_\-walkable}}
+\index{is\_\-walkable@{is\_\-walkable}!Maze@{Maze}}
+\subsubsection[{is\_\-walkable}]{\setlength{\rightskip}{0pt plus 5cm}bool Maze::is\_\-walkable (
+\begin{DoxyParamCaption}
+\item[{Coord}]{coord}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMaze_a345eaa7ceb15067163e32c3efe04ce4c}
+
+
+Functie care spune daca o celula din labirint este accesibila. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coord} & Linia si coloana din labirint. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Functia intoarce {\bfseries true} daca celula din labirint de la coord este accesibila, sau {\bfseries false} daca respectiva celula este zid. 
+\end{DoxyReturn}
+\hypertarget{classMaze_ac93538707952b53de27238eea535ee54}{
+\index{Maze@{Maze}!is\_\-walkable@{is\_\-walkable}}
+\index{is\_\-walkable@{is\_\-walkable}!Maze@{Maze}}
+\subsubsection[{is\_\-walkable}]{\setlength{\rightskip}{0pt plus 5cm}bool Maze::is\_\-walkable (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{line, }
+\item[{unsigned int}]{column}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMaze_ac93538707952b53de27238eea535ee54}
+
+
+Functie care spune daca o celula din labirint este accesibila. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & Linia din labirint. \\
+\hline
+{\em column} & Coloana din labirint. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Functia intoarce {\bfseries true} daca celula din labirint de la (line, column) este accesibila, sau {\bfseries false} daca respectiva celula este zid. 
+\end{DoxyReturn}
+\hypertarget{classMaze_a07a1b1c1187313a16ec8a2823e7a3019}{
+\index{Maze@{Maze}!mark\_\-solution\_\-step@{mark\_\-solution\_\-step}}
+\index{mark\_\-solution\_\-step@{mark\_\-solution\_\-step}!Maze@{Maze}}
+\subsubsection[{mark\_\-solution\_\-step}]{\setlength{\rightskip}{0pt plus 5cm}void Maze::mark\_\-solution\_\-step (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{line, }
+\item[{unsigned int}]{column}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMaze_a07a1b1c1187313a16ec8a2823e7a3019}
+
+
+Functie care marcheaza un pas din solutie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & Linia din labirint. \\
+\hline
+{\em column} & Coloana din labirint. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classMaze_a0b27a912b886cd33a45d53789e4f2f1b}{
+\index{Maze@{Maze}!mark\_\-solution\_\-step@{mark\_\-solution\_\-step}}
+\index{mark\_\-solution\_\-step@{mark\_\-solution\_\-step}!Maze@{Maze}}
+\subsubsection[{mark\_\-solution\_\-step}]{\setlength{\rightskip}{0pt plus 5cm}void Maze::mark\_\-solution\_\-step (
+\begin{DoxyParamCaption}
+\item[{Coord}]{coord}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMaze_a0b27a912b886cd33a45d53789e4f2f1b}
+
+
+Functie care marcheaza un pas din solutie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coord} & Linia si coloana din labirint. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Functia intoarce {\bfseries true} daca celula din labiring de la coord este acceisbila, sau {\bfseries false} daca respectiva celula este zid. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/tudalex/codeBase/C++/include/Maze.h\end{DoxyCompactItemize}

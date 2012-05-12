@@ -1,0 +1,86 @@
+\hypertarget{structFlowGraph}{
+\section{FlowGraph Struct Reference}
+\label{structFlowGraph}\index{FlowGraph@{FlowGraph}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \hyperlink{structFlowGraph_aeeae960e5ebc81157a250a0c6b48e15a}{size} ()
+\begin{DoxyCompactList}\small\item\em Functie care intoarce numarul de noduri din graf. \item\end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{structFlowGraph_a19a2f24fbcbe9a11af5f8147426a4737}{operator\mbox{[}$\,$\mbox{]}} (int index)
+\begin{DoxyCompactList}\small\item\em Functie care permite accesul la graf ca la o matrice de adiacenta. \item\end{DoxyCompactList}\item 
+bool \hyperlink{structFlowGraph_ace838a5427a079d74ecd18428f5c63ea}{is\_\-saturated} (unsigned int u, unsigned int v)
+\begin{DoxyCompactList}\small\item\em Functie care spune daca muchia (u, v) din graf este sau nu saturata. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structFlowGraph_aed8df937356e6365dcb435abb4de9a7f}{
+std::istream \& {\bfseries operator$>$$>$} (std::istream \&in, \hyperlink{structFlowGraph}{FlowGraph} \&graph)}
+\label{structFlowGraph_aed8df937356e6365dcb435abb4de9a7f}
+
+\item 
+\hypertarget{structFlowGraph_a2ea10c7cd0d5f40f2b3d36f4f67794e9}{
+void {\bfseries loadMatrixGraph} (std::istream \&in, \hyperlink{structFlowGraph}{FlowGraph} \&graph)}
+\label{structFlowGraph_a2ea10c7cd0d5f40f2b3d36f4f67794e9}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structFlowGraph_ace838a5427a079d74ecd18428f5c63ea}{
+\index{FlowGraph@{FlowGraph}!is\_\-saturated@{is\_\-saturated}}
+\index{is\_\-saturated@{is\_\-saturated}!FlowGraph@{FlowGraph}}
+\subsubsection[{is\_\-saturated}]{\setlength{\rightskip}{0pt plus 5cm}bool FlowGraph::is\_\-saturated (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ u, }
+\item[{unsigned int}]{ v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structFlowGraph_ace838a5427a079d74ecd18428f5c63ea}
+
+
+Functie care spune daca muchia (u, v) din graf este sau nu saturata. 
+
+\begin{DoxyReturn}{Returns}
+{\bfseries True} daca muchia este saturata, sau {\bfseries False} altfel. 
+\end{DoxyReturn}
+\hypertarget{structFlowGraph_a19a2f24fbcbe9a11af5f8147426a4737}{
+\index{FlowGraph@{FlowGraph}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!FlowGraph@{FlowGraph}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ FlowGraph::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{int}]{ index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structFlowGraph_a19a2f24fbcbe9a11af5f8147426a4737}
+
+
+Functie care permite accesul la graf ca la o matrice de adiacenta. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]Un nod in graf. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un pointer catre linia din matricea de adiacenta a nodului index. 
+\end{DoxyReturn}
+\hypertarget{structFlowGraph_aeeae960e5ebc81157a250a0c6b48e15a}{
+\index{FlowGraph@{FlowGraph}!size@{size}}
+\index{size@{size}!FlowGraph@{FlowGraph}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int FlowGraph::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structFlowGraph_aeeae960e5ebc81157a250a0c6b48e15a}
+
+
+Functie care intoarce numarul de noduri din graf. 
+
+\begin{DoxyReturn}{Returns}
+Numarul de noduri din graf. 
+\end{DoxyReturn}
+
+
+The documentation for this struct was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/marcvs/Desktop/working/pa-\/materiale/pa/codeBase/C++/include/FlowGraph.h\end{DoxyCompactItemize}

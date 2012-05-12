@@ -1,0 +1,180 @@
+\hypertarget{classXOBoard}{
+\section{XOBoard Class Reference}
+\label{classXOBoard}\index{XOBoard@{XOBoard}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classXOBoard_a5740df9f6637e64adb7745228820b608}{
+\hyperlink{classXOBoard_a5740df9f6637e64adb7745228820b608}{XOBoard} ()}
+\label{classXOBoard_a5740df9f6637e64adb7745228820b608}
+
+\begin{DoxyCompactList}\small\item\em Constructor fara parametri care instantiaza o tabla goala pe care nu este marcat nimic. \item\end{DoxyCompactList}\item 
+\hypertarget{classXOBoard_a9cc0ccf792149ff4d2fb30f159b4331d}{
+{\bfseries XOBoard} (int movesX, int movesO, int moves)}
+\label{classXOBoard_a9cc0ccf792149ff4d2fb30f159b4331d}
+
+\item 
+boolean \hyperlink{classXOBoard_a6c374e5e5961b1223e08df188c276379}{is\_\-empty} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Metoda care verifica daca o celula este libera sau nu. \item\end{DoxyCompactList}\item 
+char \hyperlink{classXOBoard_a45c7e3b053887aed0d4fbaf27bad4789}{get} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Metoda care intoarce caracterul de pe tabla. \item\end{DoxyCompactList}\item 
+void \hyperlink{classXOBoard_a21c932338885c299354e4f702a632dae}{put} (XOPlayer player, int x, int y)
+\begin{DoxyCompactList}\small\item\em Metoda care bifeaza o celula de pe tabla in numele unui jucator. \item\end{DoxyCompactList}\item 
+void \hyperlink{classXOBoard_a6e72af673a48b7a4de79d7b738a690c1}{erase} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Metoda care sterge valoarea dintr-\/o celula de pe tabla. \item\end{DoxyCompactList}\item 
+boolean \hyperlink{classXOBoard_aabd4973f2aec517e4a260834170c8fe5}{is\_\-full} ()
+\begin{DoxyCompactList}\small\item\em Metoda care spune daca tabla s-\/a terminat de completat sau nu. \item\end{DoxyCompactList}\item 
+int \hyperlink{classXOBoard_ac7efc6b2b81c1ad846984a887394fbbc}{get\_\-score} (XOPlayer player)
+\begin{DoxyCompactList}\small\item\em Metoda care intoarce scorul tablei din perspectiva jucatorului dat ca parametru. \item\end{DoxyCompactList}\item 
+boolean \hyperlink{classXOBoard_a7bf161fef927f1271ccaa018b2fc8d10}{game\_\-over} ()
+\begin{DoxyCompactList}\small\item\em Metoda care spune daca jocul s-\/a terminat. \item\end{DoxyCompactList}\item 
+\hypertarget{classXOBoard_a1d963dd14185fa970577f23e5559f6a0}{
+void {\bfseries print} ()}
+\label{classXOBoard_a1d963dd14185fa970577f23e5559f6a0}
+
+\item 
+\hypertarget{classXOBoard_a5d4d4e134e7785da5ce31bddc01e9049}{
+\hyperlink{classXOBoard}{XOBoard} {\bfseries clone} ()  throws CloneNotSupportedException        }
+\label{classXOBoard_a5d4d4e134e7785da5ce31bddc01e9049}
+
+\item 
+\hypertarget{classXOBoard_ae3b9fec9bd85693f35a2c9c3713682e2}{
+\hyperlink{classXOBoard}{XOBoard} {\bfseries tryClone} ()}
+\label{classXOBoard_ae3b9fec9bd85693f35a2c9c3713682e2}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classXOBoard_a6e72af673a48b7a4de79d7b738a690c1}{
+\index{XOBoard@{XOBoard}!erase@{erase}}
+\index{erase@{erase}!XOBoard@{XOBoard}}
+\subsubsection[{erase}]{\setlength{\rightskip}{0pt plus 5cm}void XOBoard::erase (
+\begin{DoxyParamCaption}
+\item[{int}]{ x, }
+\item[{int}]{ y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classXOBoard_a6e72af673a48b7a4de79d7b738a690c1}
+
+
+Metoda care sterge valoarea dintr-\/o celula de pe tabla. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em x}]Linia X de pe tabla (intre 0 si 2) \item[{\em y}]Linia Y de pe tabla (intre 0 si 2) \end{DoxyParams}
+\hypertarget{classXOBoard_a7bf161fef927f1271ccaa018b2fc8d10}{
+\index{XOBoard@{XOBoard}!game\_\-over@{game\_\-over}}
+\index{game\_\-over@{game\_\-over}!XOBoard@{XOBoard}}
+\subsubsection[{game\_\-over}]{\setlength{\rightskip}{0pt plus 5cm}boolean XOBoard::game\_\-over (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classXOBoard_a7bf161fef927f1271ccaa018b2fc8d10}
+
+
+Metoda care spune daca jocul s-\/a terminat. 
+
+\begin{DoxyReturn}{Returns}
+Functia intoarce {\bfseries true} daca jocul s-\/a terminat sau {\bfseries false} daca se poate juca in continuare. 
+\end{DoxyReturn}
+\hypertarget{classXOBoard_a45c7e3b053887aed0d4fbaf27bad4789}{
+\index{XOBoard@{XOBoard}!get@{get}}
+\index{get@{get}!XOBoard@{XOBoard}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}char XOBoard::get (
+\begin{DoxyParamCaption}
+\item[{int}]{ x, }
+\item[{int}]{ y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classXOBoard_a45c7e3b053887aed0d4fbaf27bad4789}
+
+
+Metoda care intoarce caracterul de pe tabla. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em x}]Linia X de pe tabla (intre 0 si 2) \item[{\em y}]Linia Y de pe tabla (intre 0 si 2) \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Dupa caz, intoarce 'X', {\bfseries 'O'} sau {\bfseries '\_\-'} 
+\end{DoxyReturn}
+\hypertarget{classXOBoard_ac7efc6b2b81c1ad846984a887394fbbc}{
+\index{XOBoard@{XOBoard}!get\_\-score@{get\_\-score}}
+\index{get\_\-score@{get\_\-score}!XOBoard@{XOBoard}}
+\subsubsection[{get\_\-score}]{\setlength{\rightskip}{0pt plus 5cm}int XOBoard::get\_\-score (
+\begin{DoxyParamCaption}
+\item[{XOPlayer}]{ player}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classXOBoard_ac7efc6b2b81c1ad846984a887394fbbc}
+
+
+Metoda care intoarce scorul tablei din perspectiva jucatorului dat ca parametru. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em player}]Jucatorul din perspectiva caruia se calculeaza scorul. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Functia intoarce numarul de linii, coloane si diagonale complete ale jucatorului dat ca parametru. 
+\end{DoxyReturn}
+\hypertarget{classXOBoard_a6c374e5e5961b1223e08df188c276379}{
+\index{XOBoard@{XOBoard}!is\_\-empty@{is\_\-empty}}
+\index{is\_\-empty@{is\_\-empty}!XOBoard@{XOBoard}}
+\subsubsection[{is\_\-empty}]{\setlength{\rightskip}{0pt plus 5cm}boolean XOBoard::is\_\-empty (
+\begin{DoxyParamCaption}
+\item[{int}]{ x, }
+\item[{int}]{ y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classXOBoard_a6c374e5e5961b1223e08df188c276379}
+
+
+Metoda care verifica daca o celula este libera sau nu. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em x}]Linia X de pe tabla (intre 0 si 2) \item[{\em y}]Coloana Y de pe tabla (intre 0 si 2) \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Functia intoarce {\bfseries true} daca celula este libera sau {\bfseries false} daca celula este completata. 
+\end{DoxyReturn}
+\hypertarget{classXOBoard_aabd4973f2aec517e4a260834170c8fe5}{
+\index{XOBoard@{XOBoard}!is\_\-full@{is\_\-full}}
+\index{is\_\-full@{is\_\-full}!XOBoard@{XOBoard}}
+\subsubsection[{is\_\-full}]{\setlength{\rightskip}{0pt plus 5cm}boolean XOBoard::is\_\-full (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classXOBoard_aabd4973f2aec517e4a260834170c8fe5}
+
+
+Metoda care spune daca tabla s-\/a terminat de completat sau nu. 
+
+\begin{DoxyReturn}{Returns}
+Functia intoarce {\bfseries true} daca tabla este completata la maxim sau {\bfseries false} altfel. 
+\end{DoxyReturn}
+\hypertarget{classXOBoard_a21c932338885c299354e4f702a632dae}{
+\index{XOBoard@{XOBoard}!put@{put}}
+\index{put@{put}!XOBoard@{XOBoard}}
+\subsubsection[{put}]{\setlength{\rightskip}{0pt plus 5cm}void XOBoard::put (
+\begin{DoxyParamCaption}
+\item[{XOPlayer}]{ player, }
+\item[{int}]{ x, }
+\item[{int}]{ y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classXOBoard_a21c932338885c299354e4f702a632dae}
+
+
+Metoda care bifeaza o celula de pe tabla in numele unui jucator. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em player}]Jucatorul in numele caruia se bifeaza (valori constante din clasa \hyperlink{classXOBoard}{XOBoard}) \item[{\em x}]Linia X de pe tabla (intre 0 si 2) \item[{\em y}]Linia Y de pe tabla (intre 0 si 2) \end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/marcvs/Desktop/working/pa-\/materiale/pa/codeBase/Java/src/XOBoard.java\end{DoxyCompactItemize}

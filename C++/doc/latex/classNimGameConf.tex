@@ -1,0 +1,100 @@
+\hypertarget{classNimGameConf}{
+\section{NimGameConf Class Reference}
+\label{classNimGameConf}\index{NimGameConf@{NimGameConf}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classNimGameConf_aca38313f09d82be07a32770a9f6875cc}{
+{\bfseries NimGameConf} (int n)}
+\label{classNimGameConf_aca38313f09d82be07a32770a9f6875cc}
+
+\item 
+size\_\-t \hyperlink{classNimGameConf_a6562b1e5b81ef42b350abdb7b3f024be}{size} ()
+\begin{DoxyCompactList}\small\item\em Functie care intoarce dimensiunea celei mai mari gramezi din joc. \end{DoxyCompactList}\item 
+bool \hyperlink{classNimGameConf_a9d882cf631a20956c0e542dd71a8b726}{gameOver} ()
+\begin{DoxyCompactList}\small\item\em Functie care spune daca jocul s-\/a terminat. Jocul se termina atunci cand nu mai exista nici o gramada cu cel putin trei pietricele. \end{DoxyCompactList}\item 
+\hypertarget{classNimGameConf_ad8c71ec49bf1a773c169f6a57523309e}{
+int \& \hyperlink{classNimGameConf_ad8c71ec49bf1a773c169f6a57523309e}{operator\mbox{[}$\,$\mbox{]}} (const unsigned int index)}
+\label{classNimGameConf_ad8c71ec49bf1a773c169f6a57523309e}
+
+\begin{DoxyCompactList}\small\item\em Operator care permite accesul la orice gramada din joc. \end{DoxyCompactList}\item 
+void \hyperlink{classNimGameConf_ad19bf383bbd4eafc893491e31059d777}{split} (int heap, int a, int b)
+\begin{DoxyCompactList}\small\item\em Functie care imparte o gramada in alte doua gramezi mai mici. \end{DoxyCompactList}\item 
+\hypertarget{classNimGameConf_a8001a96febdfe2ce67ae8cee025a89e0}{
+void \hyperlink{classNimGameConf_a8001a96febdfe2ce67ae8cee025a89e0}{unsplit} (int heap, int a, int b)}
+\label{classNimGameConf_a8001a96febdfe2ce67ae8cee025a89e0}
+
+\begin{DoxyCompactList}\small\item\em Inversul functiei split. Reasambleaza doua gramezi in gramada originala. Nu este o miscare valida de gameplay, dar poate fi utila la expandarea arborelui. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classNimGameConf_a119d80a72d6c9f144fc19036dabc1827}{
+std::ostream \& {\bfseries operator$<$$<$} (std::ostream \&, const \hyperlink{classNimGameConf}{NimGameConf} \&)}
+\label{classNimGameConf_a119d80a72d6c9f144fc19036dabc1827}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classNimGameConf_a9d882cf631a20956c0e542dd71a8b726}{
+\index{NimGameConf@{NimGameConf}!gameOver@{gameOver}}
+\index{gameOver@{gameOver}!NimGameConf@{NimGameConf}}
+\subsubsection[{gameOver}]{\setlength{\rightskip}{0pt plus 5cm}bool NimGameConf::gameOver (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classNimGameConf_a9d882cf631a20956c0e542dd71a8b726}
+
+
+Functie care spune daca jocul s-\/a terminat. Jocul se termina atunci cand nu mai exista nici o gramada cu cel putin trei pietricele. 
+
+\begin{DoxyReturn}{Returns}
+{\bfseries true} daca jocul s-\/a terminat, sau {\bfseries false} altfel. 
+\end{DoxyReturn}
+\hypertarget{classNimGameConf_a6562b1e5b81ef42b350abdb7b3f024be}{
+\index{NimGameConf@{NimGameConf}!size@{size}}
+\index{size@{size}!NimGameConf@{NimGameConf}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t NimGameConf::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classNimGameConf_a6562b1e5b81ef42b350abdb7b3f024be}
+
+
+Functie care intoarce dimensiunea celei mai mari gramezi din joc. 
+
+\begin{DoxyReturn}{Returns}
+Dimensiunea celei mai mari gramezi din joc (cea initiala). 
+\end{DoxyReturn}
+\hypertarget{classNimGameConf_ad19bf383bbd4eafc893491e31059d777}{
+\index{NimGameConf@{NimGameConf}!split@{split}}
+\index{split@{split}!NimGameConf@{NimGameConf}}
+\subsubsection[{split}]{\setlength{\rightskip}{0pt plus 5cm}void NimGameConf::split (
+\begin{DoxyParamCaption}
+\item[{int}]{heap, }
+\item[{int}]{a, }
+\item[{int}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classNimGameConf_ad19bf383bbd4eafc893491e31059d777}
+
+
+Functie care imparte o gramada in alte doua gramezi mai mici. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em heap} & Gramada ce trebuie impartita. \\
+\hline
+{\em a} & Dimensiunea primei gramezi. \\
+\hline
+{\em b} & Dimensiunea celei de-\/a doua gramezi. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/tudalex/codeBase/C++/include/Nim.h\end{DoxyCompactItemize}

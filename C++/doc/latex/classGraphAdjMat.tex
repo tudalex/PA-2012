@@ -1,0 +1,174 @@
+\hypertarget{classGraphAdjMat}{
+\section{GraphAdjMat Class Reference}
+\label{classGraphAdjMat}\index{GraphAdjMat@{GraphAdjMat}}
+}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classGraphAdjMat_a88a0f99f3fd4d00d4ef6e7702b0e59f2}{
+typedef std::vector$<$ std::pair$<$ std::pair$<$ int, int $>$, int $>$ $>$ {\bfseries Path}}
+\label{classGraphAdjMat_a88a0f99f3fd4d00d4ef6e7702b0e59f2}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGraphAdjMat_a31e0dcb775dbff2143bb23362570f06a}{GraphAdjMat} (unsigned int n, bool directed=false)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{classGraphAdjMat_a14096e1110de31ed885a5db3aefc0352}{
+void \hyperlink{classGraphAdjMat_a14096e1110de31ed885a5db3aefc0352}{clear\_\-paths} ()}
+\label{classGraphAdjMat_a14096e1110de31ed885a5db3aefc0352}
+
+\begin{DoxyCompactList}\small\item\em Functie care reseteaza toate drumurile din graf (folositi inainte de a rula din nou algoritmi de rutare). \end{DoxyCompactList}\item 
+std::vector$<$ \hyperlink{structEdge}{Edge} $>$ \hyperlink{classGraphAdjMat_a001e4a1c68a16e97bcd46803d22aa09a}{get\_\-edges} ()
+\begin{DoxyCompactList}\small\item\em Functie care intoarce vectorul de muchii din graf. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{classGraphAdjMat_a5085b90aa536ef045a93902f18eb8867}{get\_\-n} () const 
+\begin{DoxyCompactList}\small\item\em Functie care returneaza numarul de noduri din Graph. \end{DoxyCompactList}\item 
+int \hyperlink{classGraphAdjMat_aff425a66e306023d3465336ff9392b27}{get\_\-edge} (int a, int b) const 
+\begin{DoxyCompactList}\small\item\em Functie care determina daca o muchie exista in graf. \end{DoxyCompactList}\item 
+\hypertarget{classGraphAdjMat_af97e10d2dc5ecbefe2e24aa064e3f9b1}{
+void \hyperlink{classGraphAdjMat_af97e10d2dc5ecbefe2e24aa064e3f9b1}{set\_\-edge} (int a, int b, int cost)}
+\label{classGraphAdjMat_af97e10d2dc5ecbefe2e24aa064e3f9b1}
+
+\begin{DoxyCompactList}\small\item\em Functie care seteaza un cost in graf. \end{DoxyCompactList}\item 
+\hypertarget{classGraphAdjMat_ab3a00134d8c219cba150c624850b3b41}{
+void \hyperlink{classGraphAdjMat_ab3a00134d8c219cba150c624850b3b41}{erase\_\-edge} (int a, int b)}
+\label{classGraphAdjMat_ab3a00134d8c219cba150c624850b3b41}
+
+\begin{DoxyCompactList}\small\item\em Functie care sterge o muchie din graf. \end{DoxyCompactList}\item 
+\hypertarget{classGraphAdjMat_a81e6304b47eee06cd873a9c6c81e8883}{
+int \hyperlink{classGraphAdjMat_a81e6304b47eee06cd873a9c6c81e8883}{get\_\-detour} (int a, int b)}
+\label{classGraphAdjMat_a81e6304b47eee06cd873a9c6c81e8883}
+
+\begin{DoxyCompactList}\small\item\em Functie care returneaza urmatorul hop de pe drumul de la nodul a la nodul b (hopul trebuie setat manual in prealabil in cadrul rularii unui algoritm pe acest graf. \end{DoxyCompactList}\item 
+\hypertarget{classGraphAdjMat_ac4b58b9abab3a1206bc2b6410fa7c42b}{
+void \hyperlink{classGraphAdjMat_ac4b58b9abab3a1206bc2b6410fa7c42b}{set\_\-detour} (int a, int b, int det)}
+\label{classGraphAdjMat_ac4b58b9abab3a1206bc2b6410fa7c42b}
+
+\begin{DoxyCompactList}\small\item\em Functie care stabileste ca drumul optim de la a la b trebuie sa treaca prin det (folosit la reconstructia de drumuri). \end{DoxyCompactList}\item 
+Path \hyperlink{classGraphAdjMat_ae1becbc6072af4aafc0c929e50cb18c1}{path} (int a, int b) const 
+\begin{DoxyCompactList}\small\item\em Functie care intoarce un drum intre doua noduri. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classGraphAdjMat_a6d54bba8160edf78df0a01851553a9e6}{
+static const int {\bfseries NONE} = -\/1}
+\label{classGraphAdjMat_a6d54bba8160edf78df0a01851553a9e6}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classGraphAdjMat_aaf5011a169d94972d68e46e01b524cbe}{
+std::ostream \& {\bfseries operator$<$$<$} (std::ostream \&out, Path \&path)}
+\label{classGraphAdjMat_aaf5011a169d94972d68e46e01b524cbe}
+
+\item 
+\hypertarget{classGraphAdjMat_ab9f91e9b4e444235235407d6eeb7c230}{
+std::ostream \& {\bfseries operator$<$$<$} (std::ostream \&out, \hyperlink{classGraphAdjMat}{GraphAdjMat} \&graph)}
+\label{classGraphAdjMat_ab9f91e9b4e444235235407d6eeb7c230}
+
+\item 
+\hypertarget{classGraphAdjMat_ac5f68f8889681f66e3f095b2c8d0c000}{
+std::istream \& {\bfseries operator$>$$>$} (std::istream \&in, \hyperlink{classGraphAdjMat}{GraphAdjMat} \&graph)}
+\label{classGraphAdjMat_ac5f68f8889681f66e3f095b2c8d0c000}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classGraphAdjMat_a31e0dcb775dbff2143bb23362570f06a}{
+\index{GraphAdjMat@{GraphAdjMat}!GraphAdjMat@{GraphAdjMat}}
+\index{GraphAdjMat@{GraphAdjMat}!GraphAdjMat@{GraphAdjMat}}
+\subsubsection[{GraphAdjMat}]{\setlength{\rightskip}{0pt plus 5cm}GraphAdjMat::GraphAdjMat (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{n, }
+\item[{bool}]{directed = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classGraphAdjMat_a31e0dcb775dbff2143bb23362570f06a}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & numarul de noduri \\
+\hline
+{\em directed} & specifica daca graful trebuie sa fie orientat (implicit, este \char`\"{}false\char`\"{}). \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classGraphAdjMat_aff425a66e306023d3465336ff9392b27}{
+\index{GraphAdjMat@{GraphAdjMat}!get\_\-edge@{get\_\-edge}}
+\index{get\_\-edge@{get\_\-edge}!GraphAdjMat@{GraphAdjMat}}
+\subsubsection[{get\_\-edge}]{\setlength{\rightskip}{0pt plus 5cm}int GraphAdjMat::get\_\-edge (
+\begin{DoxyParamCaption}
+\item[{int}]{a, }
+\item[{int}]{b}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classGraphAdjMat_aff425a66e306023d3465336ff9392b27}
+
+
+Functie care determina daca o muchie exista in graf. 
+
+\begin{DoxyReturn}{Returns}
+Costul muchiei, daca aceasta exista, sau NONE, daca ea nu exista. 
+\end{DoxyReturn}
+\hypertarget{classGraphAdjMat_a001e4a1c68a16e97bcd46803d22aa09a}{
+\index{GraphAdjMat@{GraphAdjMat}!get\_\-edges@{get\_\-edges}}
+\index{get\_\-edges@{get\_\-edges}!GraphAdjMat@{GraphAdjMat}}
+\subsubsection[{get\_\-edges}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<${\bf Edge}$>$ GraphAdjMat::get\_\-edges (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classGraphAdjMat_a001e4a1c68a16e97bcd46803d22aa09a}
+
+
+Functie care intoarce vectorul de muchii din graf. 
+
+\begin{DoxyReturn}{Returns}
+Vectorul de muchii din graf. 
+\end{DoxyReturn}
+\hypertarget{classGraphAdjMat_a5085b90aa536ef045a93902f18eb8867}{
+\index{GraphAdjMat@{GraphAdjMat}!get\_\-n@{get\_\-n}}
+\index{get\_\-n@{get\_\-n}!GraphAdjMat@{GraphAdjMat}}
+\subsubsection[{get\_\-n}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int GraphAdjMat::get\_\-n (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classGraphAdjMat_a5085b90aa536ef045a93902f18eb8867}
+
+
+Functie care returneaza numarul de noduri din Graph. 
+
+\begin{DoxyReturn}{Returns}
+Numarul de noduri din Graph. 
+\end{DoxyReturn}
+\hypertarget{classGraphAdjMat_ae1becbc6072af4aafc0c929e50cb18c1}{
+\index{GraphAdjMat@{GraphAdjMat}!path@{path}}
+\index{path@{path}!GraphAdjMat@{GraphAdjMat}}
+\subsubsection[{path}]{\setlength{\rightskip}{0pt plus 5cm}Path GraphAdjMat::path (
+\begin{DoxyParamCaption}
+\item[{int}]{a, }
+\item[{int}]{b}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classGraphAdjMat_ae1becbc6072af4aafc0c929e50cb18c1}
+
+
+Functie care intoarce un drum intre doua noduri. 
+
+\begin{DoxyReturn}{Returns}
+Drumul dintre nodurile a si b. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/tudalex/codeBase/C++/include/GraphAdjMat.h\end{DoxyCompactItemize}
